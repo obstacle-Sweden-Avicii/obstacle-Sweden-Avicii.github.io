@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>my first blog</title>
+    <url>/2024/11/03/blog/</url>
+    <content><![CDATA[<p>这是我的第一个博客</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>typora测试</title>
+    <url>/2024/11/21/typora%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>尝试用typora写一篇博客，此文章仅做测试使用</p>
+]]></content>
+  </entry>
+</search>
