@@ -7,6 +7,13 @@
 ]]></content>
   </entry>
   <entry>
+    <title>typora测试尝试</title>
+    <url>/2024/11/21/typora%E5%8A%9F%E8%83%BD%E5%88%9D%E6%AD%A5%E5%B0%9D%E8%AF%95/</url>
+    <content><![CDATA[<h1 id="typora功能初步尝试"><a href="#typora功能初步尝试" class="headerlink" title="typora功能初步尝试"></a>typora功能初步尝试</h1><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>一级标题：ctrl+1或#<br>二级标题：ctrl+2或##<br>剩下的三级四级等就可以以此类推了</p>
+<h2 id="2-文字"><a href="#2-文字" class="headerlink" title="2.文字"></a>2.文字</h2><p>删除线：alt+shift+5    示例   ~~~~<br>加粗：ctrl+B 示例  <strong>加粗</strong><br>斜体：ctrl+I 示例  <em>斜体</em><br>下划线：ctrl+U 示例 <u>下划线</u><br>高亮：&#x3D;&#x3D;中间内容&#x3D;&#x3D;</p>
+]]></content>
+  </entry>
+  <entry>
     <title>typora测试</title>
     <url>/2024/11/21/typora%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p>尝试用typora写一篇博客，此文章仅做测试使用</p>
