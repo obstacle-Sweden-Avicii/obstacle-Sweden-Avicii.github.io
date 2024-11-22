@@ -5,12 +5,66 @@
     <url>/2024/11/03/blog/</url>
     <content><![CDATA[<p>这是我的第一个博客</p>
 ]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
   </entry>
   <entry>
     <title>typora测试尝试</title>
     <url>/2024/11/21/typora%E5%8A%9F%E8%83%BD%E5%88%9D%E6%AD%A5%E5%B0%9D%E8%AF%95/</url>
     <content><![CDATA[<h1 id="typora功能初步尝试"><a href="#typora功能初步尝试" class="headerlink" title="typora功能初步尝试"></a>typora功能初步尝试</h1><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>一级标题：ctrl+1或#<br>二级标题：ctrl+2或##<br>剩下的三级四级等就可以以此类推了</p>
 <h2 id="2-文字"><a href="#2-文字" class="headerlink" title="2.文字"></a>2.文字</h2><p>删除线：alt+shift+5    示例   ~~~~<br>加粗：ctrl+B 示例  <strong>加粗</strong><br>斜体：ctrl+I 示例  <em>斜体</em><br>下划线：ctrl+U 示例 <u>下划线</u><br>高亮：&#x3D;&#x3D;中间内容&#x3D;&#x3D;</p>
+<h2 id="3-表情包"><a href="#3-表情包" class="headerlink" title="3.表情包"></a>3.表情包</h2><p>:smile: :100: :heart:  快捷键:windows+；    </p>
+<h2 id="4-表格"><a href="#4-表格" class="headerlink" title="4.表格"></a>4.表格</h2><table>
+<thead>
+<tr>
+<th>week2</th>
+<th>week3</th>
+<th>week4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>快捷键:ctrl+t</p>
+<h2 id="5-引用"><a href="#5-引用" class="headerlink" title="5.引用"></a>5.引用</h2><blockquote>
+<p>一级应用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>瑞典厨师长</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="6-代码"><a href="#6-代码" class="headerlink" title="6.代码"></a>6.代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">插入不确定代码，快捷键：ctrl+shift+k</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-分隔线"><a href="#7-分隔线" class="headerlink" title="7.分隔线"></a>7.分隔线</h2><hr>
+<p>***  然后回车</p>
+<h2 id="8-源代码模式"><a href="#8-源代码模式" class="headerlink" title="8.源代码模式"></a>8.源代码模式</h2><p>ctrl+&#x2F;,退出一样</p>
+<h2 id="9-跳转"><a href="#9-跳转" class="headerlink" title="9.跳转"></a>9.跳转</h2><h4 id="1-跳转到外部"><a href="#1-跳转到外部" class="headerlink" title="1.跳转到外部"></a>1.跳转到外部</h4><p><a href="https://www.bilibili.com/">bilibili</a><br><a href="obstacle.top">屑魔女的个人博客</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">快捷键：ctrl+k      格式[提示文字](网址)</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-跳转到内部"><a href="#2-跳转到内部" class="headerlink" title="2.跳转到内部"></a>2.跳转到内部</h4><p>[博客](#<a href="http://localhost:4000/2024/11/03/blog/">my first blog</a>)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">快捷键：CTRL+k     [提示文字](#标题)</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-自动链接"><a href="#10-自动链接" class="headerlink" title="10.自动链接"></a>10.自动链接</h2><p>使用&lt;&gt;然后括号里链接会自动转化为超链接</p>
+<h2 id="11-图片"><a href="#11-图片" class="headerlink" title="11.图片"></a>11.图片</h2><p>往typora插入图片，图片文件夹一定要和创建的.md文件夹放在同一个文件夹下。不然文件移动位置后图片会因找不到地址而消失</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k</span><br><span class="line">例如：![伊雷娜](D:\blog\source\图片\Elaina.jpg)</span><br></pre></td></tr></table></figure>
+
+<p><img src="D:\blog\source\图片\Elaina.jpg" alt="伊蕾娜"></p>
 ]]></content>
   </entry>
   <entry>
