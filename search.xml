@@ -16,6 +16,15 @@
       </tags>
   </entry>
   <entry>
+    <title>my first blog</title>
+    <url>/2024/11/03/blog/</url>
+    <content><![CDATA[<p>这是我的第一个博客</p>
+]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>kmp算法学习</title>
     <url>/2025/01/18/kmp%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>前言：前段时间在写pta上面的代码题时遇到一个查找字符串字串的问题，一开始采取i，j循环遍历的方法暴力寻找，但是很可惜时间复杂度上出现问题，于是经过学习，初步尝试运用kmp算法来解决查找字符串字串中时间复杂度的问题。</p>
@@ -41,15 +50,6 @@
 ]]></content>
       <tags>
         <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>my first blog</title>
-    <url>/2024/11/03/blog/</url>
-    <content><![CDATA[<p>这是我的第一个博客</p>
-]]></content>
-      <tags>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
