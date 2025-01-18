@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>图片无法加载解决方法</title>
+    <url>/2024/11/30/1.%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<hr>
+<h2 id="1-图片"><a href="#1-图片" class="headerlink" title="1.图片"></a>1.图片</h2><p>往typora插入图片，图片文件夹一定要和创建的.md文件夹放在同一个文件夹下。不然文件移动位置后图片会因找不到地址而消失</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k</span><br><span class="line">例如：![伊雷娜](D:\blog\source\images\Elaina.jpg)</span><br></pre></td></tr></table></figure>
+
+<img src="/2024/11/30/1.%E5%9B%BE%E7%89%87/Elaina.jpg" class="" title="伊蕾娜">
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>相信很多人尝试上面图片的插入方法会遇到在typora能正常显示图片，但在网页上图片却无法加载。这是因为上述地址如D:\blog\source\images\Elaina.jpg为本地地址，而hexo+github搭建的博客并不能访问本地地址所以自然无法成功。</p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>最简单粗暴的方法就是直接将图片拖到typora中，typora会直接创建博客文章同名的文件夹存放图片。但是就是感觉文章写多了有点乱乱的。</p>
+]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>my first blog</title>
     <url>/2024/11/03/blog/</url>
     <content><![CDATA[<p>这是我的第一个博客</p>
@@ -71,21 +86,6 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k</span><br><span class="line">例如：![伊雷娜](D:\blog\source\images\Elaina.jpg)</span><br></pre></td></tr></table></figure>
 
 <p><img src="/%5Cimages%5CElaina.jpg" alt="伊蕾娜"></p>
-]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图片无法加载解决方法</title>
-    <url>/2024/11/30/1.%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<hr>
-<h2 id="1-图片"><a href="#1-图片" class="headerlink" title="1.图片"></a>1.图片</h2><p>往typora插入图片，图片文件夹一定要和创建的.md文件夹放在同一个文件夹下。不然文件移动位置后图片会因找不到地址而消失</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k</span><br><span class="line">例如：![伊雷娜](D:\blog\source\images\Elaina.jpg)</span><br></pre></td></tr></table></figure>
-
-<img src="/2024/11/30/1.%E5%9B%BE%E7%89%87/Elaina.jpg" class="" title="伊蕾娜">
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>相信很多人尝试上面图片的插入方法会遇到在typora能正常显示图片，但在网页上图片却无法加载。这是因为上述地址如D:\blog\source\images\Elaina.jpg为本地地址，而hexo+github搭建的博客并不能访问本地地址所以自然无法成功。</p>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>最简单粗暴的方法就是直接将图片拖到typora中，typora会直接创建博客文章同名的文件夹存放图片。但是就是感觉文章写多了有点乱乱的。</p>
 ]]></content>
       <tags>
         <tag>测试</tag>
