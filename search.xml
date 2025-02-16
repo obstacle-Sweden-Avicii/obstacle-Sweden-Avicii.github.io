@@ -119,4 +119,20 @@
     <content><![CDATA[<p>尝试用typora写一篇博客，此文章仅做测试使用</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>格密码学初步学习</title>
+    <url>/2025/01/22/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>懒惰的我终于开始初步学习密码学中格的相关内容了，虽然很早之前就看过了，但是由于东西实在是太多了根本看不下去，看了也不理解。现在再次开始密码学之路，这篇文章算是边学边理解的感悟吧。</p>
+<h1 id="格的认识"><a href="#格的认识" class="headerlink" title="格的认识"></a>格的认识</h1><p>经过学长的点明后，对于我目前学习最初步的格来说就把格理解为线性向量，把线性代数的知识运用上去，无非就是换了很多全新的名词，本质上按线性向量去理解会轻松很多。所以说还是要有一定线代基础不然还是很难接受（但线代本身也确实很抽象😢）</p>
+<h2 id="problem"><a href="#problem" class="headerlink" title="problem"></a>problem</h2><p>目前看过来分为svp（shortest vector problem）最短向量问题和cvp（closest vector problem)最近向量问题。两个名字看中文感觉就是一回事最短和最近，但事实上区别很大。</p>
+<h3 id="SVP"><a href="#SVP" class="headerlink" title="SVP"></a>SVP</h3><p>感觉正式讲法很难理解，我自己想法就是格中有一组基向量【b1，b2】以及很多点，要通过基向量找到一个点，使得这个点离原点最近，而λ1就是最短向量。有时候因为基的点分布并不理想，很多时候找出来的是最短向量λ1的倍数，这就是svp的宽松版本了。</p>
+<p><img src="/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/image-20250126215144384.png" alt="svp图片"></p>
+<h3 id="CVP"><a href="#CVP" class="headerlink" title="CVP"></a>CVP</h3><p>在基中找一个点t，找到距离这个点最近的格点。换句话理解就是找到一个向量λ1使得t向量（蓝色线）与λ1相减后得到的向量μ最短。同样存在cvp的宽松版本，如图中2μ，只不过目前我对于宽松版本还未很好理解。</p>
+<p><img src="/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/image-20250126221918701.png" alt="cvp图片"></p>
+<h2 id="LLL算法"><a href="#LLL算法" class="headerlink" title="LLL算法"></a>LLL算法</h2><p>嗯感觉这个原理非常复杂，想理解目前水平做不到，差不多想就是LLL是一个格基约化算法，作用是将上面图片中格变得更加整齐（就是把图中倾斜绿色点变得和坐标轴一样整齐）。反正目前做一些初步题大概就是按题目意思构造一个合理的格然后对格直接用LLL.( )会得到一个短向量，然后从这些向量中可以找到我们需要的，然后差不多就可以解出题目。所以不需要理解直接用吧😢然后顺带提一下BKZ算法，也是理解为更高级的LLL，直接用别管原理什么的。</p>
+]]></content>
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
 </search>
