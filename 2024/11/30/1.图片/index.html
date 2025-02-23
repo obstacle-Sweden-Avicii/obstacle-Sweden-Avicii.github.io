@@ -19,31 +19,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":false,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="懒惰的我终于开始初步学习密码学中格的相关内容了，虽然很早之前就看过了，但是由于东西实在是太多了根本看不下去，看了也不理解。现在再次开始密码学之路，这篇文章算是边学边理解的感悟吧。 格的认识经过学长的点明后，对于我目前学习最初步的格来说就把格理解为线性向量，把线性代数的知识运用上去，无非就是换了很多全新的名词，本质上按线性向量去理解会轻松很多。所以说还是要有一定线代基础不然还是很难接受（但线代本身也">
+    <meta name="description" content="1.图片往typora插入图片，图片文件夹一定要和创建的.md文件夹放在同一个文件夹下。不然文件移动位置后图片会因找不到地址而消失 12格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k例如：![伊雷娜](D:\blog\source\images\Elaina.jpg)   问题相信很多人尝试上面图片的插入方法会遇到在typora能正常显示图片，但在网页上图片却无法加载。这">
 <meta property="og:type" content="article">
-<meta property="og:title" content="格密码学初步学习">
-<meta property="og:url" content="http://example.com/2025/01/22/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="图片无法加载解决方法">
+<meta property="og:url" content="http://example.com/2024/11/30/1.%E5%9B%BE%E7%89%87/index.html">
 <meta property="og:site_name" content="obstacle的个人空间">
-<meta property="og:description" content="懒惰的我终于开始初步学习密码学中格的相关内容了，虽然很早之前就看过了，但是由于东西实在是太多了根本看不下去，看了也不理解。现在再次开始密码学之路，这篇文章算是边学边理解的感悟吧。 格的认识经过学长的点明后，对于我目前学习最初步的格来说就把格理解为线性向量，把线性代数的知识运用上去，无非就是换了很多全新的名词，本质上按线性向量去理解会轻松很多。所以说还是要有一定线代基础不然还是很难接受（但线代本身也">
+<meta property="og:description" content="1.图片往typora插入图片，图片文件夹一定要和创建的.md文件夹放在同一个文件夹下。不然文件移动位置后图片会因找不到地址而消失 12格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k例如：![伊雷娜](D:\blog\source\images\Elaina.jpg)   问题相信很多人尝试上面图片的插入方法会遇到在typora能正常显示图片，但在网页上图片却无法加载。这">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/svp.png">
-<meta property="og:image" content="http://example.com/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/cvp.png">
-<meta property="article:published_time" content="2025-01-22T15:41:42.000Z">
-<meta property="article:modified_time" content="2025-02-23T12:20:56.399Z">
+<meta property="og:image" content="http://example.com/1.%E5%9B%BE%E7%89%87/Elaina.jpg">
+<meta property="article:published_time" content="2024-11-30T14:58:03.692Z">
+<meta property="article:modified_time" content="2025-02-23T12:33:33.901Z">
 <meta property="article:author" content="瑞典厨师长">
-<meta property="article:tag" content="crypto">
+<meta property="article:tag" content="测试">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/svp.png">
+<meta name="twitter:image" content="http://example.com/1.%E5%9B%BE%E7%89%87/Elaina.jpg">
 
 
-<link rel="canonical" href="http://example.com/2025/01/22/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/">
+<link rel="canonical" href="http://example.com/2024/11/30/1.%E5%9B%BE%E7%89%87/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/01/22/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/","path":"2025/01/22/格密码学初步学习/格密码学初步学习/","title":"格密码学初步学习"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/11/30/1.%E5%9B%BE%E7%89%87/","path":"2024/11/30/1.图片/","title":"图片无法加载解决方法"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>格密码学初步学习 | obstacle的个人空间</title>
+<title>图片无法加载解决方法 | obstacle的个人空间</title>
   
 
 
@@ -143,7 +142,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%BC%E7%9A%84%E8%AE%A4%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">格的认识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#problem"><span class="nav-number">1.1.</span> <span class="nav-text">problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SVP"><span class="nav-number">1.1.1.</span> <span class="nav-text">SVP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CVP"><span class="nav-number">1.1.2.</span> <span class="nav-text">CVP</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LLL%E7%AE%97%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">LLL算法</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%9B%BE%E7%89%87"><span class="nav-number">1.</span> <span class="nav-text">1.图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3"><span class="nav-number">3.</span> <span class="nav-text">解决</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -191,7 +190,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/22/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/30/1.%E5%9B%BE%E7%89%87/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/qq.jpg">
@@ -204,12 +203,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="格密码学初步学习 | obstacle的个人空间">
+      <meta itemprop="name" content="图片无法加载解决方法 | obstacle的个人空间">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          格密码学初步学习
+          图片无法加载解决方法
         </h1>
 
         <div class="post-meta-container">
@@ -220,14 +219,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2025-01-22 23:41:42" itemprop="dateCreated datePublished" datetime="2025-01-22T23:41:42+08:00">2025-01-22</time>
+      <time title="创建时间：2024-11-30 22:58:03" itemprop="dateCreated datePublished" datetime="2024-11-30T22:58:03+08:00">2024-11-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-02-23 20:20:56" itemprop="dateModified" datetime="2025-02-23T20:20:56+08:00">2025-02-23</time>
+      <time title="修改时间：2025-02-23 20:33:33" itemprop="dateModified" datetime="2025-02-23T20:33:33+08:00">2025-02-23</time>
     </span>
 
   
@@ -244,7 +243,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>756</span>
+      <span>340</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -261,12 +260,13 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>懒惰的我终于开始初步学习密码学中格的相关内容了，虽然很早之前就看过了，但是由于东西实在是太多了根本看不下去，看了也不理解。现在再次开始密码学之路，这篇文章算是边学边理解的感悟吧。</p>
-<h1 id="格的认识"><a href="#格的认识" class="headerlink" title="格的认识"></a>格的认识</h1><p>经过学长的点明后，对于我目前学习最初步的格来说就把格理解为线性向量，把线性代数的知识运用上去，无非就是换了很多全新的名词，本质上按线性向量去理解会轻松很多。所以说还是要有一定线代基础不然还是很难接受（但线代本身也确实很抽象😢）</p>
-<h2 id="problem"><a href="#problem" class="headerlink" title="problem"></a>problem</h2><p>目前看过来分为svp（shortest vector problem）最短向量问题和cvp（closest vector problem)最近向量问题。两个名字看中文感觉就是一回事最短和最近，但事实上区别很大。</p>
-<h3 id="SVP"><a href="#SVP" class="headerlink" title="SVP"></a>SVP</h3><p>感觉正式讲法很难理解，我自己想法就是格中有一组基向量【b1，b2】以及很多点，要通过基向量找到一个点，使得这个点离原点最近，而λ1就是最短向量。有时候因为基的点分布并不理想，很多时候找出来的是最短向量λ1的倍数，这就是svp的宽松版本了。<img src="/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/svp.png" alt="svp"></p>
-<h3 id="CVP"><a href="#CVP" class="headerlink" title="CVP"></a>CVP</h3><p>在基中找一个点t，找到距离这个点最近的格点。换句话理解就是找到一个向量λ1使得t向量（蓝色线）与λ1相减后得到的向量μ最短。同样存在cvp的宽松版本，如图中2μ，只不过目前我对于宽松版本还未很好理解。<img src="/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0/cvp.png" alt="cvp"></p>
-<h2 id="LLL算法"><a href="#LLL算法" class="headerlink" title="LLL算法"></a>LLL算法</h2><p>嗯感觉这个原理非常复杂，想理解目前水平做不到，差不多想就是LLL是一个格基约化算法，作用是将上面图片中格变得更加整齐（就是把图中倾斜绿色点变得和坐标轴一样整齐）。反正目前做一些初步题大概就是按题目意思构造一个合理的格然后对格直接用LLL.( )会得到一个短向量，然后从这些向量中可以找到我们需要的，然后差不多就可以解出题目。所以不需要理解直接用吧😢然后顺带提一下BKZ算法，也是理解为更高级的LLL，直接用别管原理什么的。</p>
+    <div class="post-body" itemprop="articleBody"><hr>
+<h2 id="1-图片"><a href="#1-图片" class="headerlink" title="1.图片"></a>1.图片</h2><p>往typora插入图片，图片文件夹一定要和创建的.md文件夹放在同一个文件夹下。不然文件移动位置后图片会因找不到地址而消失</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k</span><br><span class="line">例如：![伊雷娜](D:\blog\source\images\Elaina.jpg)</span><br></pre></td></tr></table></figure>
+
+<p><img src="/1.%E5%9B%BE%E7%89%87/Elaina.jpg" alt="Elaina"></p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>相信很多人尝试上面图片的插入方法会遇到在typora能正常显示图片，但在网页上图片却无法加载。这是因为上述地址如D:\blog\source\images\Elaina.jpg为本地地址，而hexo+github搭建的博客并不能访问本地地址所以自然无法成功。</p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>最简单粗暴的方法就是直接将图片拖到typora中，typora会直接创建博客文章同名的文件夹存放图片。但是就是感觉文章写多了有点乱乱的。</p>
 
     </div>
 
@@ -276,20 +276,20 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/crypto/" rel="tag"># crypto</a>
+              <a href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag"># 测试</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/01/18/kmp%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/" rel="prev" title="kmp算法学习">
-                  <i class="fa fa-angle-left"></i> kmp算法学习
+                <a href="/2024/11/21/typora%E5%8A%9F%E8%83%BD%E5%88%9D%E6%AD%A5%E5%B0%9D%E8%AF%95/" rel="prev" title="typora测试尝试">
+                  <i class="fa fa-angle-left"></i> typora测试尝试
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2025/02/18/hgame2025week2%20crypto/hgame2025week2%20crypto/" rel="next" title="hgame 2025 week2 crypto">
-                  hgame 2025 week2 crypto <i class="fa fa-angle-right"></i>
+                <a href="/2025/01/18/kmp%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/" rel="next" title="kmp算法学习">
+                  kmp算法学习 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
