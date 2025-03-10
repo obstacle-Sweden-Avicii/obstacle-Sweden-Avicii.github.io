@@ -19,31 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":false,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="懒惰的我终于开始初步学习密码学中格的相关内容了，虽然很早之前就看过了，但是由于东西实在是太多了根本看不下去，看了也不理解。现在再次开始密码学之路，这篇文章算是边学边理解的感悟吧。 格的认识经过学长的点明后，对于我目前学习最初步的格来说就把格理解为线性向量，把线性代数的知识运用上去，无非就是换了很多全新的名词，本质上按线性向量去理解会轻松很多。所以说还是要有一定线代基础不然还是很难接受（但线代本身也">
+    <meta name="description" content="RSA中leak&#x3D;p^q%n + q^p%n问题以ISCTF2024crypto蓝鲨的费马这道题为例子讲解自己学到的一个解决方法 1234567891011121314151617181920import libnumimport gmpy2from Crypto.Util.number import *flag&#x3D;b&#x27;ISCTF&#123;********&#125;&amp;#x27">
 <meta property="og:type" content="article">
-<meta property="og:title" content="格密码学初步学习">
-<meta property="og:url" content="http://example.com/2025/01/22/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0.html">
+<meta property="og:title" content="RSA中leak&#x3D;p^q%n + q^p%n问题">
+<meta property="og:url" content="http://example.com/2025/02/27/RSA%E4%B8%ADleak=p^q%n%20+%20q^p%n%E9%97%AE%E9%A2%98.html">
 <meta property="og:site_name" content="obstacle的个人空间">
-<meta property="og:description" content="懒惰的我终于开始初步学习密码学中格的相关内容了，虽然很早之前就看过了，但是由于东西实在是太多了根本看不下去，看了也不理解。现在再次开始密码学之路，这篇文章算是边学边理解的感悟吧。 格的认识经过学长的点明后，对于我目前学习最初步的格来说就把格理解为线性向量，把线性代数的知识运用上去，无非就是换了很多全新的名词，本质上按线性向量去理解会轻松很多。所以说还是要有一定线代基础不然还是很难接受（但线代本身也">
+<meta property="og:description" content="RSA中leak&#x3D;p^q%n + q^p%n问题以ISCTF2024crypto蓝鲨的费马这道题为例子讲解自己学到的一个解决方法 1234567891011121314151617181920import libnumimport gmpy2from Crypto.Util.number import *flag&#x3D;b&#x27;ISCTF&#123;********&#125;&amp;#x27">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/svp.png">
-<meta property="og:image" content="http://example.com/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0%5Ccvp.png">
-<meta property="article:published_time" content="2025-01-22T15:41:42.000Z">
-<meta property="article:modified_time" content="2025-02-23T14:03:26.228Z">
+<meta property="article:published_time" content="2025-02-27T12:37:21.790Z">
+<meta property="article:modified_time" content="2025-03-10T06:55:32.892Z">
 <meta property="article:author" content="瑞典厨师长">
 <meta property="article:tag" content="crypto">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/svp.png">
 
 
-<link rel="canonical" href="http://example.com/2025/01/22/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0.html">
+<link rel="canonical" href="http://example.com/2025/02/27/RSA%E4%B8%ADleak=p^q%n%20+%20q^p%n%E9%97%AE%E9%A2%98.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/01/22/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0.html","path":"2025/01/22/格密码学初步学习.html","title":"格密码学初步学习"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/02/27/RSA%E4%B8%ADleak=p^q%n%20+%20q^p%n%E9%97%AE%E9%A2%98.html","path":"2025/02/27/RSA中leak=p^q%n + q^p%n问题.html","title":"RSA中leak=p^q%n + q^p%n问题"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>格密码学初步学习 | obstacle的个人空间</title>
+<title>RSA中leak=p^q%n + q^p%n问题 | obstacle的个人空间</title>
   
 
 
@@ -143,7 +140,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%BC%E7%9A%84%E8%AE%A4%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">格的认识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#problem"><span class="nav-number">1.1.</span> <span class="nav-text">problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SVP"><span class="nav-number">1.1.1.</span> <span class="nav-text">SVP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CVP"><span class="nav-number">1.1.2.</span> <span class="nav-text">CVP</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LLL%E7%AE%97%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">LLL算法</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RSA%E4%B8%ADleak-p-q-n-q-p-n%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">RSA中leak&#x3D;p^q%n + q^p%n问题</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -191,7 +188,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/22/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0.html">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/27/RSA%E4%B8%ADleak=p^q%n%20+%20q^p%n%E9%97%AE%E9%A2%98.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/qq.jpg">
@@ -204,12 +201,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="格密码学初步学习 | obstacle的个人空间">
+      <meta itemprop="name" content="RSA中leak=p^q%n + q^p%n问题 | obstacle的个人空间">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          格密码学初步学习
+          RSA中leak=p^q%n + q^p%n问题
         </h1>
 
         <div class="post-meta-container">
@@ -220,14 +217,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2025-01-22 23:41:42" itemprop="dateCreated datePublished" datetime="2025-01-22T23:41:42+08:00">2025-01-22</time>
+      <time title="创建时间：2025-02-27 20:37:21" itemprop="dateCreated datePublished" datetime="2025-02-27T20:37:21+08:00">2025-02-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-02-23 22:03:26" itemprop="dateModified" datetime="2025-02-23T22:03:26+08:00">2025-02-23</time>
+      <time title="修改时间：2025-03-10 14:55:32" itemprop="dateModified" datetime="2025-03-10T14:55:32+08:00">2025-03-10</time>
     </span>
 
   
@@ -244,14 +241,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>756</span>
+      <span>4.8k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>9 分钟</span>
     </span>
 </div>
 
@@ -261,12 +258,23 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>懒惰的我终于开始初步学习密码学中格的相关内容了，虽然很早之前就看过了，但是由于东西实在是太多了根本看不下去，看了也不理解。现在再次开始密码学之路，这篇文章算是边学边理解的感悟吧。</p>
-<h1 id="格的认识"><a href="#格的认识" class="headerlink" title="格的认识"></a>格的认识</h1><p>经过学长的点明后，对于我目前学习最初步的格来说就把格理解为线性向量，把线性代数的知识运用上去，无非就是换了很多全新的名词，本质上按线性向量去理解会轻松很多。所以说还是要有一定线代基础不然还是很难接受（但线代本身也确实很抽象😢）</p>
-<h2 id="problem"><a href="#problem" class="headerlink" title="problem"></a>problem</h2><p>目前看过来分为svp（shortest vector problem）最短向量问题和cvp（closest vector problem)最近向量问题。两个名字看中文感觉就是一回事最短和最近，但事实上区别很大。</p>
-<h3 id="SVP"><a href="#SVP" class="headerlink" title="SVP"></a>SVP</h3><p>感觉正式讲法很难理解，我自己想法就是格中有一组基向量【b1，b2】以及很多点，要通过基向量找到一个点，使得这个点离原点最近，而λ1就是最短向量。有时候因为基的点分布并不理想，很多时候找出来的是最短向量λ1的倍数，这就是svp的宽松版本了。<img src="/svp.png" alt="svp"></p>
-<h3 id="CVP"><a href="#CVP" class="headerlink" title="CVP"></a>CVP</h3><p>在基中找一个点t，找到距离这个点最近的格点。换句话理解就是找到一个向量λ1使得t向量（蓝色线）与λ1相减后得到的向量μ最短。同样存在cvp的宽松版本，如图中2μ，只不过目前我对于宽松版本还未很好理解。<img src="/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0%5Ccvp.png" alt="cvp"></p>
-<h2 id="LLL算法"><a href="#LLL算法" class="headerlink" title="LLL算法"></a>LLL算法</h2><p>嗯感觉这个原理非常复杂，想理解目前水平做不到，差不多想就是LLL是一个格基约化算法，作用是将上面图片中格变得更加整齐（就是把图中倾斜绿色点变得和坐标轴一样整齐）。反正目前做一些初步题大概就是按题目意思构造一个合理的格然后对格直接用LLL.( )会得到一个短向量，然后从这些向量中可以找到我们需要的，然后差不多就可以解出题目。所以不需要理解直接用吧😢然后顺带提一下BKZ算法，也是理解为更高级的LLL，直接用别管原理什么的。</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="RSA中leak-p-q-n-q-p-n问题"><a href="#RSA中leak-p-q-n-q-p-n问题" class="headerlink" title="RSA中leak&#x3D;p^q%n + q^p%n问题"></a>RSA中leak&#x3D;p^q%n + q^p%n问题</h1><p>以ISCTF2024crypto蓝鲨的费马这道题为例子讲解自己学到的一个解决方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> libnum</span><br><span class="line"><span class="keyword">import</span> gmpy2</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line">flag=<span class="string">b&#x27;ISCTF&#123;********&#125;&#x27;</span></span><br><span class="line">m=bytes_to_long(flag)</span><br><span class="line">p=libnum.generate_prime(<span class="number">1024</span>)</span><br><span class="line">q=libnum.generate_prime(<span class="number">1024</span>)</span><br><span class="line">n=p*q</span><br><span class="line">e=<span class="number">0x10001</span></span><br><span class="line">c=<span class="built_in">pow</span>(m,e,n)</span><br><span class="line">d=inverse(e,(p-<span class="number">1</span>)*(q-<span class="number">1</span>))</span><br><span class="line">leak = (d+(<span class="built_in">pow</span>(p,q,n)+<span class="built_in">pow</span>(q,p,n)))%n</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c=&quot;</span>, c)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;n=&quot;</span>, n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;leak=&quot;</span>, leak)</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">c= 8989289659072309605793417141528767265266446236550650613514493589798432446586991233583435051268377555448062724563967695425657559568596372723980081067589103919296476501677424322525079257328042851349095575718347302884996529329066703597604694781627113384086536158793653551546025090807063130353950841148535682974762381044510423210397947080397718080033363000599995100765708244828566873128882878164321817156170983773105693537799111546309755235573342169431295776881832991533489235535981382958295960435126843833532716436804949502318851112378495533302256759494573250596802016112398817816155228378089079806308296705261876583997</span></span><br><span class="line"><span class="string">n= 13424018200035368603483071894166480724482952594135293395398366121467209427078817227870501294732149372214083432516059795712917132804111155585926502759533393295089100965059106772393520277313184519450478832376508528256865861027444446718552169503579478134286009893965458507369983396982525906466073384013443851551139147777507283791250268462136554061959016630318688169168797939873600493494258467352326974238472394214986505312411729432927489878418792288365594455065912126527908319239444514857325441614280498882524432151918146061570116187524918358453036228204087993064505391742062288050068745930452767100091519798860487150247</span></span><br><span class="line"><span class="string">leak= 9192002086528025412361053058922669469031188193149143635074798633855112230489479254740324032262690315813650428270911079121913869290893574897752990491429582640499542165616254566396564016734157323265631446079744216458719690853526969359930225042993006404843355356540487296896949431969541367144841985153231095140361069256753593550199420993461786814074270171257117410848796614931926182811404655619662690700351986753661502438299236428991412206196135090756862851230228396476709412020941670878645924203989895008014836619321109848938770269989596541278600166088022166386213646074764712810133558692545401032391239330088256431881</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>$$</p>
+<p>$$</p>
+<p>$$</p>
+<ol>
+<li>\text{leak} &#x3D; d + p + q ，其中 \text{leak} 简写为 L。\</li>
+<li>m &#x3D; \text{pow}(c, d, n) ，即  m &#x3D; c^d \mod n 。\</li>
+<li>d &#x3D; L - (p + q) 。\<br>根据欧拉函数的定义：<br> \phi &#x3D; (p - 1)(q - 1) &#x3D; pq - p - q + 1 \<br>由于  n &#x3D; pq ，因此：<br> \phi &#x3D; n + 1 - (p + q) \</li>
+</ol>
+<p>根据欧拉定理：<br>c^\phi  \equiv1 \mod n \</p>
+<p>代入 \phi 的表达式：<br>c^{n + 1 - (p + q)} \equiv 1 \mod n \</p>
+<p>可以进一步推导：<br>c^{n + 1} \equiv c^{p + q} \mod n \</p>
+<p>因此：<br>c^{n + 1} \equiv c^{p + q} \mod n \</p>
+<p>已知  d &#x3D; L - (p + q) ，代入  c^d  \mod n &#x3D; m ：\<br>c^{L - (p + q)} \mod n &#x3D; m \<br>根据前面的推导：<br>c^{n + 1} \equiv c^{p + q} \mod n \<br>因此：<br>c^{L - (n + 1)} \mod n &#x3D; m \<br> m &#x3D; \text{pow}(c, L - n - 1, n) \<br>$$</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">c= <span class="number">8989289659072309605793417141528767265266446236550650613514493589798432446586991233583435051268377555448062724563967695425657559568596372723980081067589103919296476501677424322525079257328042851349095575718347302884996529329066703597604694781627113384086536158793653551546025090807063130353950841148535682974762381044510423210397947080397718080033363000599995100765708244828566873128882878164321817156170983773105693537799111546309755235573342169431295776881832991533489235535981382958295960435126843833532716436804949502318851112378495533302256759494573250596802016112398817816155228378089079806308296705261876583997</span></span><br><span class="line">n= <span class="number">13424018200035368603483071894166480724482952594135293395398366121467209427078817227870501294732149372214083432516059795712917132804111155585926502759533393295089100965059106772393520277313184519450478832376508528256865861027444446718552169503579478134286009893965458507369983396982525906466073384013443851551139147777507283791250268462136554061959016630318688169168797939873600493494258467352326974238472394214986505312411729432927489878418792288365594455065912126527908319239444514857325441614280498882524432151918146061570116187524918358453036228204087993064505391742062288050068745930452767100091519798860487150247</span></span><br><span class="line">leak= <span class="number">9192002086528025412361053058922669469031188193149143635074798633855112230489479254740324032262690315813650428270911079121913869290893574897752990491429582640499542165616254566396564016734157323265631446079744216458719690853526969359930225042993006404843355356540487296896949431969541367144841985153231095140361069256753593550199420993461786814074270171257117410848796614931926182811404655619662690700351986753661502438299236428991412206196135090756862851230228396476709412020941670878645924203989895008014836619321109848938770269989596541278600166088022166386213646074764712810133558692545401032391239330088256431881</span></span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> long_to_bytes, inverse</span><br><span class="line">m=<span class="built_in">pow</span>(c,leak-n-<span class="number">1</span>,n)</span><br><span class="line"><span class="built_in">print</span>(m)</span><br><span class="line">flag=long_to_bytes(m)</span><br><span class="line"><span class="built_in">print</span>(flag)</span><br><span class="line"><span class="comment">#b&#x27;ISCTF&#123;u_got_it&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -283,14 +291,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/01/18/kmp%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0.html" rel="prev" title="kmp算法学习">
-                  <i class="fa fa-angle-left"></i> kmp算法学习
+                <a href="/2025/02/18/hgame2025week2%20crypto.html" rel="prev" title="hgame 2025 week2 crypto">
+                  <i class="fa fa-angle-left"></i> hgame 2025 week2 crypto
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2025/02/18/hgame2025week2%20crypto.html" rel="next" title="hgame 2025 week2 crypto">
-                  hgame 2025 week2 crypto <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
