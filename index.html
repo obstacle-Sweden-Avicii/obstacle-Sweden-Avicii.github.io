@@ -220,7 +220,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-03-10 14:55:32" itemprop="dateModified" datetime="2025-03-10T14:55:32+08:00">2025-03-10</time>
+      <time title="修改时间：2025-03-10 16:55:03" itemprop="dateModified" datetime="2025-03-10T16:55:03+08:00">2025-03-10</time>
     </span>
 
   
@@ -251,19 +251,20 @@
           <h1 id="RSA中leak-p-q-n-q-p-n问题"><a href="#RSA中leak-p-q-n-q-p-n问题" class="headerlink" title="RSA中leak&#x3D;p^q%n + q^p%n问题"></a>RSA中leak&#x3D;p^q%n + q^p%n问题</h1><p>以ISCTF2024crypto蓝鲨的费马这道题为例子讲解自己学到的一个解决方法</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> libnum</span><br><span class="line"><span class="keyword">import</span> gmpy2</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line">flag=<span class="string">b&#x27;ISCTF&#123;********&#125;&#x27;</span></span><br><span class="line">m=bytes_to_long(flag)</span><br><span class="line">p=libnum.generate_prime(<span class="number">1024</span>)</span><br><span class="line">q=libnum.generate_prime(<span class="number">1024</span>)</span><br><span class="line">n=p*q</span><br><span class="line">e=<span class="number">0x10001</span></span><br><span class="line">c=<span class="built_in">pow</span>(m,e,n)</span><br><span class="line">d=inverse(e,(p-<span class="number">1</span>)*(q-<span class="number">1</span>))</span><br><span class="line">leak = (d+(<span class="built_in">pow</span>(p,q,n)+<span class="built_in">pow</span>(q,p,n)))%n</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c=&quot;</span>, c)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;n=&quot;</span>, n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;leak=&quot;</span>, leak)</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">c= 8989289659072309605793417141528767265266446236550650613514493589798432446586991233583435051268377555448062724563967695425657559568596372723980081067589103919296476501677424322525079257328042851349095575718347302884996529329066703597604694781627113384086536158793653551546025090807063130353950841148535682974762381044510423210397947080397718080033363000599995100765708244828566873128882878164321817156170983773105693537799111546309755235573342169431295776881832991533489235535981382958295960435126843833532716436804949502318851112378495533302256759494573250596802016112398817816155228378089079806308296705261876583997</span></span><br><span class="line"><span class="string">n= 13424018200035368603483071894166480724482952594135293395398366121467209427078817227870501294732149372214083432516059795712917132804111155585926502759533393295089100965059106772393520277313184519450478832376508528256865861027444446718552169503579478134286009893965458507369983396982525906466073384013443851551139147777507283791250268462136554061959016630318688169168797939873600493494258467352326974238472394214986505312411729432927489878418792288365594455065912126527908319239444514857325441614280498882524432151918146061570116187524918358453036228204087993064505391742062288050068745930452767100091519798860487150247</span></span><br><span class="line"><span class="string">leak= 9192002086528025412361053058922669469031188193149143635074798633855112230489479254740324032262690315813650428270911079121913869290893574897752990491429582640499542165616254566396564016734157323265631446079744216458719690853526969359930225042993006404843355356540487296896949431969541367144841985153231095140361069256753593550199420993461786814074270171257117410848796614931926182811404655619662690700351986753661502438299236428991412206196135090756862851230228396476709412020941670878645924203989895008014836619321109848938770269989596541278600166088022166386213646074764712810133558692545401032391239330088256431881</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>$$</p>
-<p>$$</p>
-<p>$$</p>
-<ol>
-<li>\text{leak} &#x3D; d + p + q ，其中 \text{leak} 简写为 L。\</li>
-<li>m &#x3D; \text{pow}(c, d, n) ，即  m &#x3D; c^d \mod n 。\</li>
-<li>d &#x3D; L - (p + q) 。\<br>根据欧拉函数的定义：<br> \phi &#x3D; (p - 1)(q - 1) &#x3D; pq - p - q + 1 \<br>由于  n &#x3D; pq ，因此：<br> \phi &#x3D; n + 1 - (p + q) \</li>
-</ol>
-<p>根据欧拉定理：<br>c^\phi  \equiv1 \mod n \</p>
-<p>代入 \phi 的表达式：<br>c^{n + 1 - (p + q)} \equiv 1 \mod n \</p>
-<p>可以进一步推导：<br>c^{n + 1} \equiv c^{p + q} \mod n \</p>
-<p>因此：<br>c^{n + 1} \equiv c^{p + q} \mod n \</p>
-<p>已知  d &#x3D; L - (p + q) ，代入  c^d  \mod n &#x3D; m ：\<br>c^{L - (p + q)} \mod n &#x3D; m \<br>根据前面的推导：<br>c^{n + 1} \equiv c^{p + q} \mod n \<br>因此：<br>c^{L - (n + 1)} \mod n &#x3D; m \<br> m &#x3D; \text{pow}(c, L - n - 1, n) \<br>$$</p>
+<p>$1.\text{leak} &#x3D; d + p + q$  其中 leak 简写为 L</p>
+<p>$2. m &#x3D; \text{pow}(c, d, n)，即 m &#x3D; c^d \mod n.$</p>
+<p>$3.d &#x3D; L - (p + q) .$</p>
+<p>根据欧拉函数的定义：$\phi &#x3D; (p - 1)(q - 1) &#x3D; pq - p - q + 1$</p>
+<p>由于  n &#x3D; pq ，因此：$\phi &#x3D; n + 1 - (p + q)$</p>
+<p>根据欧拉定理:$c^\phi \equiv1 \mod n$</p>
+<p>代入 $\phi$的表达式：$c^{n + 1 - (p + q)} \equiv 1 \mod n$</p>
+<p>可以进一步推导：$c^{n + 1} \equiv c^{p + q} \mod n$</p>
+<p>因此:$c^{n + 1} \equiv c^{p + q} \mod n$</p>
+<p>已知  d &#x3D; L - (p + q) ，代入 $c^d  \mod n &#x3D; m$ ：</p>
+<p>$c^{L - (p + q)} \mod n &#x3D; m$</p>
+<p>根据前面的推导：$c^{n + 1} \equiv c^{p + q} \mod n$</p>
+<p>因此：$c^{L - (n + 1)} \mod n &#x3D; m$</p>
+<p>$m &#x3D; \text{pow}(c, L - n - 1, n)$</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">c= <span class="number">8989289659072309605793417141528767265266446236550650613514493589798432446586991233583435051268377555448062724563967695425657559568596372723980081067589103919296476501677424322525079257328042851349095575718347302884996529329066703597604694781627113384086536158793653551546025090807063130353950841148535682974762381044510423210397947080397718080033363000599995100765708244828566873128882878164321817156170983773105693537799111546309755235573342169431295776881832991533489235535981382958295960435126843833532716436804949502318851112378495533302256759494573250596802016112398817816155228378089079806308296705261876583997</span></span><br><span class="line">n= <span class="number">13424018200035368603483071894166480724482952594135293395398366121467209427078817227870501294732149372214083432516059795712917132804111155585926502759533393295089100965059106772393520277313184519450478832376508528256865861027444446718552169503579478134286009893965458507369983396982525906466073384013443851551139147777507283791250268462136554061959016630318688169168797939873600493494258467352326974238472394214986505312411729432927489878418792288365594455065912126527908319239444514857325441614280498882524432151918146061570116187524918358453036228204087993064505391742062288050068745930452767100091519798860487150247</span></span><br><span class="line">leak= <span class="number">9192002086528025412361053058922669469031188193149143635074798633855112230489479254740324032262690315813650428270911079121913869290893574897752990491429582640499542165616254566396564016734157323265631446079744216458719690853526969359930225042993006404843355356540487296896949431969541367144841985153231095140361069256753593550199420993461786814074270171257117410848796614931926182811404655619662690700351986753661502438299236428991412206196135090756862851230228396476709412020941670878645924203989895008014836619321109848938770269989596541278600166088022166386213646074764712810133558692545401032391239330088256431881</span></span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> long_to_bytes, inverse</span><br><span class="line">m=<span class="built_in">pow</span>(c,leak-n-<span class="number">1</span>,n)</span><br><span class="line"><span class="built_in">print</span>(m)</span><br><span class="line">flag=long_to_bytes(m)</span><br><span class="line"><span class="built_in">print</span>(flag)</span><br><span class="line"><span class="comment">#b&#x27;ISCTF&#123;u_got_it&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
 
       
@@ -1112,6 +1113,12 @@
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 
