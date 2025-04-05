@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":false,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="1.univariate题目 描述 1I love univariate polynomials...  123456789101112131415161718192021222324252627282930313233from Crypto.Util.number import getPrime, bytes_to_longfrom secret import flagp &#x3D; getPrime(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="近期密码复现学习">
+<meta property="og:url" content="http://example.com/2025/04/05/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html">
+<meta property="og:site_name" content="obstacle的个人空间">
+<meta property="og:description" content="1.univariate题目 描述 1I love univariate polynomials...  123456789101112131415161718192021222324252627282930313233from Crypto.Util.number import getPrime, bytes_to_longfrom secret import flagp &#x3D; getPrime(">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-04T17:09:25.908Z">
+<meta property="article:modified_time" content="2025-04-05T16:38:52.561Z">
+<meta property="article:author" content="瑞典厨师长">
+<meta property="article:tag" content="crypto">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2025/04/05/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/04/05/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html","path":"2025/04/05/近期密码复现学习.html","title":"近期密码复现学习"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>近期密码复现学习 | obstacle的个人空间</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">obstacle的个人空间</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">These are the days we won't forget</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-univariate"><span class="nav-number">1.</span> <span class="nav-text">1.univariate</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="瑞典厨师长"
+      src="/images/qq.jpg">
+  <p class="site-author-name" itemprop="name">瑞典厨师长</p>
+  <div class="site-description" itemprop="description">不要温和地走进那个良夜</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/05/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/qq.jpg">
+      <meta itemprop="name" content="瑞典厨师长">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="obstacle的个人空间">
+      <meta itemprop="description" content="不要温和地走进那个良夜">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="近期密码复现学习 | obstacle的个人空间">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          近期密码复现学习
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-04-05 01:09:25" itemprop="dateCreated datePublished" datetime="2025-04-05T01:09:25+08:00">2025-04-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-04-06 00:38:52" itemprop="dateModified" datetime="2025-04-06T00:38:52+08:00">2025-04-06</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>5k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>9 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="1-univariate"><a href="#1-univariate" class="headerlink" title="1.univariate"></a>1.univariate</h3><p>题目</p>
+<p>描述</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I love univariate polynomials...</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> getPrime, bytes_to_long</span><br><span class="line"><span class="keyword">from</span> secret <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line">p = getPrime(<span class="number">512</span>)</span><br><span class="line">q = getPrime(<span class="number">512</span>)</span><br><span class="line">n = p*q</span><br><span class="line"></span><br><span class="line">m = bytes_to_long(flag.encode())</span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="built_in">pow</span>(m,e,n)</span><br><span class="line"></span><br><span class="line">P.&lt;x&gt; = PolynomialRing(ZZ)</span><br><span class="line">x = P.gens()[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">terms = [x**i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">137</span>)]</span><br><span class="line"></span><br><span class="line">T = RealDistribution(<span class="string">&#x27;gaussian&#x27;</span>, <span class="number">2</span>)</span><br><span class="line">coefs = [<span class="built_in">round</span>(T.get_random_element()) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(terms))]</span><br><span class="line"></span><br><span class="line">f = <span class="built_in">sum</span>([term*coef <span class="keyword">for</span> term,coef <span class="keyword">in</span> <span class="built_in">zip</span>(terms,coefs)])</span><br><span class="line">w = <span class="built_in">pow</span>(<span class="number">2</span>,f(p),n)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;out.txt&#x27;</span>, <span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;n = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;e = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;c = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;f = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;w = &#125;</span>\n&#x27;</span>)</span><br><span class="line">n = <span class="number">151510886600487624888537926759375027338192556324330182365859112926770109752858284462159488504727238764120612593911292154858008775463001345641311051184326218974685701057787672193003745574697137968457609530135969033403360561333863943223407215732526198691453110628598401583407984162075630768455052482583101773637</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="number">74468088842131664480394073891613024559473817230309311952320910922177130990996003196602702376336093457990873018154873841543712071422931358036924937335888815556064840522100618318507080665149514719351519909821468981883880543654015414713368018500970500498936910817336501949914675483148862843329341461828563728789</span></span><br><span class="line">f = -x^<span class="number">136</span> + x^<span class="number">135</span> - <span class="number">2</span>*x^<span class="number">134</span> - <span class="number">4</span>*x^<span class="number">132</span> + <span class="number">2</span>*x^<span class="number">130</span> - x^<span class="number">128</span> - <span class="number">3</span>*x^<span class="number">127</span> + <span class="number">4</span>*x^<span class="number">126</span> + <span class="number">3</span>*x^<span class="number">125</span> + <span class="number">3</span>*x^<span class="number">124</span> + x^<span class="number">123</span> + x^<span class="number">122</span> - <span class="number">5</span>*x^<span class="number">121</span> - <span class="number">3</span>*x^<span class="number">120</span> - x^<span class="number">119</span> - x^<span class="number">118</span> + x^<span class="number">117</span> + x^<span class="number">116</span> - <span class="number">4</span>*x^<span class="number">114</span> - <span class="number">2</span>*x^<span class="number">112</span> + <span class="number">2</span>*x^<span class="number">110</span> + x^<span class="number">109</span> + <span class="number">2</span>*x^<span class="number">108</span> - <span class="number">2</span>*x^<span class="number">107</span> + <span class="number">3</span>*x^<span class="number">106</span> - x^<span class="number">104</span> + <span class="number">2</span>*x^<span class="number">103</span> - x^<span class="number">102</span> + x^<span class="number">101</span> - <span class="number">2</span>*x^<span class="number">100</span> + <span class="number">3</span>*x^<span class="number">99</span> - <span class="number">2</span>*x^<span class="number">98</span> - x^<span class="number">97</span> - x^<span class="number">96</span> - <span class="number">3</span>*x^<span class="number">95</span> - x^<span class="number">94</span> - <span class="number">2</span>*x^<span class="number">93</span> - <span class="number">2</span>*x^<span class="number">91</span> + <span class="number">3</span>*x^<span class="number">90</span> - <span class="number">2</span>*x^<span class="number">89</span> - <span class="number">2</span>*x^<span class="number">88</span> + x^<span class="number">86</span> + x^<span class="number">85</span> - <span class="number">2</span>*x^<span class="number">84</span> - <span class="number">3</span>*x^<span class="number">83</span> + <span class="number">2</span>*x^<span class="number">82</span> + <span class="number">3</span>*x^<span class="number">79</span> - x^<span class="number">76</span> + <span class="number">2</span>*x^<span class="number">75</span> - x^<span class="number">74</span> + x^<span class="number">71</span> - <span class="number">5</span>*x^<span class="number">70</span> - x^<span class="number">67</span> + x^<span class="number">66</span> + x^<span class="number">65</span> + x^<span class="number">63</span> - x^<span class="number">61</span> + x^<span class="number">59</span> - <span class="number">2</span>*x^<span class="number">58</span> + <span class="number">6</span>*x^<span class="number">56</span> + x^<span class="number">55</span> + <span class="number">3</span>*x^<span class="number">54</span> - x^<span class="number">53</span> + <span class="number">2</span>*x^<span class="number">52</span> + <span class="number">3</span>*x^<span class="number">51</span> + x^<span class="number">50</span> + <span class="number">2</span>*x^<span class="number">49</span> + <span class="number">3</span>*x^<span class="number">47</span> + <span class="number">2</span>*x^<span class="number">46</span> - <span class="number">4</span>*x^<span class="number">45</span> + <span class="number">3</span>*x^<span class="number">44</span> + <span class="number">3</span>*x^<span class="number">43</span> - x^<span class="number">42</span> - <span class="number">2</span>*x^<span class="number">40</span> - <span class="number">5</span>*x^<span class="number">39</span> + x^<span class="number">38</span> + x^<span class="number">37</span> + <span class="number">2</span>*x^<span class="number">36</span> + <span class="number">2</span>*x^<span class="number">35</span> + x^<span class="number">34</span> - x^<span class="number">33</span> + x^<span class="number">32</span> - <span class="number">5</span>*x^<span class="number">31</span> + x^<span class="number">30</span> + x^<span class="number">29</span> + <span class="number">2</span>*x^<span class="number">28</span> - <span class="number">2</span>*x^<span class="number">27</span> + <span class="number">3</span>*x^<span class="number">26</span> - x^<span class="number">25</span> - x^<span class="number">23</span> - x^<span class="number">22</span> - <span class="number">3</span>*x^<span class="number">21</span> + <span class="number">2</span>*x^<span class="number">20</span> - x^<span class="number">19</span> - x^<span class="number">17</span> + <span class="number">2</span>*x^<span class="number">16</span> - <span class="number">2</span>*x^<span class="number">15</span> - <span class="number">2</span>*x^<span class="number">14</span> - <span class="number">2</span>*x^<span class="number">13</span> - <span class="number">2</span>*x^<span class="number">12</span> + <span class="number">2</span>*x^<span class="number">11</span> - <span class="number">2</span>*x^<span class="number">9</span> + <span class="number">3</span>*x^<span class="number">8</span> - <span class="number">4</span>*x^<span class="number">7</span> + <span class="number">2</span>*x^<span class="number">6</span> - <span class="number">2</span>*x^<span class="number">5</span> - <span class="number">5</span>*x^<span class="number">4</span> - <span class="number">3</span>*x^<span class="number">3</span> + <span class="number">5</span>*x^<span class="number">2</span> - <span class="number">2</span></span><br><span class="line">w = <span class="number">86258923706084556733053644452456806418792871483898871193707132372143291757396867798433017660985422614532352743658877188445517898648519256573663299464811234251773841741466280567326570167017786562044635756348763128567054349991798640926148221279889174229551074668002853442182664523748992260830782387602048836221</span></span><br></pre></td></tr></table></figure>
+
+<p>思路：<br>根据题目描述univariate polynomials（单变量多项式），题目中也是反复利用p，所以可以从p开始下手。  从    w &#x3D; pow(2,f(p),n)开始，这里也是我学习中感觉非常巧妙的地方，先了解前提知识费马小定理gcd(a,p)&#x3D;1,$a^{p-1}\equiv 1\pmod{p}$,于是接下来就要构造出p-1。对f(p)模(p-1),就有f(p) &#x3D; g(p)(p-1) + k。然后对w取p的模数</p>
+<p>$w &#x3D; 2^{f(p)} &#x3D; 2^{g(p)(p-1) + k} &#x3D; \left(2^{g(p)(p-1)}\right) \cdot \left(2^k\right)&#x3D;2^k \pmod{p}$。所以w除以p的模数就为2^k, 那么$w-2^{k}$就为p的倍数，然后再与n取最大公约数就可以找出p从而解决RSA问题。即gcd(w-2^k,n).</p>
+<p>代码(<strong>错误的</strong>)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">P.&lt;x&gt; = PolynomialRing(ZZ)</span><br><span class="line">x = P.gens()[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">n = <span class="number">151510886600487624888537926759375027338192556324330182365859112926770109752858284462159488504727238764120612593911292154858008775463001345641311051184326218974685701057787672193003745574697137968457609530135969033403360561333863943223407215732526198691453110628598401583407984162075630768455052482583101773637</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="number">74468088842131664480394073891613024559473817230309311952320910922177130990996003196602702376336093457990873018154873841543712071422931358036924937335888815556064840522100618318507080665149514719351519909821468981883880543654015414713368018500970500498936910817336501949914675483148862843329341461828563728789</span></span><br><span class="line">f = -x^<span class="number">136</span> + x^<span class="number">135</span> - <span class="number">2</span>*x^<span class="number">134</span> - <span class="number">4</span>*x^<span class="number">132</span> + <span class="number">2</span>*x^<span class="number">130</span> - x^<span class="number">128</span> - <span class="number">3</span>*x^<span class="number">127</span> + <span class="number">4</span>*x^<span class="number">126</span> + <span class="number">3</span>*x^<span class="number">125</span> + <span class="number">3</span>*x^<span class="number">124</span> + x^<span class="number">123</span> + x^<span class="number">122</span> - <span class="number">5</span>*x^<span class="number">121</span> - <span class="number">3</span>*x^<span class="number">120</span> - x^<span class="number">119</span> - x^<span class="number">118</span> + x^<span class="number">117</span> + x^<span class="number">116</span> - <span class="number">4</span>*x^<span class="number">114</span> - <span class="number">2</span>*x^<span class="number">112</span> + <span class="number">2</span>*x^<span class="number">110</span> + x^<span class="number">109</span> + <span class="number">2</span>*x^<span class="number">108</span> - <span class="number">2</span>*x^<span class="number">107</span> + <span class="number">3</span>*x^<span class="number">106</span> - x^<span class="number">104</span> + <span class="number">2</span>*x^<span class="number">103</span> - x^<span class="number">102</span> + x^<span class="number">101</span> - <span class="number">2</span>*x^<span class="number">100</span> + <span class="number">3</span>*x^<span class="number">99</span> - <span class="number">2</span>*x^<span class="number">98</span> - x^<span class="number">97</span> - x^<span class="number">96</span> - <span class="number">3</span>*x^<span class="number">95</span> - x^<span class="number">94</span> - <span class="number">2</span>*x^<span class="number">93</span> - <span class="number">2</span>*x^<span class="number">91</span> + <span class="number">3</span>*x^<span class="number">90</span> - <span class="number">2</span>*x^<span class="number">89</span> - <span class="number">2</span>*x^<span class="number">88</span> + x^<span class="number">86</span> + x^<span class="number">85</span> - <span class="number">2</span>*x^<span class="number">84</span> - <span class="number">3</span>*x^<span class="number">83</span> + <span class="number">2</span>*x^<span class="number">82</span> + <span class="number">3</span>*x^<span class="number">79</span> - x^<span class="number">76</span> + <span class="number">2</span>*x^<span class="number">75</span> - x^<span class="number">74</span> + x^<span class="number">71</span> - <span class="number">5</span>*x^<span class="number">70</span> - x^<span class="number">67</span> + x^<span class="number">66</span> + x^<span class="number">65</span> + x^<span class="number">63</span> - x^<span class="number">61</span> + x^<span class="number">59</span> - <span class="number">2</span>*x^<span class="number">58</span> + <span class="number">6</span>*x^<span class="number">56</span> + x^<span class="number">55</span> + <span class="number">3</span>*x^<span class="number">54</span> - x^<span class="number">53</span> + <span class="number">2</span>*x^<span class="number">52</span> + <span class="number">3</span>*x^<span class="number">51</span> + x^<span class="number">50</span> + <span class="number">2</span>*x^<span class="number">49</span> + <span class="number">3</span>*x^<span class="number">47</span> + <span class="number">2</span>*x^<span class="number">46</span> - <span class="number">4</span>*x^<span class="number">45</span> + <span class="number">3</span>*x^<span class="number">44</span> + <span class="number">3</span>*x^<span class="number">43</span> - x^<span class="number">42</span> - <span class="number">2</span>*x^<span class="number">40</span> - <span class="number">5</span>*x^<span class="number">39</span> + x^<span class="number">38</span> + x^<span class="number">37</span> + <span class="number">2</span>*x^<span class="number">36</span> + <span class="number">2</span>*x^<span class="number">35</span> + x^<span class="number">34</span> - x^<span class="number">33</span> + x^<span class="number">32</span> - <span class="number">5</span>*x^<span class="number">31</span> + x^<span class="number">30</span> + x^<span class="number">29</span> + <span class="number">2</span>*x^<span class="number">28</span> - <span class="number">2</span>*x^<span class="number">27</span> + <span class="number">3</span>*x^<span class="number">26</span> - x^<span class="number">25</span> - x^<span class="number">23</span> - x^<span class="number">22</span> - <span class="number">3</span>*x^<span class="number">21</span> + <span class="number">2</span>*x^<span class="number">20</span> - x^<span class="number">19</span> - x^<span class="number">17</span> + <span class="number">2</span>*x^<span class="number">16</span> - <span class="number">2</span>*x^<span class="number">15</span> - <span class="number">2</span>*x^<span class="number">14</span> - <span class="number">2</span>*x^<span class="number">13</span> - <span class="number">2</span>*x^<span class="number">12</span> + <span class="number">2</span>*x^<span class="number">11</span> - <span class="number">2</span>*x^<span class="number">9</span> + <span class="number">3</span>*x^<span class="number">8</span> - <span class="number">4</span>*x^<span class="number">7</span> + <span class="number">2</span>*x^<span class="number">6</span> - <span class="number">2</span>*x^<span class="number">5</span> - <span class="number">5</span>*x^<span class="number">4</span> - <span class="number">3</span>*x^<span class="number">3</span> + <span class="number">5</span>*x^<span class="number">2</span> - <span class="number">2</span></span><br><span class="line">w = <span class="number">86258923706084556733053644452456806418792871483898871193707132372143291757396867798433017660985422614532352743658877188445517898648519256573663299464811234251773841741466280567326570167017786562044635756348763128567054349991798640926148221279889174229551074668002853442182664523748992260830782387602048836221</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">k = f % (x-<span class="number">1</span>)</span><br><span class="line">k_int=ZZ(k)</span><br><span class="line">q = GCD(w -<span class="number">2</span>^k_int, n)</span><br><span class="line">p = n // q</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(long_to_bytes(<span class="built_in">int</span>(<span class="built_in">pow</span>(c, inverse(e, (p-<span class="number">1</span>)*(q-<span class="number">1</span>)), n))))</span><br></pre></td></tr></table></figure>
+
+<p>代码报错了，检查大概知道了原因在于k的值最后是负数，所以直接2^k不行。</p>
+<p>正确部分</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">k = f % (x-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">p = GCD(w * <span class="built_in">pow</span>(<span class="number">2</span>, -k, n) - <span class="number">1</span>, n)</span><br><span class="line">q = n // p</span><br><span class="line"><span class="comment">#b&#x27;ictf&#123;p-1_g0es_aB$olU7eLy_w1lD!!!&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>解释：当k是负数时， $2^{k}\pmod{n}$实际上是$2^{-\lvert k\rvert }\pmod{n}$的模逆元。这是因为指数运算是周期性的，且模逆元可以看作是将指数“翻转”到模数的范围内。pow(2, -k, n) 计算的是 $2^{k}\pmod{n}$ 的模逆元。如果 k是负数，这意味着我们正在寻找一个数 <em>y</em> 使得 $2^{k}*y\equiv 1\pmod{n}$，然后乘上w再减1就是与n有共同因子。勉强理解是这样，但我数学这方面并未深入研究，所以个人感觉纠错推导过程有点牵强，日后有新理解再做修改吧。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/crypto/" rel="tag"># crypto</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/03/30/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86.html" rel="prev" title="中国剩余定理">
+                  <i class="fa fa-angle-left"></i> 中国剩余定理
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">瑞典厨师长</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">30k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">54 分钟</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">
+  <!--由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动 -->
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
