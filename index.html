@@ -522,7 +522,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/02/27/RSA%E4%B8%ADleak%E9%97%AE%E9%A2%98.html" class="post-title-link" itemprop="url">RSA中leak=p^q%n + q^p%n问题</a>
+          <a href="/2025/02/27/RSA%E4%B8%ADleak%E9%97%AE%E9%A2%98.html" class="post-title-link" itemprop="url">RSA中leak问题</a>
         </h2>
 
         <div class="post-meta-container">
@@ -540,7 +540,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-03-10 16:55:03" itemprop="dateModified" datetime="2025-03-10T16:55:03+08:00">2025-03-10</time>
+      <time title="修改时间：2025-04-24 16:42:54" itemprop="dateModified" datetime="2025-04-24T16:42:54+08:00">2025-04-24</time>
     </span>
 
   
@@ -550,14 +550,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>4.8k</span>
+      <span>7.2k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>9 分钟</span>
+      <span>13 分钟</span>
     </span>
 </div>
 
@@ -568,7 +568,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="RSA中leak-p-q-n-q-p-n问题"><a href="#RSA中leak-p-q-n-q-p-n问题" class="headerlink" title="RSA中leak&#x3D;p^q%n + q^p%n问题"></a>RSA中leak&#x3D;p^q%n + q^p%n问题</h1><p>以ISCTF2024crypto蓝鲨的费马这道题为例子讲解自己学到的一个解决方法</p>
+          <h1 id="1-RSA中leak-p-q-n-q-p-n问题"><a href="#1-RSA中leak-p-q-n-q-p-n问题" class="headerlink" title="1.RSA中leak&#x3D;p^q%n + q^p%n问题"></a>1.RSA中leak&#x3D;p^q%n + q^p%n问题</h1><p>以ISCTF2024crypto蓝鲨的费马这道题为例子讲解自己学到的一个解决方法</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> libnum</span><br><span class="line"><span class="keyword">import</span> gmpy2</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line">flag=<span class="string">b&#x27;ISCTF&#123;********&#125;&#x27;</span></span><br><span class="line">m=bytes_to_long(flag)</span><br><span class="line">p=libnum.generate_prime(<span class="number">1024</span>)</span><br><span class="line">q=libnum.generate_prime(<span class="number">1024</span>)</span><br><span class="line">n=p*q</span><br><span class="line">e=<span class="number">0x10001</span></span><br><span class="line">c=<span class="built_in">pow</span>(m,e,n)</span><br><span class="line">d=inverse(e,(p-<span class="number">1</span>)*(q-<span class="number">1</span>))</span><br><span class="line">leak = (d+(<span class="built_in">pow</span>(p,q,n)+<span class="built_in">pow</span>(q,p,n)))%n</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c=&quot;</span>, c)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;n=&quot;</span>, n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;leak=&quot;</span>, leak)</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">c= 8989289659072309605793417141528767265266446236550650613514493589798432446586991233583435051268377555448062724563967695425657559568596372723980081067589103919296476501677424322525079257328042851349095575718347302884996529329066703597604694781627113384086536158793653551546025090807063130353950841148535682974762381044510423210397947080397718080033363000599995100765708244828566873128882878164321817156170983773105693537799111546309755235573342169431295776881832991533489235535981382958295960435126843833532716436804949502318851112378495533302256759494573250596802016112398817816155228378089079806308296705261876583997</span></span><br><span class="line"><span class="string">n= 13424018200035368603483071894166480724482952594135293395398366121467209427078817227870501294732149372214083432516059795712917132804111155585926502759533393295089100965059106772393520277313184519450478832376508528256865861027444446718552169503579478134286009893965458507369983396982525906466073384013443851551139147777507283791250268462136554061959016630318688169168797939873600493494258467352326974238472394214986505312411729432927489878418792288365594455065912126527908319239444514857325441614280498882524432151918146061570116187524918358453036228204087993064505391742062288050068745930452767100091519798860487150247</span></span><br><span class="line"><span class="string">leak= 9192002086528025412361053058922669469031188193149143635074798633855112230489479254740324032262690315813650428270911079121913869290893574897752990491429582640499542165616254566396564016734157323265631446079744216458719690853526969359930225042993006404843355356540487296896949431969541367144841985153231095140361069256753593550199420993461786814074270171257117410848796614931926182811404655619662690700351986753661502438299236428991412206196135090756862851230228396476709412020941670878645924203989895008014836619321109848938770269989596541278600166088022166386213646074764712810133558692545401032391239330088256431881</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>$1.\text{leak} &#x3D; d + p + q$  其中 leak 简写为 L</p>
@@ -586,6 +586,26 @@
 <p>因此：$c^{L - (n + 1)} \mod n &#x3D; m$</p>
 <p>$m &#x3D; \text{pow}(c, L - n - 1, n)$</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">c= <span class="number">8989289659072309605793417141528767265266446236550650613514493589798432446586991233583435051268377555448062724563967695425657559568596372723980081067589103919296476501677424322525079257328042851349095575718347302884996529329066703597604694781627113384086536158793653551546025090807063130353950841148535682974762381044510423210397947080397718080033363000599995100765708244828566873128882878164321817156170983773105693537799111546309755235573342169431295776881832991533489235535981382958295960435126843833532716436804949502318851112378495533302256759494573250596802016112398817816155228378089079806308296705261876583997</span></span><br><span class="line">n= <span class="number">13424018200035368603483071894166480724482952594135293395398366121467209427078817227870501294732149372214083432516059795712917132804111155585926502759533393295089100965059106772393520277313184519450478832376508528256865861027444446718552169503579478134286009893965458507369983396982525906466073384013443851551139147777507283791250268462136554061959016630318688169168797939873600493494258467352326974238472394214986505312411729432927489878418792288365594455065912126527908319239444514857325441614280498882524432151918146061570116187524918358453036228204087993064505391742062288050068745930452767100091519798860487150247</span></span><br><span class="line">leak= <span class="number">9192002086528025412361053058922669469031188193149143635074798633855112230489479254740324032262690315813650428270911079121913869290893574897752990491429582640499542165616254566396564016734157323265631446079744216458719690853526969359930225042993006404843355356540487296896949431969541367144841985153231095140361069256753593550199420993461786814074270171257117410848796614931926182811404655619662690700351986753661502438299236428991412206196135090756862851230228396476709412020941670878645924203989895008014836619321109848938770269989596541278600166088022166386213646074764712810133558692545401032391239330088256431881</span></span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> long_to_bytes, inverse</span><br><span class="line">m=<span class="built_in">pow</span>(c,leak-n-<span class="number">1</span>,n)</span><br><span class="line"><span class="built_in">print</span>(m)</span><br><span class="line">flag=long_to_bytes(m)</span><br><span class="line"><span class="built_in">print</span>(flag)</span><br><span class="line"><span class="comment">#b&#x27;ISCTF&#123;u_got_it&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="2-RSA中dp泄露-已知dp-e-n-c"><a href="#2-RSA中dp泄露-已知dp-e-n-c" class="headerlink" title="2.RSA中dp泄露(已知dp,e,n,c)"></a>2.RSA中dp泄露(已知dp,e,n,c)</h1><p>dp&#x3D;d mod (p-1)</p>
+<p>dq&#x3D;d mod (q-1)</p>
+<p>因为$\phi(n)&#x3D;(p-1)*(q-1)$,这里也出现了（p-1）所以这几个存在一定的联系，一旦泄露可能会造成安全隐患。</p>
+<p>题目部分数据</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gmpy2 <span class="keyword">as</span> gp</span><br><span class="line"></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">n = <span class="number">248254007851526241177721526698901802985832766176221609612258877371620580060433101538328030305219918697643619814200930679612109885533801335348445023751670478437073055544724280684733298051599167660303645183146161497485358633681492129668802402065797789905550489547645118787266601929429724133167768465309665906113</span></span><br><span class="line">dp = <span class="number">905074498052346904643025132879518330691925174573054004621877253318682675055421970943552016695528560364834446303196939207056642927148093290374440210503657</span></span><br><span class="line"></span><br><span class="line">c = <span class="number">140423670976252696807533673586209400575664282100684119784203527124521188996403826597436883766041879067494280957410201958935737360380801845453829293997433414188838725751796261702622028587211560353362847191060306578510511380965162133472698713063592621028959167072781482562673683090590521214218071160287665180751</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>同样先进行推导，化简成为一个可以靠程序解决的式子。</p>
+<p>1.dp&#x3D;d mod(p-1)</p>
+<p>2.两边同乘e，$dp<em>e\equiv d</em>e\mod(p-1)$</p>
+<p>3.$ed&#x3D; k_1*(p-1)+dp<em>e$  又$ed \equiv 1\mod\phi(n)$,$\phi(n)&#x3D;(p-1)</em>(q-1)$</p>
+<p>4.$k_1*(p-1)+dp<em>e &#x3D;1+k_2</em>(p-1)*(q-1)$ </p>
+<p>5.接下来就合并同类项解方程</p>
+<p>6.化简得$dp*e&#x3D;(k_2(q-1)-k_1)(p-1)+1$,令$k_2(q-1)-k_1&#x3D;X$</p>
+<p>7.$dp*e&#x3D;X(p-1)+1$,首先dp&lt;(p-1),所以X&lt;e.</p>
+<p>8.$p-1&#x3D;\frac{dp*e-1}{X}$,因为X的范围已知直接遍历爆破即可求出p-1的值从而后续就变为常规RSA问题了</p>
+<p>exp:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gmpy2 <span class="keyword">as</span> gp</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">n = <span class="number">248254007851526241177721526698901802985832766176221609612258877371620580060433101538328030305219918697643619814200930679612109885533801335348445023751670478437073055544724280684733298051599167660303645183146161497485358633681492129668802402065797789905550489547645118787266601929429724133167768465309665906113</span></span><br><span class="line">dp = <span class="number">905074498052346904643025132879518330691925174573054004621877253318682675055421970943552016695528560364834446303196939207056642927148093290374440210503657</span></span><br><span class="line"></span><br><span class="line">c = <span class="number">140423670976252696807533673586209400575664282100684119784203527124521188996403826597436883766041879067494280957410201958935737360380801845453829293997433414188838725751796261702622028587211560353362847191060306578510511380965162133472698713063592621028959167072781482562673683090590521214218071160287665180751</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,e):                   </span><br><span class="line">    <span class="keyword">if</span>(dp*e-<span class="number">1</span>)%i == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">if</span> n%(((dp*e-<span class="number">1</span>)//i)+<span class="number">1</span>) == <span class="number">0</span>:   </span><br><span class="line">            p=((dp*e-<span class="number">1</span>)//i)+<span class="number">1</span></span><br><span class="line">            q=n//(((dp*e-<span class="number">1</span>)//i)+<span class="number">1</span>)</span><br><span class="line">            phi=(q-<span class="number">1</span>)*(p-<span class="number">1</span>)            </span><br><span class="line">            d=gp.invert(e,phi)         </span><br><span class="line">            m=<span class="built_in">pow</span>(c,d,n)               </span><br><span class="line">                                     </span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(long_to_bytes(m))  </span><br><span class="line">//flag&#123;wow_leaking_dp_breaks_rsa?_98924743502&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-RSA中dp-dq泄露（dp-dq-c-p-q"><a href="#3-RSA中dp-dq泄露（dp-dq-c-p-q" class="headerlink" title="3.RSA中dp,dq泄露（dp,dq,c,p,q)"></a>3.RSA中dp,dq泄露（dp,dq,c,p,q)</h1><p>未完待续</p>
 
       
     </div>
@@ -1277,13 +1297,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">36k</span>
+    <span title="站点总字数">39k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:06</span>
+    <span title="站点阅读时长">1:11</span>
   </span>
 </div>
 <div class="busuanzi-count">
