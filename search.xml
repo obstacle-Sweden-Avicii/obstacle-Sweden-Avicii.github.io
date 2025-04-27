@@ -201,8 +201,8 @@
 <p>同样先进行推导，化简成为一个可以靠程序解决的式子。</p>
 <p>1.dp&#x3D;d mod(p-1)</p>
 <p>2.两边同乘e,$dp<em>e \equiv d</em>e \mod(p-1)$</p>
-<p>3.$ed &#x3D;k_1*(p-1)+dp<em>e,而ed \equiv1 \mod\phi(n),\phi(n)&#x3D;(p-1)</em>(q-1)$</p>
-<p>4.$k_1*(p-1)+dp<em>e&#x3D;1+k_2</em>(p-1)*(q-1)$</p>
+<p>3.$ed &#x3D;k_1*(p-1)+dp<em>e,而ed \equiv 1 \mod \phi(n),\phi(n)&#x3D;(p-1)</em>(q-1)$</p>
+<p>4.$k_1*(p-1)+dp<em>e &#x3D; 1+k_2</em>(p-1)*(q-1)$</p>
 <p>5.接下来就合并同类项解方程</p>
 <p>6.化简得$dp*e&#x3D;(k_2(q-1)-k_1)(p-1)+1$,令$k_2(q-1)-k_1&#x3D;X$</p>
 <p>7.$dp*e&#x3D;X(p-1)+1$,首先dp&lt;(p-1),所以X&lt;e.</p>
@@ -218,7 +218,7 @@
   </entry>
   <entry>
     <title>中国剩余定理</title>
-    <url>/2025/03/30/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86.html</url>
+    <url>/2025/03/29/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86.html</url>
     <content><![CDATA[<h1 id="中国剩余定理（CRT"><a href="#中国剩余定理（CRT" class="headerlink" title="中国剩余定理（CRT)"></a>中国剩余定理（CRT)</h1><p>在做题时遇到离散对数问题中碰到很多CRT相关知识，但最初了解比较浅显，现在准备再稍微细致的回顾一下。</p>
 <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>中国剩余定理 (Chinese Remainder Theorem, CRT) 可求解如下形式的一元线性同余方程组（其中$n_1$ $n_2$ ······$n_k$ 两两互质)：</p>
 <p>$$<br>\begin{cases} x\equiv a_1 \pmod{n_1}\\ x\equiv a_2 \pmod{n_2}\\ x\equiv a_3 \pmod{n_3}\\ ·····\\ ·····\\ ·····\\ x\equiv a_k \pmod{n_k} \end{cases}<br>$$</p>
@@ -244,7 +244,7 @@
   </entry>
   <entry>
     <title>近期密码复现学习</title>
-    <url>/2025/04/05/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html</url>
+    <url>/2025/04/02/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html</url>
     <content><![CDATA[<h3 id="1-univariate"><a href="#1-univariate" class="headerlink" title="1.univariate"></a>1.univariate</h3><p>题目</p>
 <p>描述</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I love univariate polynomials...</span><br></pre></td></tr></table></figure>
@@ -290,7 +290,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">from Crypto.Util.number import long_to_bytes</span><br><span class="line">import hashlib</span><br><span class="line"></span><br><span class="line">def hash(x):</span><br><span class="line">    return int(hashlib.md5(str(x).encode()).hexdigest(), 16)</span><br><span class="line">    </span><br><span class="line">h1 = hash(307)</span><br><span class="line">h2 = hash(7)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">n = 100885785256342169056765112203447042910886647238787490462506364977429519290706204521984596783537199842140535823208433284571495132415960381175163434675775328905396713032321690195499705998621049971024487732085874710868565606249892231863632731481840542506411757024315315311788336796336407286355303887021285839839</span><br><span class="line">e=3</span><br><span class="line">delta = h1 - h2</span><br><span class="line">c1 = 41973910895747673899187679417443865074160589754180118442365040608786257167532976519645413349472355652086604920132172274308809002827286937134629295632868623764934042989648498006706284984313078230848738989331579140105876643369041029438708179499450424414752031366276378743595588425043730563346092854896545408366</span><br><span class="line">c2 = 41973912583926901518444642835111314526720967879172223986535984124576403651553273447618087600591347032422378272332279802860926604693828116337548053006928860031338938935746179912330961194768693506712533420818446672613053888256943921222915644107389736912059397747390472331492265060448066180414639931364582445814</span><br><span class="line"></span><br><span class="line">R.&lt;s&gt; = PolynomialRing(Zmod(n))</span><br><span class="line">f = (s+h1)^3 - c1</span><br><span class="line">g = (s +h2)^3 - c2</span><br><span class="line">flag = -gcd(f, g)[0]</span><br><span class="line"></span><br><span class="line">print(long_to_bytes(int(flag)))</span><br><span class="line">#TGCTF&#123;RS4_Tw1nZ_d0You_th1nk_ItS_fun_2win?!!!1111111111&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="LLLCG"><a href="#LLLCG" class="headerlink" title="LLLCG"></a>LLLCG</h2><p>咕咕咕，后续这题应该不搞了，大概去看LCG相关的题学习一下就好了</p>
-<h2 id="EZRSA"><a href="#EZRSA" class="headerlink" title="EZRSA"></a>EZRSA</h2><p>咕咕咕，这题emmmm也不搞了吧，学习一下p的低位泄露然后就过。</p>
+<h2 id="EZRSA"><a href="#EZRSA" class="headerlink" title="EZRSA"></a>EZRSA</h2><p>咕咕咕，这题emmmm也不搞了吧，学习一下p的低位泄露然后就过。后续应该放在RSA中leak问题那篇文章中</p>
 ]]></content>
       <tags>
         <tag>crypto</tag>

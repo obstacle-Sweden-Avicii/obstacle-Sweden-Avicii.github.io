@@ -184,7 +184,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/30/1.%E5%9B%BE%E7%89%87.html">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/14/TGCTF2025.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/qq.jpg">
@@ -202,7 +202,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/11/30/1.%E5%9B%BE%E7%89%87.html" class="post-title-link" itemprop="url">图片无法加载解决方法</a>
+          <a href="/2025/04/14/TGCTF2025.html" class="post-title-link" itemprop="url">TGCTF2025</a>
         </h2>
 
         <div class="post-meta-container">
@@ -213,14 +213,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2024-11-30 22:58:03" itemprop="dateCreated datePublished" datetime="2024-11-30T22:58:03+08:00">2024-11-30</time>
+      <time title="创建时间：2025-04-14 13:01:05" itemprop="dateCreated datePublished" datetime="2025-04-14T13:01:05+08:00">2025-04-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-02-26 17:26:41" itemprop="dateModified" datetime="2025-02-26T17:26:41+08:00">2025-02-26</time>
+      <time title="修改时间：2025-04-27 17:27:01" itemprop="dateModified" datetime="2025-04-27T17:27:01+08:00">2025-04-27</time>
     </span>
 
   
@@ -230,14 +230,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>340</span>
+      <span>6.8k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>12 分钟</span>
     </span>
 </div>
 
@@ -248,13 +248,29 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <hr>
-<h2 id="1-图片"><a href="#1-图片" class="headerlink" title="1.图片"></a>1.图片</h2><p>往typora插入图片，图片文件夹一定要和创建的.md文件夹放在同一个文件夹下。不然文件移动位置后图片会因找不到地址而消失</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k</span><br><span class="line">例如：![伊蕾娜](D:\blog\source\images\Elaina.jpg)</span><br></pre></td></tr></table></figure>
+          <p>部分密码题目复现，后续应该会把没复现的几道题补上吧（或许吧</p>
+<h2 id="费克特尔"><a href="#费克特尔" class="headerlink" title="费克特尔"></a><strong>费克特尔</strong></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">c=670610235999012099846283721569059674725712804950807955010725968103642359765806</span><br><span class="line">n=810544624661213367964996895060815354972889892659483948276203088055391907479553</span><br><span class="line">e=65537</span><br></pre></td></tr></table></figure>
 
-<img src="/2024/11/30/1.%E5%9B%BE%E7%89%87/20240913_122405110_iOS.png" class="" title="20240913_122405110_iOS">
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>相信很多人尝试上面图片的插入方法会遇到在typora能正常显示图片，但在网页上图片却无法加载。这是因为上述地址如D:\blog\source\images\Elaina.jpg为本地地址，而hexo+github搭建的博客并不能访问本地地址所以自然无法成功。</p>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>最简单粗暴的方法就是直接将图片拖到typora中，typora会直接创建博客文章同名的文件夹存放图片。但是就是感觉文章写多了有点乱乱的。</p>
+<p>简单的RSA，借助yafu对n进行质因数分解得到多了质数p1,p2,p3等。那么phi&#x3D;（p1-1)<em>(p2-1)</em>(p3-1)·····</p>
+<p>后续就正常RSA那一套解就好了。flag:TGCTF{f4888_6abdc_9c2bd_9036bb}</p>
+<h2 id="宝宝RSA"><a href="#宝宝RSA" class="headerlink" title="宝宝RSA"></a>宝宝RSA</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> gcd</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> secret <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line"><span class="comment"># PART1</span></span><br><span class="line">p1 = getPrime(<span class="number">512</span>)</span><br><span class="line">q1 = getPrime(<span class="number">512</span>)</span><br><span class="line">n1 = p1 * q1</span><br><span class="line">phi = (p1 - <span class="number">1</span>) * (q1 - <span class="number">1</span>)</span><br><span class="line">m1 = bytes_to_long(flag[:<span class="built_in">len</span>(flag) // <span class="number">2</span>])</span><br><span class="line">e1 = getPrime(<span class="number">18</span>)</span><br><span class="line"><span class="keyword">while</span> gcd(e1, phi) != <span class="number">1</span>:</span><br><span class="line">    e1 = getPrime(<span class="number">17</span>)</span><br><span class="line">c1 = <span class="built_in">pow</span>(m1, e1, n1)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;p1 =&quot;</span>, p1)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;q1 =&quot;</span>, q1)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c1 =&quot;</span>, c1)</span><br><span class="line"></span><br><span class="line"><span class="comment"># PART2</span></span><br><span class="line">n2 = getPrime(<span class="number">512</span>) * getPrime(<span class="number">512</span>)</span><br><span class="line">e2 = <span class="number">3</span></span><br><span class="line">m2 = bytes_to_long(flag[<span class="built_in">len</span>(flag) // <span class="number">2</span>:])</span><br><span class="line">c2 = <span class="built_in">pow</span>(m2, e2, n2)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;n2 =&quot;</span>, n2)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c2 =&quot;</span>, c2)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;e2 =&quot;</span>, e2)</span><br><span class="line"></span><br><span class="line"><span class="comment"># p1 = 8362851990079664018649774360159786938757293294328116561219351503022492961843907118845919317399785168488103775809531198339213009936918460080250107807031483</span></span><br><span class="line"><span class="comment"># q1 = 8312546034426788223492083178829355192676175323324230533451989649056072814335528263136523605276378801682321623998646291206494179416941978672637426346496531</span></span><br><span class="line"><span class="comment"># c1 = 39711973075443303473292859404026809299317446021917391206568511014894789946819103680496756934914058521250438186214943037578346772475409633145435232816799913236259074769958139045997486622505579239448395807857034154142067866860431132262060279168752474990452298895511880964765819538256786616223902867436130100322</span></span><br><span class="line"><span class="comment"># n2 = 103873139604388138367962901582343595570773101048733694603978570485894317088745160532049473181477976966240986994452119002966492405873949673076731730953232584747066494028393377311943117296014622567610739232596396108513639030323602579269952539931712136467116373246367352649143304819856986264023237676167338361059</span></span><br><span class="line"><span class="comment"># c2 = 51380982170049779703682835988073709896409264083198805522051459033730166821511419536113492522308604225188048202917930917221</span></span><br><span class="line"><span class="comment"># e2 = 3</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>思路：flag拆成两部分，分别求出前后两部分然后合并即可。</p>
+<p>前半部分知道p和q也知道e的大致范围（相对来说比较小）直接爆破即可，后半部分e很小可以进行爆破。</p>
+<p>代码：</p>
+<p>前半部分</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sympy <span class="keyword">import</span> primerange</span><br><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> gcd</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> long_to_bytes</span><br><span class="line"><span class="keyword">import</span> gmpy2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 17位素数范围：2^16到2^17-1</span></span><br><span class="line">primes_17 = <span class="built_in">list</span>(primerange(<span class="number">2</span>**<span class="number">16</span>, <span class="number">2</span>**<span class="number">17</span>))</span><br><span class="line"><span class="comment"># 18位素数范围：2^17到2^18-1</span></span><br><span class="line">primes_18 = <span class="built_in">list</span>(primerange(<span class="number">2</span>**<span class="number">17</span>, <span class="number">2</span>**<span class="number">18</span>))</span><br><span class="line">candidates = primes_17 + primes_18</span><br><span class="line">p1 = <span class="number">8362851990079664018649774360159786938757293294328116561219351503022492961843907118845919317399785168488103775809531198339213009936918460080250107807031483</span></span><br><span class="line">q1 = <span class="number">8312546034426788223492083178829355192676175323324230533451989649056072814335528263136523605276378801682321623998646291206494179416941978672637426346496531</span></span><br><span class="line">phi = (p1 - <span class="number">1</span>) * (q1 - <span class="number">1</span>)</span><br><span class="line">valid_e = [e <span class="keyword">for</span> e <span class="keyword">in</span> candidates <span class="keyword">if</span> gcd(e, phi) == <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">c1 = <span class="number">39711973075443303473292859404026809299317446021917391206568511014894789946819103680496756934914058521250438186214943037578346772475409633145435232816799913236259074769958139045997486622505579239448395807857034154142067866860431132262060279168752474990452298895511880964765819538256786616223902867436130100322</span></span><br><span class="line">n1 = p1 * q1</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> e <span class="keyword">in</span> valid_e:</span><br><span class="line">    d = <span class="built_in">pow</span>(e, -<span class="number">1</span>, phi)</span><br><span class="line">    m1 = <span class="built_in">pow</span>(c1, d, n1)</span><br><span class="line">    flag_part = long_to_bytes(m1)</span><br><span class="line">    <span class="keyword">if</span> <span class="string">b&#x27;TGCTF&#x27;</span> <span class="keyword">in</span> flag_part:  <span class="comment"># 根据预期flag格式调整</span></span><br><span class="line">        <span class="built_in">print</span>(flag_part.decode())</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"><span class="comment">#TGCTF&#123;!!3xP_Is_S</span></span><br></pre></td></tr></table></figure>
+
+<p>后半部分：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sympy <span class="keyword">import</span> primerange</span><br><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> gcd</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> long_to_bytes</span><br><span class="line"><span class="keyword">import</span> gmpy2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">n2 = <span class="number">103873139604388138367962901582343595570773101048733694603978570485894317088745160532049473181477976966240986994452119002966492405873949673076731730953232584747066494028393377311943117296014622567610739232596396108513639030323602579269952539931712136467116373246367352649143304819856986264023237676167338361059</span></span><br><span class="line">c2 = <span class="number">51380982170049779703682835988073709896409264083198805522051459033730166821511419536113492522308604225188048202917930917221</span></span><br><span class="line">e2 = <span class="number">3</span></span><br><span class="line">k = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">    res = gmpy2.iroot(k*n2+c2,e2)</span><br><span class="line">    <span class="keyword">if</span>(res[<span class="number">1</span>] == <span class="literal">True</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">bytes</span>.fromhex(<span class="built_in">hex</span>(res[<span class="number">0</span>])[<span class="number">2</span>:]))</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    k += <span class="number">1</span></span><br><span class="line"><span class="comment">#m@ll_But_D@ng3r0&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="tRwSiAns"><a href="#tRwSiAns" class="headerlink" title="tRwSiAns"></a><strong>tRwSiAns</strong></h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flag <span class="keyword">import</span> FLAG</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> getPrime, bytes_to_long</span><br><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_key</span>(<span class="params">bits=<span class="number">512</span></span>):</span><br><span class="line">    p = getPrime(bits)</span><br><span class="line">    q = getPrime(bits)</span><br><span class="line">    <span class="keyword">return</span> p * q, <span class="number">3</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hash</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">int</span>(hashlib.md5(<span class="built_in">str</span>(x).encode()).hexdigest(), <span class="number">16</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">encrypt</span>(<span class="params">m, n, e</span>):</span><br><span class="line">    x1, x2 = <span class="number">307</span>, <span class="number">7</span></span><br><span class="line">    c1 = <span class="built_in">pow</span>(m + <span class="built_in">hash</span>(x1), e, n)</span><br><span class="line">    c2 = <span class="built_in">pow</span>(m + <span class="built_in">hash</span>(x2), e, n)</span><br><span class="line">    <span class="keyword">return</span> c1, c2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">m = bytes_to_long(FLAG)</span><br><span class="line">n, e = generate_key()</span><br><span class="line">c1, c2 = encrypt(m, n, e)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;n = <span class="subst">&#123;n&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;e = <span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;c1 = <span class="subst">&#123;c1&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;c2 = <span class="subst">&#123;c2&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">n = <span class="number">100885785256342169056765112203447042910886647238787490462506364977429519290706204521984596783537199842140535823208433284571495132415960381175163434675775328905396713032321690195499705998621049971024487732085874710868565606249892231863632731481840542506411757024315315311788336796336407286355303887021285839839</span></span><br><span class="line">e = <span class="number">3</span></span><br><span class="line">c1 = <span class="number">41973910895747673899187679417443865074160589754180118442365040608786257167532976519645413349472355652086604920132172274308809002827286937134629295632868623764934042989648498006706284984313078230848738989331579140105876643369041029438708179499450424414752031366276378743595588425043730563346092854896545408366</span></span><br><span class="line">c2 = <span class="number">41973912583926901518444642835111314526720967879172223986535984124576403651553273447618087600591347032422378272332279802860926604693828116337548053006928860031338938935746179912330961194768693506712533420818446672613053888256943921222915644107389736912059397747390472331492265060448066180414639931364582445814</span></span><br></pre></td></tr></table></figure>
+
+<p> <strong>Franklin-Reiter 相关消息攻击</strong> 两个密文对应的消息存在线性关系.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Util.number import long_to_bytes</span><br><span class="line">import hashlib</span><br><span class="line"></span><br><span class="line">def hash(x):</span><br><span class="line">    return int(hashlib.md5(str(x).encode()).hexdigest(), 16)</span><br><span class="line">    </span><br><span class="line">h1 = hash(307)</span><br><span class="line">h2 = hash(7)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">n = 100885785256342169056765112203447042910886647238787490462506364977429519290706204521984596783537199842140535823208433284571495132415960381175163434675775328905396713032321690195499705998621049971024487732085874710868565606249892231863632731481840542506411757024315315311788336796336407286355303887021285839839</span><br><span class="line">e=3</span><br><span class="line">delta = h1 - h2</span><br><span class="line">c1 = 41973910895747673899187679417443865074160589754180118442365040608786257167532976519645413349472355652086604920132172274308809002827286937134629295632868623764934042989648498006706284984313078230848738989331579140105876643369041029438708179499450424414752031366276378743595588425043730563346092854896545408366</span><br><span class="line">c2 = 41973912583926901518444642835111314526720967879172223986535984124576403651553273447618087600591347032422378272332279802860926604693828116337548053006928860031338938935746179912330961194768693506712533420818446672613053888256943921222915644107389736912059397747390472331492265060448066180414639931364582445814</span><br><span class="line"></span><br><span class="line">R.&lt;s&gt; = PolynomialRing(Zmod(n))</span><br><span class="line">f = (s+h1)^3 - c1</span><br><span class="line">g = (s +h2)^3 - c2</span><br><span class="line">flag = -gcd(f, g)[0]</span><br><span class="line"></span><br><span class="line">print(long_to_bytes(int(flag)))</span><br><span class="line">#TGCTF&#123;RS4_Tw1nZ_d0You_th1nk_ItS_fun_2win?!!!1111111111&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="LLLCG"><a href="#LLLCG" class="headerlink" title="LLLCG"></a>LLLCG</h2><p>咕咕咕，后续这题应该不搞了，大概去看LCG相关的题学习一下就好了</p>
+<h2 id="EZRSA"><a href="#EZRSA" class="headerlink" title="EZRSA"></a>EZRSA</h2><p>咕咕咕，这题emmmm也不搞了吧，学习一下p的低位泄露然后就过。后续应该放在RSA中leak问题那篇文章中</p>
 
       
     </div>
@@ -281,7 +297,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/03/blog.html">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/02/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/qq.jpg">
@@ -299,7 +315,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/11/03/blog.html" class="post-title-link" itemprop="url">my first blog</a>
+          <a href="/2025/04/02/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html" class="post-title-link" itemprop="url">近期密码复现学习</a>
         </h2>
 
         <div class="post-meta-container">
@@ -310,14 +326,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2024-11-03 23:41:42" itemprop="dateCreated datePublished" datetime="2024-11-03T23:41:42+08:00">2024-11-03</time>
+      <time title="创建时间：2025-04-02 17:01:05" itemprop="dateCreated datePublished" datetime="2025-04-02T17:01:05+08:00">2025-04-02</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-22 23:33:39" itemprop="dateModified" datetime="2024-11-22T23:33:39+08:00">2024-11-22</time>
+      <time title="修改时间：2025-04-27 17:28:34" itemprop="dateModified" datetime="2025-04-27T17:28:34+08:00">2025-04-27</time>
     </span>
 
   
@@ -327,14 +343,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>9</span>
+      <span>5k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>9 分钟</span>
     </span>
 </div>
 
@@ -345,7 +361,21 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>这是我的第一个博客</p>
+          <h3 id="1-univariate"><a href="#1-univariate" class="headerlink" title="1.univariate"></a>1.univariate</h3><p>题目</p>
+<p>描述</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I love univariate polynomials...</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> getPrime, bytes_to_long</span><br><span class="line"><span class="keyword">from</span> secret <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line">p = getPrime(<span class="number">512</span>)</span><br><span class="line">q = getPrime(<span class="number">512</span>)</span><br><span class="line">n = p*q</span><br><span class="line"></span><br><span class="line">m = bytes_to_long(flag.encode())</span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="built_in">pow</span>(m,e,n)</span><br><span class="line"></span><br><span class="line">P.&lt;x&gt; = PolynomialRing(ZZ)</span><br><span class="line">x = P.gens()[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">terms = [x**i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">137</span>)]</span><br><span class="line"></span><br><span class="line">T = RealDistribution(<span class="string">&#x27;gaussian&#x27;</span>, <span class="number">2</span>)</span><br><span class="line">coefs = [<span class="built_in">round</span>(T.get_random_element()) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(terms))]</span><br><span class="line"></span><br><span class="line">f = <span class="built_in">sum</span>([term*coef <span class="keyword">for</span> term,coef <span class="keyword">in</span> <span class="built_in">zip</span>(terms,coefs)])</span><br><span class="line">w = <span class="built_in">pow</span>(<span class="number">2</span>,f(p),n)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;out.txt&#x27;</span>, <span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;n = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;e = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;c = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;f = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;w = &#125;</span>\n&#x27;</span>)</span><br><span class="line">n = <span class="number">151510886600487624888537926759375027338192556324330182365859112926770109752858284462159488504727238764120612593911292154858008775463001345641311051184326218974685701057787672193003745574697137968457609530135969033403360561333863943223407215732526198691453110628598401583407984162075630768455052482583101773637</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="number">74468088842131664480394073891613024559473817230309311952320910922177130990996003196602702376336093457990873018154873841543712071422931358036924937335888815556064840522100618318507080665149514719351519909821468981883880543654015414713368018500970500498936910817336501949914675483148862843329341461828563728789</span></span><br><span class="line">f = -x^<span class="number">136</span> + x^<span class="number">135</span> - <span class="number">2</span>*x^<span class="number">134</span> - <span class="number">4</span>*x^<span class="number">132</span> + <span class="number">2</span>*x^<span class="number">130</span> - x^<span class="number">128</span> - <span class="number">3</span>*x^<span class="number">127</span> + <span class="number">4</span>*x^<span class="number">126</span> + <span class="number">3</span>*x^<span class="number">125</span> + <span class="number">3</span>*x^<span class="number">124</span> + x^<span class="number">123</span> + x^<span class="number">122</span> - <span class="number">5</span>*x^<span class="number">121</span> - <span class="number">3</span>*x^<span class="number">120</span> - x^<span class="number">119</span> - x^<span class="number">118</span> + x^<span class="number">117</span> + x^<span class="number">116</span> - <span class="number">4</span>*x^<span class="number">114</span> - <span class="number">2</span>*x^<span class="number">112</span> + <span class="number">2</span>*x^<span class="number">110</span> + x^<span class="number">109</span> + <span class="number">2</span>*x^<span class="number">108</span> - <span class="number">2</span>*x^<span class="number">107</span> + <span class="number">3</span>*x^<span class="number">106</span> - x^<span class="number">104</span> + <span class="number">2</span>*x^<span class="number">103</span> - x^<span class="number">102</span> + x^<span class="number">101</span> - <span class="number">2</span>*x^<span class="number">100</span> + <span class="number">3</span>*x^<span class="number">99</span> - <span class="number">2</span>*x^<span class="number">98</span> - x^<span class="number">97</span> - x^<span class="number">96</span> - <span class="number">3</span>*x^<span class="number">95</span> - x^<span class="number">94</span> - <span class="number">2</span>*x^<span class="number">93</span> - <span class="number">2</span>*x^<span class="number">91</span> + <span class="number">3</span>*x^<span class="number">90</span> - <span class="number">2</span>*x^<span class="number">89</span> - <span class="number">2</span>*x^<span class="number">88</span> + x^<span class="number">86</span> + x^<span class="number">85</span> - <span class="number">2</span>*x^<span class="number">84</span> - <span class="number">3</span>*x^<span class="number">83</span> + <span class="number">2</span>*x^<span class="number">82</span> + <span class="number">3</span>*x^<span class="number">79</span> - x^<span class="number">76</span> + <span class="number">2</span>*x^<span class="number">75</span> - x^<span class="number">74</span> + x^<span class="number">71</span> - <span class="number">5</span>*x^<span class="number">70</span> - x^<span class="number">67</span> + x^<span class="number">66</span> + x^<span class="number">65</span> + x^<span class="number">63</span> - x^<span class="number">61</span> + x^<span class="number">59</span> - <span class="number">2</span>*x^<span class="number">58</span> + <span class="number">6</span>*x^<span class="number">56</span> + x^<span class="number">55</span> + <span class="number">3</span>*x^<span class="number">54</span> - x^<span class="number">53</span> + <span class="number">2</span>*x^<span class="number">52</span> + <span class="number">3</span>*x^<span class="number">51</span> + x^<span class="number">50</span> + <span class="number">2</span>*x^<span class="number">49</span> + <span class="number">3</span>*x^<span class="number">47</span> + <span class="number">2</span>*x^<span class="number">46</span> - <span class="number">4</span>*x^<span class="number">45</span> + <span class="number">3</span>*x^<span class="number">44</span> + <span class="number">3</span>*x^<span class="number">43</span> - x^<span class="number">42</span> - <span class="number">2</span>*x^<span class="number">40</span> - <span class="number">5</span>*x^<span class="number">39</span> + x^<span class="number">38</span> + x^<span class="number">37</span> + <span class="number">2</span>*x^<span class="number">36</span> + <span class="number">2</span>*x^<span class="number">35</span> + x^<span class="number">34</span> - x^<span class="number">33</span> + x^<span class="number">32</span> - <span class="number">5</span>*x^<span class="number">31</span> + x^<span class="number">30</span> + x^<span class="number">29</span> + <span class="number">2</span>*x^<span class="number">28</span> - <span class="number">2</span>*x^<span class="number">27</span> + <span class="number">3</span>*x^<span class="number">26</span> - x^<span class="number">25</span> - x^<span class="number">23</span> - x^<span class="number">22</span> - <span class="number">3</span>*x^<span class="number">21</span> + <span class="number">2</span>*x^<span class="number">20</span> - x^<span class="number">19</span> - x^<span class="number">17</span> + <span class="number">2</span>*x^<span class="number">16</span> - <span class="number">2</span>*x^<span class="number">15</span> - <span class="number">2</span>*x^<span class="number">14</span> - <span class="number">2</span>*x^<span class="number">13</span> - <span class="number">2</span>*x^<span class="number">12</span> + <span class="number">2</span>*x^<span class="number">11</span> - <span class="number">2</span>*x^<span class="number">9</span> + <span class="number">3</span>*x^<span class="number">8</span> - <span class="number">4</span>*x^<span class="number">7</span> + <span class="number">2</span>*x^<span class="number">6</span> - <span class="number">2</span>*x^<span class="number">5</span> - <span class="number">5</span>*x^<span class="number">4</span> - <span class="number">3</span>*x^<span class="number">3</span> + <span class="number">5</span>*x^<span class="number">2</span> - <span class="number">2</span></span><br><span class="line">w = <span class="number">86258923706084556733053644452456806418792871483898871193707132372143291757396867798433017660985422614532352743658877188445517898648519256573663299464811234251773841741466280567326570167017786562044635756348763128567054349991798640926148221279889174229551074668002853442182664523748992260830782387602048836221</span></span><br></pre></td></tr></table></figure>
+
+<p>思路：<br>根据题目描述univariate polynomials（单变量多项式），题目中也是反复利用p，所以可以从p开始下手。  从    w &#x3D; pow(2,f(p),n)开始，这里也是我学习中感觉非常巧妙的地方，先了解前提知识费马小定理gcd(a,p)&#x3D;1,$a^{p-1}\equiv 1\pmod{p}$,于是接下来就要构造出p-1。对f(p)模(p-1),就有f(p) &#x3D; g(p)(p-1) + k。然后对w取p的模数。<br>$$<br>w &#x3D; 2^{f(p)} &#x3D; 2^{g(p)(p-1) + k} &#x3D; \left(2^{g(p)(p-1)}\right) \cdot \left(2^k\right)&#x3D;2^k \pmod{p}<br>$$<br>所以w除以p的模数就为2^k, 那么$w-2^{k}$​就为p的倍数，然后再与n取最大公约数就可以找出p从而解决RSA问题。即gcd(w-2^k,n).</p>
+<p>代码(<strong>错误的</strong>)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">P.&lt;x&gt; = PolynomialRing(ZZ)</span><br><span class="line">x = P.gens()[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">n = <span class="number">151510886600487624888537926759375027338192556324330182365859112926770109752858284462159488504727238764120612593911292154858008775463001345641311051184326218974685701057787672193003745574697137968457609530135969033403360561333863943223407215732526198691453110628598401583407984162075630768455052482583101773637</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="number">74468088842131664480394073891613024559473817230309311952320910922177130990996003196602702376336093457990873018154873841543712071422931358036924937335888815556064840522100618318507080665149514719351519909821468981883880543654015414713368018500970500498936910817336501949914675483148862843329341461828563728789</span></span><br><span class="line">f = -x^<span class="number">136</span> + x^<span class="number">135</span> - <span class="number">2</span>*x^<span class="number">134</span> - <span class="number">4</span>*x^<span class="number">132</span> + <span class="number">2</span>*x^<span class="number">130</span> - x^<span class="number">128</span> - <span class="number">3</span>*x^<span class="number">127</span> + <span class="number">4</span>*x^<span class="number">126</span> + <span class="number">3</span>*x^<span class="number">125</span> + <span class="number">3</span>*x^<span class="number">124</span> + x^<span class="number">123</span> + x^<span class="number">122</span> - <span class="number">5</span>*x^<span class="number">121</span> - <span class="number">3</span>*x^<span class="number">120</span> - x^<span class="number">119</span> - x^<span class="number">118</span> + x^<span class="number">117</span> + x^<span class="number">116</span> - <span class="number">4</span>*x^<span class="number">114</span> - <span class="number">2</span>*x^<span class="number">112</span> + <span class="number">2</span>*x^<span class="number">110</span> + x^<span class="number">109</span> + <span class="number">2</span>*x^<span class="number">108</span> - <span class="number">2</span>*x^<span class="number">107</span> + <span class="number">3</span>*x^<span class="number">106</span> - x^<span class="number">104</span> + <span class="number">2</span>*x^<span class="number">103</span> - x^<span class="number">102</span> + x^<span class="number">101</span> - <span class="number">2</span>*x^<span class="number">100</span> + <span class="number">3</span>*x^<span class="number">99</span> - <span class="number">2</span>*x^<span class="number">98</span> - x^<span class="number">97</span> - x^<span class="number">96</span> - <span class="number">3</span>*x^<span class="number">95</span> - x^<span class="number">94</span> - <span class="number">2</span>*x^<span class="number">93</span> - <span class="number">2</span>*x^<span class="number">91</span> + <span class="number">3</span>*x^<span class="number">90</span> - <span class="number">2</span>*x^<span class="number">89</span> - <span class="number">2</span>*x^<span class="number">88</span> + x^<span class="number">86</span> + x^<span class="number">85</span> - <span class="number">2</span>*x^<span class="number">84</span> - <span class="number">3</span>*x^<span class="number">83</span> + <span class="number">2</span>*x^<span class="number">82</span> + <span class="number">3</span>*x^<span class="number">79</span> - x^<span class="number">76</span> + <span class="number">2</span>*x^<span class="number">75</span> - x^<span class="number">74</span> + x^<span class="number">71</span> - <span class="number">5</span>*x^<span class="number">70</span> - x^<span class="number">67</span> + x^<span class="number">66</span> + x^<span class="number">65</span> + x^<span class="number">63</span> - x^<span class="number">61</span> + x^<span class="number">59</span> - <span class="number">2</span>*x^<span class="number">58</span> + <span class="number">6</span>*x^<span class="number">56</span> + x^<span class="number">55</span> + <span class="number">3</span>*x^<span class="number">54</span> - x^<span class="number">53</span> + <span class="number">2</span>*x^<span class="number">52</span> + <span class="number">3</span>*x^<span class="number">51</span> + x^<span class="number">50</span> + <span class="number">2</span>*x^<span class="number">49</span> + <span class="number">3</span>*x^<span class="number">47</span> + <span class="number">2</span>*x^<span class="number">46</span> - <span class="number">4</span>*x^<span class="number">45</span> + <span class="number">3</span>*x^<span class="number">44</span> + <span class="number">3</span>*x^<span class="number">43</span> - x^<span class="number">42</span> - <span class="number">2</span>*x^<span class="number">40</span> - <span class="number">5</span>*x^<span class="number">39</span> + x^<span class="number">38</span> + x^<span class="number">37</span> + <span class="number">2</span>*x^<span class="number">36</span> + <span class="number">2</span>*x^<span class="number">35</span> + x^<span class="number">34</span> - x^<span class="number">33</span> + x^<span class="number">32</span> - <span class="number">5</span>*x^<span class="number">31</span> + x^<span class="number">30</span> + x^<span class="number">29</span> + <span class="number">2</span>*x^<span class="number">28</span> - <span class="number">2</span>*x^<span class="number">27</span> + <span class="number">3</span>*x^<span class="number">26</span> - x^<span class="number">25</span> - x^<span class="number">23</span> - x^<span class="number">22</span> - <span class="number">3</span>*x^<span class="number">21</span> + <span class="number">2</span>*x^<span class="number">20</span> - x^<span class="number">19</span> - x^<span class="number">17</span> + <span class="number">2</span>*x^<span class="number">16</span> - <span class="number">2</span>*x^<span class="number">15</span> - <span class="number">2</span>*x^<span class="number">14</span> - <span class="number">2</span>*x^<span class="number">13</span> - <span class="number">2</span>*x^<span class="number">12</span> + <span class="number">2</span>*x^<span class="number">11</span> - <span class="number">2</span>*x^<span class="number">9</span> + <span class="number">3</span>*x^<span class="number">8</span> - <span class="number">4</span>*x^<span class="number">7</span> + <span class="number">2</span>*x^<span class="number">6</span> - <span class="number">2</span>*x^<span class="number">5</span> - <span class="number">5</span>*x^<span class="number">4</span> - <span class="number">3</span>*x^<span class="number">3</span> + <span class="number">5</span>*x^<span class="number">2</span> - <span class="number">2</span></span><br><span class="line">w = <span class="number">86258923706084556733053644452456806418792871483898871193707132372143291757396867798433017660985422614532352743658877188445517898648519256573663299464811234251773841741466280567326570167017786562044635756348763128567054349991798640926148221279889174229551074668002853442182664523748992260830782387602048836221</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">k = f % (x-<span class="number">1</span>)</span><br><span class="line">k_int=ZZ(k)</span><br><span class="line">q = GCD(w -<span class="number">2</span>^k_int, n)</span><br><span class="line">p = n // q</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(long_to_bytes(<span class="built_in">int</span>(<span class="built_in">pow</span>(c, inverse(e, (p-<span class="number">1</span>)*(q-<span class="number">1</span>)), n))))</span><br></pre></td></tr></table></figure>
+
+<p>代码报错了，检查大概知道了原因在于k的值最后是负数，所以直接2^k不行。</p>
+<p>正确部分</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">k = f % (x-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">p = GCD(w * <span class="built_in">pow</span>(<span class="number">2</span>, -k, n) - <span class="number">1</span>, n)</span><br><span class="line">q = n // p</span><br><span class="line"><span class="comment">#b&#x27;ictf&#123;p-1_g0es_aB$olU7eLy_w1lD!!!&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>解释：当k是负数时， $2^{k}\pmod{n}$实际上是$2^{-\lvert k\rvert }\pmod{n}$的模逆元。这是因为指数运算是周期性的，且模逆元可以看作是将指数“翻转”到模数的范围内。pow(2, -k, n) 计算的是 $2^{k}\pmod{n}$ 的模逆元。如果 k是负数，这意味着我们正在寻找一个数 <em>y</em> 使得 $2^{k}*y\equiv 1\pmod{n}$，然后乘上w再减1就是与n有共同因子。勉强理解是这样，但我数学这方面并未深入研究，所以个人感觉纠错推导过程有点牵强，日后有新理解再做修改吧。</p>
 
       
     </div>
@@ -372,7 +402,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/18/kmp%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0.html">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/29/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/qq.jpg">
@@ -390,7 +420,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/01/18/kmp%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0.html" class="post-title-link" itemprop="url">kmp算法学习</a>
+          <a href="/2025/03/29/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86.html" class="post-title-link" itemprop="url">中国剩余定理</a>
         </h2>
 
         <div class="post-meta-container">
@@ -401,14 +431,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2025-01-18 23:41:42" itemprop="dateCreated datePublished" datetime="2025-01-18T23:41:42+08:00">2025-01-18</time>
+      <time title="创建时间：2025-03-29 17:01:05" itemprop="dateCreated datePublished" datetime="2025-03-29T17:01:05+08:00">2025-03-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-01-19 00:19:22" itemprop="dateModified" datetime="2025-01-19T00:19:22+08:00">2025-01-19</time>
+      <time title="修改时间：2025-04-27 17:28:43" itemprop="dateModified" datetime="2025-04-27T17:28:43+08:00">2025-04-27</time>
     </span>
 
   
@@ -418,14 +448,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>3k</span>
+      <span>1.1k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>5 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -436,26 +466,24 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>前言：前段时间在写pta上面的代码题时遇到一个查找字符串字串的问题，一开始采取i，j循环遍历的方法暴力寻找，但是很可惜时间复杂度上出现问题，于是经过学习，初步尝试运用kmp算法来解决查找字符串字串中时间复杂度的问题。</p>
-<p>对kmp的名称由来等就不展开描述了直接进入代码部分。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">computeLPSArray</span><span class="params">(<span class="type">char</span>* pat, <span class="type">int</span> M, <span class="type">int</span>* lps)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> len = <span class="number">0</span>,i=<span class="number">1</span>;  <span class="comment">// 当前最长前缀后缀长度</span></span><br><span class="line">    lps[<span class="number">0</span>] = <span class="number">0</span>;   <span class="comment">// lps[0] 总是为 0</span></span><br><span class="line">    <span class="keyword">while</span> (i &lt; M)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (pat[i] == pat[len]) </span><br><span class="line">        &#123;</span><br><span class="line">            len++;</span><br><span class="line">            lps[i] = len;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">         <span class="keyword">else</span> </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (len != <span class="number">0</span>)   <span class="comment">// 不匹配时，根据 lps 数组更新 len</span></span><br><span class="line">            &#123;</span><br><span class="line">                len = lps[len - <span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> </span><br><span class="line">            &#123;</span><br><span class="line">                lps[i] = <span class="number">0</span>;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">KMPSearch</span><span class="params">(<span class="type">char</span>* pat, <span class="type">char</span>* txt)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> M = <span class="built_in">strlen</span>(pat);</span><br><span class="line">    <span class="type">int</span> N = <span class="built_in">strlen</span>(txt);</span><br><span class="line">    <span class="type">int</span>* lps = (<span class="type">int</span>*)<span class="built_in">malloc</span>(M * <span class="built_in">sizeof</span>(<span class="type">int</span>));  <span class="comment">// 创建 lps 数组</span></span><br><span class="line">    <span class="built_in">computeLPSArray</span>(pat, M, lps);</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>; <span class="comment">// txt 的索引</span></span><br><span class="line">    <span class="type">int</span> j = <span class="number">0</span>; <span class="comment">// pat 的索引</span></span><br><span class="line">    <span class="keyword">while</span> (i &lt; N)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (pat[j] == txt[i])</span><br><span class="line">        &#123;</span><br><span class="line">            i++;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (j == M)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;找到模式字符串 &#x27;%s&#x27; 的起始位置: %d\n&quot;</span>, pat, i - j);</span><br><span class="line">            j = lps[j - <span class="number">1</span>];</span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(i &lt; N &amp;&amp; pat[j] != txt[i])</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (j != <span class="number">0</span>)   <span class="comment">// 字符不匹配</span></span><br><span class="line">            &#123;</span><br><span class="line">                j = lps[j - <span class="number">1</span>];</span><br><span class="line">            &#125; <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">char</span> txt[] = <span class="string">&quot;ABABDABACDABABCABAB&quot;</span>;</span><br><span class="line">    <span class="type">char</span> pat[] = <span class="string">&quot;ABABCABAB&quot;</span>;</span><br><span class="line">    <span class="built_in">KMPSearch</span>(pat, txt);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <h1 id="中国剩余定理（CRT"><a href="#中国剩余定理（CRT" class="headerlink" title="中国剩余定理（CRT)"></a>中国剩余定理（CRT)</h1><p>在做题时遇到离散对数问题中碰到很多CRT相关知识，但最初了解比较浅显，现在准备再稍微细致的回顾一下。</p>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>中国剩余定理 (Chinese Remainder Theorem, CRT) 可求解如下形式的一元线性同余方程组（其中$n_1$ $n_2$ ······$n_k$ 两两互质)：</p>
+<p>$$<br>\begin{cases} x\equiv a_1 \pmod{n_1}\\ x\equiv a_2 \pmod{n_2}\\ x\equiv a_3 \pmod{n_3}\\ ·····\\ ·····\\ ·····\\ x\equiv a_k \pmod{n_k} \end{cases}<br>$$</p>
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><h3 id="1-计算所有模数的积-n；n-n-1-n-2-···n-k"><a href="#1-计算所有模数的积-n；n-n-1-n-2-···n-k" class="headerlink" title="1.计算所有模数的积 n；n&#x3D;$n_1*n_2*···n_k$"></a>1.计算所有模数的积 n；n&#x3D;$n_1*n_2*···n_k$</h3><h3 id="2-对于第-i个方程"><a href="#2-对于第-i个方程" class="headerlink" title="2.对于第 i个方程:"></a>2.对于第 i个方程:</h3><p>​		a.计算$m_i&#x3D;n&#x2F;n_i$;</p>
+<p>​		b.计算$m_i在模n_i意义下的逆元m_i^{-1}$;      逆元$m_im_i^{-1}\equiv 1\pmod{n_i}$</p>
+<p>​		c.计算$c_i&#x3D;m_im_i^{-1}$</p>
+<h3 id="3-方程组在模n意义下的唯一解为-x-sum-i-1-k-a-ic-i-pmod-n"><a href="#3-方程组在模n意义下的唯一解为-x-sum-i-1-k-a-ic-i-pmod-n" class="headerlink" title="3.方程组在模n意义下的唯一解为$x&#x3D;\sum_{i&#x3D;1}^{k}{a_ic_i}\pmod{n}$"></a>3.方程组在模n意义下的唯一解为$x&#x3D;\sum_{i&#x3D;1}^{k}{a_ic_i}\pmod{n}$</h3><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">CRT</span>(<span class="params">k, a, r</span>):</span><br><span class="line">    n = <span class="number">1</span></span><br><span class="line">    ans = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, k + <span class="number">1</span>):</span><br><span class="line">        n = n * r[i]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, k + <span class="number">1</span>):</span><br><span class="line">        m = n // r[i]</span><br><span class="line">        b =y=<span class="number">0</span></span><br><span class="line">        exgcd(m, r[i], b, y)  <span class="comment"># b * m mod r[i] = 1  exgcd是另一个用来求逆元的自定义函数未标</span></span><br><span class="line">        ans = (ans + a[i] * m * b % n) % n</span><br><span class="line">    <span class="keyword">return</span> (ans % n + n) % n</span><br></pre></td></tr></table></figure>
 
-<p>个人理解，掌握kmp算法的关键就是掌握lps数组的构造（网上大部分也称next数组，就把lps换成next），lps数组也就是找字串中的最大公共前后缀，它可以帮助我们查找子串时优化“回溯”过程，因为用i，j单纯暴力循环每次都要回到最初会有很多浪费，利用lps数组的构造就可以优化这个过程。具体概念理解，以及构造思路还需要在网络上自己找视频理解。</p>
-<p>接下来是pta里面的一道题，运用kmp算法解决。</p>
-<p><strong>7-11 删除字符串中的子串</strong></p>
-<p>分数 10</p>
-<p>作者 白洪欢</p>
-<p>单位 浙江大学</p>
-<p>输入2个字符串S1和S2，要求删除字符串S1中出现的所有子串S2，即结果字符串中不能包含S2。</p>
-<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入在2行中分别给出不超过80个字符长度的、以回车结束的2个非空字符串，对应S1和S2。</p>
-<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>在一行中输出删除字符串S1中出现的所有子串S2后的结果字符串。</p>
-<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Tomcat is a male ccatat</span><br><span class="line">cat</span><br></pre></td></tr></table></figure>
+<p>当然了上述代码可能更多用于算法题中，密码学里python有很多强大的库可以直接调用CRT</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sympy.ntheory.modular <span class="keyword">import</span> crt</span><br><span class="line">a_list=[a1,a2,a3,····ak]</span><br><span class="line">n_list=[n1,n2,n3,····nk]</span><br><span class="line">x,n=crt(n_list,c_list)    //crt会返回一个元组（x,N）其中x就是我们所需要的通解，n就是所有模数（n1,n2等）的乘积</span><br></pre></td></tr></table></figure>
 
-<h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Tom is a male </span><br></pre></td></tr></table></figure>
-
-<p>下面是通过代码</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="comment">// 计算LPS（最长前缀后缀）数组</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">computeLPSArray</span><span class="params">(<span class="type">char</span>* pat, <span class="type">int</span> M, <span class="type">int</span>* lps)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> len = <span class="number">0</span>; <span class="comment">// 当前最长前缀长度</span></span><br><span class="line">    lps[<span class="number">0</span>] = <span class="number">0</span>; <span class="comment">// lps[0] 总是为 0</span></span><br><span class="line">    <span class="type">int</span> i = <span class="number">1</span>; <span class="comment">// 从 lps[1] 开始计算</span></span><br><span class="line">    <span class="keyword">while</span> (i &lt; M) &#123;</span><br><span class="line">        <span class="keyword">if</span> (pat[i] == pat[len]) &#123;</span><br><span class="line">            len++;</span><br><span class="line">            lps[i] = len;</span><br><span class="line">            i++;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (len != <span class="number">0</span>) &#123;</span><br><span class="line">                len = lps[len - <span class="number">1</span>]; <span class="comment">// 根据 lps 更新 len</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                lps[i] = <span class="number">0</span>;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// KMP搜索算法 - 查找并删除所有出现的子串</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">KMPSearchAndDelete</span><span class="params">(<span class="type">char</span>* txt, <span class="type">char</span>* pat)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> M = <span class="built_in">strlen</span>(pat);</span><br><span class="line">    <span class="type">int</span> N = <span class="built_in">strlen</span>(txt);</span><br><span class="line">    <span class="type">int</span>* lps = (<span class="type">int</span>*)<span class="built_in">malloc</span>(M * <span class="built_in">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">    <span class="built_in">computeLPSArray</span>(pat, M, lps);</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>; <span class="comment">// 主串的索引</span></span><br><span class="line">    <span class="type">int</span> j = <span class="number">0</span>; <span class="comment">// 模式串的索引</span></span><br><span class="line">    <span class="keyword">while</span> (i &lt; N) &#123;</span><br><span class="line">        <span class="keyword">if</span> (pat[j] == txt[i]) &#123;</span><br><span class="line">            i++;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (j == M) &#123;</span><br><span class="line">            <span class="comment">// 找到一个匹配，删除子串</span></span><br><span class="line">            <span class="built_in">memmove</span>(&amp;txt[i - j], &amp;txt[i], N - i + <span class="number">1</span>); <span class="comment">// 移动后面的字符</span></span><br><span class="line">            N -= j; <span class="comment">// 更新主串长度</span></span><br><span class="line">            txt[N] = <span class="string">&#x27;\0&#x27;</span>; <span class="comment">// 确保以&#x27;\0&#x27;结束</span></span><br><span class="line">            </span><br><span class="line">            <span class="comment">// 重置j为0，继续寻找进一步的匹配</span></span><br><span class="line">            j = <span class="number">0</span>;</span><br><span class="line">            i = <span class="number">0</span>; <span class="comment">// 从头再继续检查</span></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (i &lt; N &amp;&amp; pat[j] != txt[i]) &#123;</span><br><span class="line">            <span class="keyword">if</span> (j != <span class="number">0</span>) &#123;</span><br><span class="line">                j = lps[j - <span class="number">1</span>]; <span class="comment">// 根据lps调整j</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">free</span>(lps); <span class="comment">// 释放内存</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">char</span> s1[<span class="number">256</span>]; <span class="comment">// 增大数组大小以容纳更长的字符串</span></span><br><span class="line">    <span class="type">char</span> s2[<span class="number">81</span>];</span><br><span class="line">    <span class="built_in">fgets</span>(s1, <span class="built_in">sizeof</span>(s1), stdin);</span><br><span class="line">    s1[<span class="built_in">strcspn</span>(s1, <span class="string">&quot;\n&quot;</span>)] = <span class="number">0</span>; <span class="comment">// 去掉换行符</span></span><br><span class="line">    <span class="built_in">fgets</span>(s2, <span class="built_in">sizeof</span>(s2), stdin);</span><br><span class="line">    s2[<span class="built_in">strcspn</span>(s2, <span class="string">&quot;\n&quot;</span>)] = <span class="number">0</span>; <span class="comment">// 去掉换行符</span></span><br><span class="line">    <span class="comment">// 持续删除子串直到找不到为止</span></span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">strstr</span>(s1, s2) != <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="built_in">KMPSearchAndDelete</span>(s1, s2); <span class="comment">// 查找并删除子串</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, s1); <span class="comment">// 输出结果</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>虽然说密码学里直接秒了，但我还是觉得搞清背后逻辑会更有理解。</p>
+<p>$当i\neq j时，有m_j\equiv 0 \pmod{n_i}$</p>
+<p>$这是因为m_j&#x3D;n&#x2F;n_j$</p>
+<p>$所以c_j \equiv 0 \pmod{n_i},c_i\equiv 1 \pmod{n_i} $</p>
+<p>$ x \equiv \sum_{j&#x3D;1}^{k}{a_jc_j} \equiv a_ic_i\equiv a_i\pmod{n_i}$</p>
+<p>$对于任意的i的取值均符合x\equiv a_i \pmod{n_i}$</p>
+<p>所以上述方法可行</p>
 
       
     </div>
@@ -482,7 +510,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/21/typora%E5%8A%9F%E8%83%BD%E5%88%9D%E6%AD%A5%E5%B0%9D%E8%AF%95.html">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/27/RSA%E4%B8%ADleak%E9%97%AE%E9%A2%98.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/qq.jpg">
@@ -500,7 +528,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/11/21/typora%E5%8A%9F%E8%83%BD%E5%88%9D%E6%AD%A5%E5%B0%9D%E8%AF%95.html" class="post-title-link" itemprop="url">typora测试尝试</a>
+          <a href="/2025/02/27/RSA%E4%B8%ADleak%E9%97%AE%E9%A2%98.html" class="post-title-link" itemprop="url">RSA中leak问题</a>
         </h2>
 
         <div class="post-meta-container">
@@ -511,14 +539,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2024-11-21 23:41:42" itemprop="dateCreated datePublished" datetime="2024-11-21T23:41:42+08:00">2024-11-21</time>
+      <time title="创建时间：2025-02-27 13:01:05" itemprop="dateCreated datePublished" datetime="2025-02-27T13:01:05+08:00">2025-02-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-02-23 21:15:54" itemprop="dateModified" datetime="2025-02-23T21:15:54+08:00">2025-02-23</time>
+      <time title="修改时间：2025-04-27 17:27:27" itemprop="dateModified" datetime="2025-04-27T17:27:27+08:00">2025-04-27</time>
     </span>
 
   
@@ -528,14 +556,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>573</span>
+      <span>7.2k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>13 分钟</span>
     </span>
 </div>
 
@@ -546,59 +574,44 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="typora功能初步尝试"><a href="#typora功能初步尝试" class="headerlink" title="typora功能初步尝试"></a>typora功能初步尝试</h1><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>一级标题：ctrl+1或#<br>二级标题：ctrl+2或##<br>剩下的三级四级等就可以以此类推了</p>
-<h2 id="2-文字"><a href="#2-文字" class="headerlink" title="2.文字"></a>2.文字</h2><p>删除线：alt+shift+5    示例   ~~~~<br>加粗：ctrl+B 示例  <strong>加粗</strong><br>斜体：ctrl+I 示例  <em>斜体</em><br>下划线：ctrl+U 示例 <u>下划线</u><br>高亮：&#x3D;&#x3D;中间内容&#x3D;&#x3D;</p>
-<h2 id="3-表情包"><a href="#3-表情包" class="headerlink" title="3.表情包"></a>3.表情包</h2><p>:smile: :100: :heart:  快捷键:windows+；    </p>
-<h2 id="4-表格"><a href="#4-表格" class="headerlink" title="4.表格"></a>4.表格</h2><table>
-<thead>
-<tr>
-<th>week2</th>
-<th>week3</th>
-<th>week4</th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<p>快捷键:ctrl+t</p>
-<h2 id="5-引用"><a href="#5-引用" class="headerlink" title="5.引用"></a>5.引用</h2><blockquote>
-<p>一级应用</p>
-<blockquote>
-<p>二级引用</p>
-<blockquote>
-<p>瑞典厨师长</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="6-代码"><a href="#6-代码" class="headerlink" title="6.代码"></a>6.代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">插入不确定代码，快捷键：ctrl+shift+k</span><br></pre></td></tr></table></figure>
+          <h1 id="1-RSA中leak-p-q-n-q-p-n问题"><a href="#1-RSA中leak-p-q-n-q-p-n问题" class="headerlink" title="1.RSA中leak&#x3D;p^q%n + q^p%n问题"></a>1.RSA中leak&#x3D;p^q%n + q^p%n问题</h1><p>以ISCTF2024crypto蓝鲨的费马这道题为例子讲解自己学到的一个解决方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> libnum</span><br><span class="line"><span class="keyword">import</span> gmpy2</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line">flag=<span class="string">b&#x27;ISCTF&#123;********&#125;&#x27;</span></span><br><span class="line">m=bytes_to_long(flag)</span><br><span class="line">p=libnum.generate_prime(<span class="number">1024</span>)</span><br><span class="line">q=libnum.generate_prime(<span class="number">1024</span>)</span><br><span class="line">n=p*q</span><br><span class="line">e=<span class="number">0x10001</span></span><br><span class="line">c=<span class="built_in">pow</span>(m,e,n)</span><br><span class="line">d=inverse(e,(p-<span class="number">1</span>)*(q-<span class="number">1</span>))</span><br><span class="line">leak = (d+(<span class="built_in">pow</span>(p,q,n)+<span class="built_in">pow</span>(q,p,n)))%n</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c=&quot;</span>, c)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;n=&quot;</span>, n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;leak=&quot;</span>, leak)</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">c= 8989289659072309605793417141528767265266446236550650613514493589798432446586991233583435051268377555448062724563967695425657559568596372723980081067589103919296476501677424322525079257328042851349095575718347302884996529329066703597604694781627113384086536158793653551546025090807063130353950841148535682974762381044510423210397947080397718080033363000599995100765708244828566873128882878164321817156170983773105693537799111546309755235573342169431295776881832991533489235535981382958295960435126843833532716436804949502318851112378495533302256759494573250596802016112398817816155228378089079806308296705261876583997</span></span><br><span class="line"><span class="string">n= 13424018200035368603483071894166480724482952594135293395398366121467209427078817227870501294732149372214083432516059795712917132804111155585926502759533393295089100965059106772393520277313184519450478832376508528256865861027444446718552169503579478134286009893965458507369983396982525906466073384013443851551139147777507283791250268462136554061959016630318688169168797939873600493494258467352326974238472394214986505312411729432927489878418792288365594455065912126527908319239444514857325441614280498882524432151918146061570116187524918358453036228204087993064505391742062288050068745930452767100091519798860487150247</span></span><br><span class="line"><span class="string">leak= 9192002086528025412361053058922669469031188193149143635074798633855112230489479254740324032262690315813650428270911079121913869290893574897752990491429582640499542165616254566396564016734157323265631446079744216458719690853526969359930225042993006404843355356540487296896949431969541367144841985153231095140361069256753593550199420993461786814074270171257117410848796614931926182811404655619662690700351986753661502438299236428991412206196135090756862851230228396476709412020941670878645924203989895008014836619321109848938770269989596541278600166088022166386213646074764712810133558692545401032391239330088256431881</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="7-分隔线"><a href="#7-分隔线" class="headerlink" title="7.分隔线"></a>7.分隔线</h2><hr>
-<p>***  然后回车</p>
-<h2 id="8-源代码模式"><a href="#8-源代码模式" class="headerlink" title="8.源代码模式"></a>8.源代码模式</h2><p>ctrl+&#x2F;,退出一样</p>
-<h2 id="9-跳转"><a href="#9-跳转" class="headerlink" title="9.跳转"></a>9.跳转</h2><h4 id="1-跳转到外部"><a href="#1-跳转到外部" class="headerlink" title="1.跳转到外部"></a>1.跳转到外部</h4><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">bilibili</a><br><a href="obstacle.top">屑魔女的个人博客</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">快捷键：ctrl+k      格式[提示文字](网址)</span><br></pre></td></tr></table></figure>
+<p>$1.\text{leak} &#x3D; d + p + q$  其中 leak 简写为 L</p>
+<p>$2. m &#x3D; \text{pow}(c, d, n)，即 m &#x3D; c^d \mod n.$</p>
+<p>$3.d &#x3D; L - (p + q) .$</p>
+<p>根据欧拉函数的定义：$\phi &#x3D; (p - 1)(q - 1) &#x3D; pq - p - q + 1$</p>
+<p>由于  n &#x3D; pq ，因此：$\phi &#x3D; n + 1 - (p + q)$</p>
+<p>根据欧拉定理:$c^\phi \equiv1 \mod n$</p>
+<p>代入 $\phi$的表达式：$c^{n + 1 - (p + q)} \equiv 1 \mod n$</p>
+<p>可以进一步推导：$c^{n + 1} \equiv c^{p + q} \mod n$</p>
+<p>因此:$c^{n + 1} \equiv c^{p + q} \mod n$</p>
+<p>已知  d &#x3D; L - (p + q) ，代入 $c^d  \mod n &#x3D; m$ ：</p>
+<p>$c^{L - (p + q)} \mod n &#x3D; m$</p>
+<p>根据前面的推导：$c^{n + 1} \equiv c^{p + q} \mod n$</p>
+<p>因此：$c^{L - (n + 1)} \mod n &#x3D; m$</p>
+<p>$m &#x3D; \text{pow}(c, L - n - 1, n)$</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">c= <span class="number">8989289659072309605793417141528767265266446236550650613514493589798432446586991233583435051268377555448062724563967695425657559568596372723980081067589103919296476501677424322525079257328042851349095575718347302884996529329066703597604694781627113384086536158793653551546025090807063130353950841148535682974762381044510423210397947080397718080033363000599995100765708244828566873128882878164321817156170983773105693537799111546309755235573342169431295776881832991533489235535981382958295960435126843833532716436804949502318851112378495533302256759494573250596802016112398817816155228378089079806308296705261876583997</span></span><br><span class="line">n= <span class="number">13424018200035368603483071894166480724482952594135293395398366121467209427078817227870501294732149372214083432516059795712917132804111155585926502759533393295089100965059106772393520277313184519450478832376508528256865861027444446718552169503579478134286009893965458507369983396982525906466073384013443851551139147777507283791250268462136554061959016630318688169168797939873600493494258467352326974238472394214986505312411729432927489878418792288365594455065912126527908319239444514857325441614280498882524432151918146061570116187524918358453036228204087993064505391742062288050068745930452767100091519798860487150247</span></span><br><span class="line">leak= <span class="number">9192002086528025412361053058922669469031188193149143635074798633855112230489479254740324032262690315813650428270911079121913869290893574897752990491429582640499542165616254566396564016734157323265631446079744216458719690853526969359930225042993006404843355356540487296896949431969541367144841985153231095140361069256753593550199420993461786814074270171257117410848796614931926182811404655619662690700351986753661502438299236428991412206196135090756862851230228396476709412020941670878645924203989895008014836619321109848938770269989596541278600166088022166386213646074764712810133558692545401032391239330088256431881</span></span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> long_to_bytes, inverse</span><br><span class="line">m=<span class="built_in">pow</span>(c,leak-n-<span class="number">1</span>,n)</span><br><span class="line"><span class="built_in">print</span>(m)</span><br><span class="line">flag=long_to_bytes(m)</span><br><span class="line"><span class="built_in">print</span>(flag)</span><br><span class="line"><span class="comment">#b&#x27;ISCTF&#123;u_got_it&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="2-跳转到内部"><a href="#2-跳转到内部" class="headerlink" title="2.跳转到内部"></a>2.跳转到内部</h4><p>[博客](#<a target="_blank" rel="noopener" href="http://localhost:4000/2024/11/03/blog/">my first blog</a>)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">快捷键：CTRL+k     [提示文字](#标题)</span><br></pre></td></tr></table></figure>
+<h1 id="2-RSA中dp泄露-已知dp-e-n-c"><a href="#2-RSA中dp泄露-已知dp-e-n-c" class="headerlink" title="2.RSA中dp泄露(已知dp,e,n,c)"></a>2.RSA中dp泄露(已知dp,e,n,c)</h1><p>dp&#x3D;d mod (p-1)</p>
+<p>dq&#x3D;d mod (q-1)</p>
+<p>因为$\phi(n)&#x3D;(p-1)*(q-1)$,这里也出现了（p-1）所以这几个存在一定的联系，一旦泄露可能会造成安全隐患。</p>
+<p>题目部分数据</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gmpy2 <span class="keyword">as</span> gp</span><br><span class="line"></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">n = <span class="number">248254007851526241177721526698901802985832766176221609612258877371620580060433101538328030305219918697643619814200930679612109885533801335348445023751670478437073055544724280684733298051599167660303645183146161497485358633681492129668802402065797789905550489547645118787266601929429724133167768465309665906113</span></span><br><span class="line">dp = <span class="number">905074498052346904643025132879518330691925174573054004621877253318682675055421970943552016695528560364834446303196939207056642927148093290374440210503657</span></span><br><span class="line"></span><br><span class="line">c = <span class="number">140423670976252696807533673586209400575664282100684119784203527124521188996403826597436883766041879067494280957410201958935737360380801845453829293997433414188838725751796261702622028587211560353362847191060306578510511380965162133472698713063592621028959167072781482562673683090590521214218071160287665180751</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h2 id="10-自动链接"><a href="#10-自动链接" class="headerlink" title="10.自动链接"></a>10.自动链接</h2><p>使用&lt;&gt;然后括号里链接会自动转化为超链接</p>
-<h2 id="11-图片"><a href="#11-图片" class="headerlink" title="11.图片"></a>11.图片</h2><p>往typora插入图片，图片文件夹一定要和创建的.md文件夹放在同一个文件夹下。不然文件移动位置后图片会因找不到地址而消失</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k</span><br><span class="line">例如：![伊蕾娜](D:\blog\source\images\Elaina.jpg)</span><br></pre></td></tr></table></figure>
+<p>同样先进行推导，化简成为一个可以靠程序解决的式子。</p>
+<p>1.dp&#x3D;d mod(p-1)</p>
+<p>2.两边同乘e,$dp<em>e \equiv d</em>e \mod(p-1)$</p>
+<p>3.$ed &#x3D;k_1*(p-1)+dp<em>e,而ed \equiv 1 \mod \phi(n),\phi(n)&#x3D;(p-1)</em>(q-1)$</p>
+<p>4.$k_1*(p-1)+dp<em>e &#x3D; 1+k_2</em>(p-1)*(q-1)$</p>
+<p>5.接下来就合并同类项解方程</p>
+<p>6.化简得$dp*e&#x3D;(k_2(q-1)-k_1)(p-1)+1$,令$k_2(q-1)-k_1&#x3D;X$</p>
+<p>7.$dp*e&#x3D;X(p-1)+1$,首先dp&lt;(p-1),所以X&lt;e.</p>
+<p>8.$p-1&#x3D;\frac{dp*e-1}{X}$,因为X的范围已知直接遍历爆破即可求出p-1的值从而后续就变为常规RSA问题了</p>
+<p>exp:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gmpy2 <span class="keyword">as</span> gp</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">n = <span class="number">248254007851526241177721526698901802985832766176221609612258877371620580060433101538328030305219918697643619814200930679612109885533801335348445023751670478437073055544724280684733298051599167660303645183146161497485358633681492129668802402065797789905550489547645118787266601929429724133167768465309665906113</span></span><br><span class="line">dp = <span class="number">905074498052346904643025132879518330691925174573054004621877253318682675055421970943552016695528560364834446303196939207056642927148093290374440210503657</span></span><br><span class="line"></span><br><span class="line">c = <span class="number">140423670976252696807533673586209400575664282100684119784203527124521188996403826597436883766041879067494280957410201958935737360380801845453829293997433414188838725751796261702622028587211560353362847191060306578510511380965162133472698713063592621028959167072781482562673683090590521214218071160287665180751</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,e):                   </span><br><span class="line">    <span class="keyword">if</span>(dp*e-<span class="number">1</span>)%i == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">if</span> n%(((dp*e-<span class="number">1</span>)//i)+<span class="number">1</span>) == <span class="number">0</span>:   </span><br><span class="line">            p=((dp*e-<span class="number">1</span>)//i)+<span class="number">1</span></span><br><span class="line">            q=n//(((dp*e-<span class="number">1</span>)//i)+<span class="number">1</span>)</span><br><span class="line">            phi=(q-<span class="number">1</span>)*(p-<span class="number">1</span>)            </span><br><span class="line">            d=gp.invert(e,phi)         </span><br><span class="line">            m=<span class="built_in">pow</span>(c,d,n)               </span><br><span class="line">                                     </span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(long_to_bytes(m))  </span><br><span class="line">//flag&#123;wow_leaking_dp_breaks_rsa?_98924743502&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/%5Cimages%5CElaina.jpg" alt="伊蕾娜"></p>
+<h1 id="3-RSA中dp-dq泄露（dp-dq-c-p-q"><a href="#3-RSA中dp-dq泄露（dp-dq-c-p-q" class="headerlink" title="3.RSA中dp,dq泄露（dp,dq,c,p,q)"></a>3.RSA中dp,dq泄露（dp,dq,c,p,q)</h1><p>未完待续</p>
 
       
     </div>
@@ -840,6 +853,356 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/18/kmp%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/qq.jpg">
+      <meta itemprop="name" content="瑞典厨师长">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="obstacle的个人空间">
+      <meta itemprop="description" content="不要温和地走进那个良夜">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | obstacle的个人空间">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2025/01/18/kmp%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0.html" class="post-title-link" itemprop="url">kmp算法学习</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-01-18 23:41:42" itemprop="dateCreated datePublished" datetime="2025-01-18T23:41:42+08:00">2025-01-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-01-19 00:19:22" itemprop="dateModified" datetime="2025-01-19T00:19:22+08:00">2025-01-19</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>5 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>前言：前段时间在写pta上面的代码题时遇到一个查找字符串字串的问题，一开始采取i，j循环遍历的方法暴力寻找，但是很可惜时间复杂度上出现问题，于是经过学习，初步尝试运用kmp算法来解决查找字符串字串中时间复杂度的问题。</p>
+<p>对kmp的名称由来等就不展开描述了直接进入代码部分。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">computeLPSArray</span><span class="params">(<span class="type">char</span>* pat, <span class="type">int</span> M, <span class="type">int</span>* lps)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> len = <span class="number">0</span>,i=<span class="number">1</span>;  <span class="comment">// 当前最长前缀后缀长度</span></span><br><span class="line">    lps[<span class="number">0</span>] = <span class="number">0</span>;   <span class="comment">// lps[0] 总是为 0</span></span><br><span class="line">    <span class="keyword">while</span> (i &lt; M)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (pat[i] == pat[len]) </span><br><span class="line">        &#123;</span><br><span class="line">            len++;</span><br><span class="line">            lps[i] = len;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">         <span class="keyword">else</span> </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (len != <span class="number">0</span>)   <span class="comment">// 不匹配时，根据 lps 数组更新 len</span></span><br><span class="line">            &#123;</span><br><span class="line">                len = lps[len - <span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> </span><br><span class="line">            &#123;</span><br><span class="line">                lps[i] = <span class="number">0</span>;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">KMPSearch</span><span class="params">(<span class="type">char</span>* pat, <span class="type">char</span>* txt)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> M = <span class="built_in">strlen</span>(pat);</span><br><span class="line">    <span class="type">int</span> N = <span class="built_in">strlen</span>(txt);</span><br><span class="line">    <span class="type">int</span>* lps = (<span class="type">int</span>*)<span class="built_in">malloc</span>(M * <span class="built_in">sizeof</span>(<span class="type">int</span>));  <span class="comment">// 创建 lps 数组</span></span><br><span class="line">    <span class="built_in">computeLPSArray</span>(pat, M, lps);</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>; <span class="comment">// txt 的索引</span></span><br><span class="line">    <span class="type">int</span> j = <span class="number">0</span>; <span class="comment">// pat 的索引</span></span><br><span class="line">    <span class="keyword">while</span> (i &lt; N)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (pat[j] == txt[i])</span><br><span class="line">        &#123;</span><br><span class="line">            i++;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (j == M)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;找到模式字符串 &#x27;%s&#x27; 的起始位置: %d\n&quot;</span>, pat, i - j);</span><br><span class="line">            j = lps[j - <span class="number">1</span>];</span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(i &lt; N &amp;&amp; pat[j] != txt[i])</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (j != <span class="number">0</span>)   <span class="comment">// 字符不匹配</span></span><br><span class="line">            &#123;</span><br><span class="line">                j = lps[j - <span class="number">1</span>];</span><br><span class="line">            &#125; <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">char</span> txt[] = <span class="string">&quot;ABABDABACDABABCABAB&quot;</span>;</span><br><span class="line">    <span class="type">char</span> pat[] = <span class="string">&quot;ABABCABAB&quot;</span>;</span><br><span class="line">    <span class="built_in">KMPSearch</span>(pat, txt);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>个人理解，掌握kmp算法的关键就是掌握lps数组的构造（网上大部分也称next数组，就把lps换成next），lps数组也就是找字串中的最大公共前后缀，它可以帮助我们查找子串时优化“回溯”过程，因为用i，j单纯暴力循环每次都要回到最初会有很多浪费，利用lps数组的构造就可以优化这个过程。具体概念理解，以及构造思路还需要在网络上自己找视频理解。</p>
+<p>接下来是pta里面的一道题，运用kmp算法解决。</p>
+<p><strong>7-11 删除字符串中的子串</strong></p>
+<p>分数 10</p>
+<p>作者 白洪欢</p>
+<p>单位 浙江大学</p>
+<p>输入2个字符串S1和S2，要求删除字符串S1中出现的所有子串S2，即结果字符串中不能包含S2。</p>
+<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入在2行中分别给出不超过80个字符长度的、以回车结束的2个非空字符串，对应S1和S2。</p>
+<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>在一行中输出删除字符串S1中出现的所有子串S2后的结果字符串。</p>
+<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Tomcat is a male ccatat</span><br><span class="line">cat</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Tom is a male </span><br></pre></td></tr></table></figure>
+
+<p>下面是通过代码</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="comment">// 计算LPS（最长前缀后缀）数组</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">computeLPSArray</span><span class="params">(<span class="type">char</span>* pat, <span class="type">int</span> M, <span class="type">int</span>* lps)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> len = <span class="number">0</span>; <span class="comment">// 当前最长前缀长度</span></span><br><span class="line">    lps[<span class="number">0</span>] = <span class="number">0</span>; <span class="comment">// lps[0] 总是为 0</span></span><br><span class="line">    <span class="type">int</span> i = <span class="number">1</span>; <span class="comment">// 从 lps[1] 开始计算</span></span><br><span class="line">    <span class="keyword">while</span> (i &lt; M) &#123;</span><br><span class="line">        <span class="keyword">if</span> (pat[i] == pat[len]) &#123;</span><br><span class="line">            len++;</span><br><span class="line">            lps[i] = len;</span><br><span class="line">            i++;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (len != <span class="number">0</span>) &#123;</span><br><span class="line">                len = lps[len - <span class="number">1</span>]; <span class="comment">// 根据 lps 更新 len</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                lps[i] = <span class="number">0</span>;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// KMP搜索算法 - 查找并删除所有出现的子串</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">KMPSearchAndDelete</span><span class="params">(<span class="type">char</span>* txt, <span class="type">char</span>* pat)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> M = <span class="built_in">strlen</span>(pat);</span><br><span class="line">    <span class="type">int</span> N = <span class="built_in">strlen</span>(txt);</span><br><span class="line">    <span class="type">int</span>* lps = (<span class="type">int</span>*)<span class="built_in">malloc</span>(M * <span class="built_in">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">    <span class="built_in">computeLPSArray</span>(pat, M, lps);</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>; <span class="comment">// 主串的索引</span></span><br><span class="line">    <span class="type">int</span> j = <span class="number">0</span>; <span class="comment">// 模式串的索引</span></span><br><span class="line">    <span class="keyword">while</span> (i &lt; N) &#123;</span><br><span class="line">        <span class="keyword">if</span> (pat[j] == txt[i]) &#123;</span><br><span class="line">            i++;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (j == M) &#123;</span><br><span class="line">            <span class="comment">// 找到一个匹配，删除子串</span></span><br><span class="line">            <span class="built_in">memmove</span>(&amp;txt[i - j], &amp;txt[i], N - i + <span class="number">1</span>); <span class="comment">// 移动后面的字符</span></span><br><span class="line">            N -= j; <span class="comment">// 更新主串长度</span></span><br><span class="line">            txt[N] = <span class="string">&#x27;\0&#x27;</span>; <span class="comment">// 确保以&#x27;\0&#x27;结束</span></span><br><span class="line">            </span><br><span class="line">            <span class="comment">// 重置j为0，继续寻找进一步的匹配</span></span><br><span class="line">            j = <span class="number">0</span>;</span><br><span class="line">            i = <span class="number">0</span>; <span class="comment">// 从头再继续检查</span></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (i &lt; N &amp;&amp; pat[j] != txt[i]) &#123;</span><br><span class="line">            <span class="keyword">if</span> (j != <span class="number">0</span>) &#123;</span><br><span class="line">                j = lps[j - <span class="number">1</span>]; <span class="comment">// 根据lps调整j</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">free</span>(lps); <span class="comment">// 释放内存</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">char</span> s1[<span class="number">256</span>]; <span class="comment">// 增大数组大小以容纳更长的字符串</span></span><br><span class="line">    <span class="type">char</span> s2[<span class="number">81</span>];</span><br><span class="line">    <span class="built_in">fgets</span>(s1, <span class="built_in">sizeof</span>(s1), stdin);</span><br><span class="line">    s1[<span class="built_in">strcspn</span>(s1, <span class="string">&quot;\n&quot;</span>)] = <span class="number">0</span>; <span class="comment">// 去掉换行符</span></span><br><span class="line">    <span class="built_in">fgets</span>(s2, <span class="built_in">sizeof</span>(s2), stdin);</span><br><span class="line">    s2[<span class="built_in">strcspn</span>(s2, <span class="string">&quot;\n&quot;</span>)] = <span class="number">0</span>; <span class="comment">// 去掉换行符</span></span><br><span class="line">    <span class="comment">// 持续删除子串直到找不到为止</span></span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">strstr</span>(s1, s2) != <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="built_in">KMPSearchAndDelete</span>(s1, s2); <span class="comment">// 查找并删除子串</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, s1); <span class="comment">// 输出结果</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/30/1.%E5%9B%BE%E7%89%87.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/qq.jpg">
+      <meta itemprop="name" content="瑞典厨师长">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="obstacle的个人空间">
+      <meta itemprop="description" content="不要温和地走进那个良夜">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | obstacle的个人空间">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/11/30/1.%E5%9B%BE%E7%89%87.html" class="post-title-link" itemprop="url">图片无法加载解决方法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-11-30 23:01:05" itemprop="dateCreated datePublished" datetime="2024-11-30T23:01:05+08:00">2024-11-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-04-27 17:27:50" itemprop="dateModified" datetime="2025-04-27T17:27:50+08:00">2025-04-27</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>340</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
+<h2 id="1-图片"><a href="#1-图片" class="headerlink" title="1.图片"></a>1.图片</h2><p>往typora插入图片，图片文件夹一定要和创建的.md文件夹放在同一个文件夹下。不然文件移动位置后图片会因找不到地址而消失</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k</span><br><span class="line">例如：![伊蕾娜](D:\blog\source\images\Elaina.jpg)</span><br></pre></td></tr></table></figure>
+
+<img src="/2024/11/30/1.%E5%9B%BE%E7%89%87/20240913_122405110_iOS.png" class="" title="20240913_122405110_iOS">
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>相信很多人尝试上面图片的插入方法会遇到在typora能正常显示图片，但在网页上图片却无法加载。这是因为上述地址如D:\blog\source\images\Elaina.jpg为本地地址，而hexo+github搭建的博客并不能访问本地地址所以自然无法成功。</p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>最简单粗暴的方法就是直接将图片拖到typora中，typora会直接创建博客文章同名的文件夹存放图片。但是就是感觉文章写多了有点乱乱的。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/21/typora%E5%8A%9F%E8%83%BD%E5%88%9D%E6%AD%A5%E5%B0%9D%E8%AF%95.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/qq.jpg">
+      <meta itemprop="name" content="瑞典厨师长">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="obstacle的个人空间">
+      <meta itemprop="description" content="不要温和地走进那个良夜">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | obstacle的个人空间">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/11/21/typora%E5%8A%9F%E8%83%BD%E5%88%9D%E6%AD%A5%E5%B0%9D%E8%AF%95.html" class="post-title-link" itemprop="url">typora测试尝试</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-11-21 23:41:42" itemprop="dateCreated datePublished" datetime="2024-11-21T23:41:42+08:00">2024-11-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-02-23 21:15:54" itemprop="dateModified" datetime="2025-02-23T21:15:54+08:00">2025-02-23</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>573</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="typora功能初步尝试"><a href="#typora功能初步尝试" class="headerlink" title="typora功能初步尝试"></a>typora功能初步尝试</h1><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><p>一级标题：ctrl+1或#<br>二级标题：ctrl+2或##<br>剩下的三级四级等就可以以此类推了</p>
+<h2 id="2-文字"><a href="#2-文字" class="headerlink" title="2.文字"></a>2.文字</h2><p>删除线：alt+shift+5    示例   ~~~~<br>加粗：ctrl+B 示例  <strong>加粗</strong><br>斜体：ctrl+I 示例  <em>斜体</em><br>下划线：ctrl+U 示例 <u>下划线</u><br>高亮：&#x3D;&#x3D;中间内容&#x3D;&#x3D;</p>
+<h2 id="3-表情包"><a href="#3-表情包" class="headerlink" title="3.表情包"></a>3.表情包</h2><p>:smile: :100: :heart:  快捷键:windows+；    </p>
+<h2 id="4-表格"><a href="#4-表格" class="headerlink" title="4.表格"></a>4.表格</h2><table>
+<thead>
+<tr>
+<th>week2</th>
+<th>week3</th>
+<th>week4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>快捷键:ctrl+t</p>
+<h2 id="5-引用"><a href="#5-引用" class="headerlink" title="5.引用"></a>5.引用</h2><blockquote>
+<p>一级应用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>瑞典厨师长</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="6-代码"><a href="#6-代码" class="headerlink" title="6.代码"></a>6.代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">插入不确定代码，快捷键：ctrl+shift+k</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-分隔线"><a href="#7-分隔线" class="headerlink" title="7.分隔线"></a>7.分隔线</h2><hr>
+<p>***  然后回车</p>
+<h2 id="8-源代码模式"><a href="#8-源代码模式" class="headerlink" title="8.源代码模式"></a>8.源代码模式</h2><p>ctrl+&#x2F;,退出一样</p>
+<h2 id="9-跳转"><a href="#9-跳转" class="headerlink" title="9.跳转"></a>9.跳转</h2><h4 id="1-跳转到外部"><a href="#1-跳转到外部" class="headerlink" title="1.跳转到外部"></a>1.跳转到外部</h4><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">bilibili</a><br><a href="obstacle.top">屑魔女的个人博客</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">快捷键：ctrl+k      格式[提示文字](网址)</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-跳转到内部"><a href="#2-跳转到内部" class="headerlink" title="2.跳转到内部"></a>2.跳转到内部</h4><p>[博客](#<a target="_blank" rel="noopener" href="http://localhost:4000/2024/11/03/blog/">my first blog</a>)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">快捷键：CTRL+k     [提示文字](#标题)</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-自动链接"><a href="#10-自动链接" class="headerlink" title="10.自动链接"></a>10.自动链接</h2><p>使用&lt;&gt;然后括号里链接会自动转化为超链接</p>
+<h2 id="11-图片"><a href="#11-图片" class="headerlink" title="11.图片"></a>11.图片</h2><p>往typora插入图片，图片文件夹一定要和创建的.md文件夹放在同一个文件夹下。不然文件移动位置后图片会因找不到地址而消失</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式！[提示文字](图片地址)      即先！然后快捷键ctrl+k</span><br><span class="line">例如：![伊蕾娜](D:\blog\source\images\Elaina.jpg)</span><br></pre></td></tr></table></figure>
+
+<p><img src="/%5Cimages%5CElaina.jpg" alt="伊蕾娜"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/21/typora%E6%B5%8B%E8%AF%95.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -899,347 +1262,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>尝试用typora写一篇博客，此文章仅做测试使用</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/27/RSA%E4%B8%ADleak%E9%97%AE%E9%A2%98.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/qq.jpg">
-      <meta itemprop="name" content="瑞典厨师长">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="obstacle的个人空间">
-      <meta itemprop="description" content="不要温和地走进那个良夜">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | obstacle的个人空间">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/02/27/RSA%E4%B8%ADleak%E9%97%AE%E9%A2%98.html" class="post-title-link" itemprop="url">RSA中leak问题</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2025-02-27 20:37:21" itemprop="dateCreated datePublished" datetime="2025-02-27T20:37:21+08:00">2025-02-27</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-04-27 14:08:13" itemprop="dateModified" datetime="2025-04-27T14:08:13+08:00">2025-04-27</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>7.2k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>13 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="1-RSA中leak-p-q-n-q-p-n问题"><a href="#1-RSA中leak-p-q-n-q-p-n问题" class="headerlink" title="1.RSA中leak&#x3D;p^q%n + q^p%n问题"></a>1.RSA中leak&#x3D;p^q%n + q^p%n问题</h1><p>以ISCTF2024crypto蓝鲨的费马这道题为例子讲解自己学到的一个解决方法</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> libnum</span><br><span class="line"><span class="keyword">import</span> gmpy2</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line">flag=<span class="string">b&#x27;ISCTF&#123;********&#125;&#x27;</span></span><br><span class="line">m=bytes_to_long(flag)</span><br><span class="line">p=libnum.generate_prime(<span class="number">1024</span>)</span><br><span class="line">q=libnum.generate_prime(<span class="number">1024</span>)</span><br><span class="line">n=p*q</span><br><span class="line">e=<span class="number">0x10001</span></span><br><span class="line">c=<span class="built_in">pow</span>(m,e,n)</span><br><span class="line">d=inverse(e,(p-<span class="number">1</span>)*(q-<span class="number">1</span>))</span><br><span class="line">leak = (d+(<span class="built_in">pow</span>(p,q,n)+<span class="built_in">pow</span>(q,p,n)))%n</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c=&quot;</span>, c)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;n=&quot;</span>, n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;leak=&quot;</span>, leak)</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">c= 8989289659072309605793417141528767265266446236550650613514493589798432446586991233583435051268377555448062724563967695425657559568596372723980081067589103919296476501677424322525079257328042851349095575718347302884996529329066703597604694781627113384086536158793653551546025090807063130353950841148535682974762381044510423210397947080397718080033363000599995100765708244828566873128882878164321817156170983773105693537799111546309755235573342169431295776881832991533489235535981382958295960435126843833532716436804949502318851112378495533302256759494573250596802016112398817816155228378089079806308296705261876583997</span></span><br><span class="line"><span class="string">n= 13424018200035368603483071894166480724482952594135293395398366121467209427078817227870501294732149372214083432516059795712917132804111155585926502759533393295089100965059106772393520277313184519450478832376508528256865861027444446718552169503579478134286009893965458507369983396982525906466073384013443851551139147777507283791250268462136554061959016630318688169168797939873600493494258467352326974238472394214986505312411729432927489878418792288365594455065912126527908319239444514857325441614280498882524432151918146061570116187524918358453036228204087993064505391742062288050068745930452767100091519798860487150247</span></span><br><span class="line"><span class="string">leak= 9192002086528025412361053058922669469031188193149143635074798633855112230489479254740324032262690315813650428270911079121913869290893574897752990491429582640499542165616254566396564016734157323265631446079744216458719690853526969359930225042993006404843355356540487296896949431969541367144841985153231095140361069256753593550199420993461786814074270171257117410848796614931926182811404655619662690700351986753661502438299236428991412206196135090756862851230228396476709412020941670878645924203989895008014836619321109848938770269989596541278600166088022166386213646074764712810133558692545401032391239330088256431881</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>$1.\text{leak} &#x3D; d + p + q$  其中 leak 简写为 L</p>
-<p>$2. m &#x3D; \text{pow}(c, d, n)，即 m &#x3D; c^d \mod n.$</p>
-<p>$3.d &#x3D; L - (p + q) .$</p>
-<p>根据欧拉函数的定义：$\phi &#x3D; (p - 1)(q - 1) &#x3D; pq - p - q + 1$</p>
-<p>由于  n &#x3D; pq ，因此：$\phi &#x3D; n + 1 - (p + q)$</p>
-<p>根据欧拉定理:$c^\phi \equiv1 \mod n$</p>
-<p>代入 $\phi$的表达式：$c^{n + 1 - (p + q)} \equiv 1 \mod n$</p>
-<p>可以进一步推导：$c^{n + 1} \equiv c^{p + q} \mod n$</p>
-<p>因此:$c^{n + 1} \equiv c^{p + q} \mod n$</p>
-<p>已知  d &#x3D; L - (p + q) ，代入 $c^d  \mod n &#x3D; m$ ：</p>
-<p>$c^{L - (p + q)} \mod n &#x3D; m$</p>
-<p>根据前面的推导：$c^{n + 1} \equiv c^{p + q} \mod n$</p>
-<p>因此：$c^{L - (n + 1)} \mod n &#x3D; m$</p>
-<p>$m &#x3D; \text{pow}(c, L - n - 1, n)$</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">c= <span class="number">8989289659072309605793417141528767265266446236550650613514493589798432446586991233583435051268377555448062724563967695425657559568596372723980081067589103919296476501677424322525079257328042851349095575718347302884996529329066703597604694781627113384086536158793653551546025090807063130353950841148535682974762381044510423210397947080397718080033363000599995100765708244828566873128882878164321817156170983773105693537799111546309755235573342169431295776881832991533489235535981382958295960435126843833532716436804949502318851112378495533302256759494573250596802016112398817816155228378089079806308296705261876583997</span></span><br><span class="line">n= <span class="number">13424018200035368603483071894166480724482952594135293395398366121467209427078817227870501294732149372214083432516059795712917132804111155585926502759533393295089100965059106772393520277313184519450478832376508528256865861027444446718552169503579478134286009893965458507369983396982525906466073384013443851551139147777507283791250268462136554061959016630318688169168797939873600493494258467352326974238472394214986505312411729432927489878418792288365594455065912126527908319239444514857325441614280498882524432151918146061570116187524918358453036228204087993064505391742062288050068745930452767100091519798860487150247</span></span><br><span class="line">leak= <span class="number">9192002086528025412361053058922669469031188193149143635074798633855112230489479254740324032262690315813650428270911079121913869290893574897752990491429582640499542165616254566396564016734157323265631446079744216458719690853526969359930225042993006404843355356540487296896949431969541367144841985153231095140361069256753593550199420993461786814074270171257117410848796614931926182811404655619662690700351986753661502438299236428991412206196135090756862851230228396476709412020941670878645924203989895008014836619321109848938770269989596541278600166088022166386213646074764712810133558692545401032391239330088256431881</span></span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> long_to_bytes, inverse</span><br><span class="line">m=<span class="built_in">pow</span>(c,leak-n-<span class="number">1</span>,n)</span><br><span class="line"><span class="built_in">print</span>(m)</span><br><span class="line">flag=long_to_bytes(m)</span><br><span class="line"><span class="built_in">print</span>(flag)</span><br><span class="line"><span class="comment">#b&#x27;ISCTF&#123;u_got_it&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="2-RSA中dp泄露-已知dp-e-n-c"><a href="#2-RSA中dp泄露-已知dp-e-n-c" class="headerlink" title="2.RSA中dp泄露(已知dp,e,n,c)"></a>2.RSA中dp泄露(已知dp,e,n,c)</h1><p>dp&#x3D;d mod (p-1)</p>
-<p>dq&#x3D;d mod (q-1)</p>
-<p>因为$\phi(n)&#x3D;(p-1)*(q-1)$,这里也出现了（p-1）所以这几个存在一定的联系，一旦泄露可能会造成安全隐患。</p>
-<p>题目部分数据</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gmpy2 <span class="keyword">as</span> gp</span><br><span class="line"></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">n = <span class="number">248254007851526241177721526698901802985832766176221609612258877371620580060433101538328030305219918697643619814200930679612109885533801335348445023751670478437073055544724280684733298051599167660303645183146161497485358633681492129668802402065797789905550489547645118787266601929429724133167768465309665906113</span></span><br><span class="line">dp = <span class="number">905074498052346904643025132879518330691925174573054004621877253318682675055421970943552016695528560364834446303196939207056642927148093290374440210503657</span></span><br><span class="line"></span><br><span class="line">c = <span class="number">140423670976252696807533673586209400575664282100684119784203527124521188996403826597436883766041879067494280957410201958935737360380801845453829293997433414188838725751796261702622028587211560353362847191060306578510511380965162133472698713063592621028959167072781482562673683090590521214218071160287665180751</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>同样先进行推导，化简成为一个可以靠程序解决的式子。</p>
-<p>1.dp&#x3D;d mod(p-1)</p>
-<p>2.两边同乘e,$dp<em>e \equiv d</em>e \mod(p-1)$</p>
-<p>3.$ed &#x3D;k_1*(p-1)+dp<em>e,而ed \equiv1 \mod\phi(n),\phi(n)&#x3D;(p-1)</em>(q-1)$</p>
-<p>4.$k_1*(p-1)+dp<em>e&#x3D;1+k_2</em>(p-1)*(q-1)$</p>
-<p>5.接下来就合并同类项解方程</p>
-<p>6.化简得$dp*e&#x3D;(k_2(q-1)-k_1)(p-1)+1$,令$k_2(q-1)-k_1&#x3D;X$</p>
-<p>7.$dp*e&#x3D;X(p-1)+1$,首先dp&lt;(p-1),所以X&lt;e.</p>
-<p>8.$p-1&#x3D;\frac{dp*e-1}{X}$,因为X的范围已知直接遍历爆破即可求出p-1的值从而后续就变为常规RSA问题了</p>
-<p>exp:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gmpy2 <span class="keyword">as</span> gp</span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">n = <span class="number">248254007851526241177721526698901802985832766176221609612258877371620580060433101538328030305219918697643619814200930679612109885533801335348445023751670478437073055544724280684733298051599167660303645183146161497485358633681492129668802402065797789905550489547645118787266601929429724133167768465309665906113</span></span><br><span class="line">dp = <span class="number">905074498052346904643025132879518330691925174573054004621877253318682675055421970943552016695528560364834446303196939207056642927148093290374440210503657</span></span><br><span class="line"></span><br><span class="line">c = <span class="number">140423670976252696807533673586209400575664282100684119784203527124521188996403826597436883766041879067494280957410201958935737360380801845453829293997433414188838725751796261702622028587211560353362847191060306578510511380965162133472698713063592621028959167072781482562673683090590521214218071160287665180751</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,e):                   </span><br><span class="line">    <span class="keyword">if</span>(dp*e-<span class="number">1</span>)%i == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">if</span> n%(((dp*e-<span class="number">1</span>)//i)+<span class="number">1</span>) == <span class="number">0</span>:   </span><br><span class="line">            p=((dp*e-<span class="number">1</span>)//i)+<span class="number">1</span></span><br><span class="line">            q=n//(((dp*e-<span class="number">1</span>)//i)+<span class="number">1</span>)</span><br><span class="line">            phi=(q-<span class="number">1</span>)*(p-<span class="number">1</span>)            </span><br><span class="line">            d=gp.invert(e,phi)         </span><br><span class="line">            m=<span class="built_in">pow</span>(c,d,n)               </span><br><span class="line">                                     </span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(long_to_bytes(m))  </span><br><span class="line">//flag&#123;wow_leaking_dp_breaks_rsa?_98924743502&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="3-RSA中dp-dq泄露（dp-dq-c-p-q"><a href="#3-RSA中dp-dq泄露（dp-dq-c-p-q" class="headerlink" title="3.RSA中dp,dq泄露（dp,dq,c,p,q)"></a>3.RSA中dp,dq泄露（dp,dq,c,p,q)</h1><p>未完待续</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/30/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/qq.jpg">
-      <meta itemprop="name" content="瑞典厨师长">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="obstacle的个人空间">
-      <meta itemprop="description" content="不要温和地走进那个良夜">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | obstacle的个人空间">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/03/30/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86.html" class="post-title-link" itemprop="url">中国剩余定理</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2025-03-30 23:03:17" itemprop="dateCreated datePublished" datetime="2025-03-30T23:03:17+08:00">2025-03-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-04-04 00:40:41" itemprop="dateModified" datetime="2025-04-04T00:40:41+08:00">2025-04-04</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.1k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="中国剩余定理（CRT"><a href="#中国剩余定理（CRT" class="headerlink" title="中国剩余定理（CRT)"></a>中国剩余定理（CRT)</h1><p>在做题时遇到离散对数问题中碰到很多CRT相关知识，但最初了解比较浅显，现在准备再稍微细致的回顾一下。</p>
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>中国剩余定理 (Chinese Remainder Theorem, CRT) 可求解如下形式的一元线性同余方程组（其中$n_1$ $n_2$ ······$n_k$ 两两互质)：</p>
-<p>$$<br>\begin{cases} x\equiv a_1 \pmod{n_1}\\ x\equiv a_2 \pmod{n_2}\\ x\equiv a_3 \pmod{n_3}\\ ·····\\ ·····\\ ·····\\ x\equiv a_k \pmod{n_k} \end{cases}<br>$$</p>
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><h3 id="1-计算所有模数的积-n；n-n-1-n-2-···n-k"><a href="#1-计算所有模数的积-n；n-n-1-n-2-···n-k" class="headerlink" title="1.计算所有模数的积 n；n&#x3D;$n_1*n_2*···n_k$"></a>1.计算所有模数的积 n；n&#x3D;$n_1*n_2*···n_k$</h3><h3 id="2-对于第-i个方程"><a href="#2-对于第-i个方程" class="headerlink" title="2.对于第 i个方程:"></a>2.对于第 i个方程:</h3><p>​		a.计算$m_i&#x3D;n&#x2F;n_i$;</p>
-<p>​		b.计算$m_i在模n_i意义下的逆元m_i^{-1}$;      逆元$m_im_i^{-1}\equiv 1\pmod{n_i}$</p>
-<p>​		c.计算$c_i&#x3D;m_im_i^{-1}$</p>
-<h3 id="3-方程组在模n意义下的唯一解为-x-sum-i-1-k-a-ic-i-pmod-n"><a href="#3-方程组在模n意义下的唯一解为-x-sum-i-1-k-a-ic-i-pmod-n" class="headerlink" title="3.方程组在模n意义下的唯一解为$x&#x3D;\sum_{i&#x3D;1}^{k}{a_ic_i}\pmod{n}$"></a>3.方程组在模n意义下的唯一解为$x&#x3D;\sum_{i&#x3D;1}^{k}{a_ic_i}\pmod{n}$</h3><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">CRT</span>(<span class="params">k, a, r</span>):</span><br><span class="line">    n = <span class="number">1</span></span><br><span class="line">    ans = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, k + <span class="number">1</span>):</span><br><span class="line">        n = n * r[i]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, k + <span class="number">1</span>):</span><br><span class="line">        m = n // r[i]</span><br><span class="line">        b =y=<span class="number">0</span></span><br><span class="line">        exgcd(m, r[i], b, y)  <span class="comment"># b * m mod r[i] = 1  exgcd是另一个用来求逆元的自定义函数未标</span></span><br><span class="line">        ans = (ans + a[i] * m * b % n) % n</span><br><span class="line">    <span class="keyword">return</span> (ans % n + n) % n</span><br></pre></td></tr></table></figure>
-
-<p>当然了上述代码可能更多用于算法题中，密码学里python有很多强大的库可以直接调用CRT</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sympy.ntheory.modular <span class="keyword">import</span> crt</span><br><span class="line">a_list=[a1,a2,a3,····ak]</span><br><span class="line">n_list=[n1,n2,n3,····nk]</span><br><span class="line">x,n=crt(n_list,c_list)    //crt会返回一个元组（x,N）其中x就是我们所需要的通解，n就是所有模数（n1,n2等）的乘积</span><br></pre></td></tr></table></figure>
-
-<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>虽然说密码学里直接秒了，但我还是觉得搞清背后逻辑会更有理解。</p>
-<p>$当i\neq j时，有m_j\equiv 0 \pmod{n_i}$</p>
-<p>$这是因为m_j&#x3D;n&#x2F;n_j$</p>
-<p>$所以c_j \equiv 0 \pmod{n_i},c_i\equiv 1 \pmod{n_i} $</p>
-<p>$ x \equiv \sum_{j&#x3D;1}^{k}{a_jc_j} \equiv a_ic_i\equiv a_i\pmod{n_i}$</p>
-<p>$对于任意的i的取值均符合x\equiv a_i \pmod{n_i}$</p>
-<p>所以上述方法可行</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/05/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/qq.jpg">
-      <meta itemprop="name" content="瑞典厨师长">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="obstacle的个人空间">
-      <meta itemprop="description" content="不要温和地走进那个良夜">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | obstacle的个人空间">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/04/05/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html" class="post-title-link" itemprop="url">近期密码复现学习</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2025-04-05 01:09:25" itemprop="dateCreated datePublished" datetime="2025-04-05T01:09:25+08:00">2025-04-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-04-06 23:49:17" itemprop="dateModified" datetime="2025-04-06T23:49:17+08:00">2025-04-06</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>5k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>9 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="1-univariate"><a href="#1-univariate" class="headerlink" title="1.univariate"></a>1.univariate</h3><p>题目</p>
-<p>描述</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I love univariate polynomials...</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> getPrime, bytes_to_long</span><br><span class="line"><span class="keyword">from</span> secret <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line">p = getPrime(<span class="number">512</span>)</span><br><span class="line">q = getPrime(<span class="number">512</span>)</span><br><span class="line">n = p*q</span><br><span class="line"></span><br><span class="line">m = bytes_to_long(flag.encode())</span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="built_in">pow</span>(m,e,n)</span><br><span class="line"></span><br><span class="line">P.&lt;x&gt; = PolynomialRing(ZZ)</span><br><span class="line">x = P.gens()[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">terms = [x**i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">137</span>)]</span><br><span class="line"></span><br><span class="line">T = RealDistribution(<span class="string">&#x27;gaussian&#x27;</span>, <span class="number">2</span>)</span><br><span class="line">coefs = [<span class="built_in">round</span>(T.get_random_element()) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(terms))]</span><br><span class="line"></span><br><span class="line">f = <span class="built_in">sum</span>([term*coef <span class="keyword">for</span> term,coef <span class="keyword">in</span> <span class="built_in">zip</span>(terms,coefs)])</span><br><span class="line">w = <span class="built_in">pow</span>(<span class="number">2</span>,f(p),n)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;out.txt&#x27;</span>, <span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;n = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;e = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;c = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;f = &#125;</span>\n&#x27;</span>)</span><br><span class="line">    file.write(<span class="string">f&#x27;<span class="subst">&#123;w = &#125;</span>\n&#x27;</span>)</span><br><span class="line">n = <span class="number">151510886600487624888537926759375027338192556324330182365859112926770109752858284462159488504727238764120612593911292154858008775463001345641311051184326218974685701057787672193003745574697137968457609530135969033403360561333863943223407215732526198691453110628598401583407984162075630768455052482583101773637</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="number">74468088842131664480394073891613024559473817230309311952320910922177130990996003196602702376336093457990873018154873841543712071422931358036924937335888815556064840522100618318507080665149514719351519909821468981883880543654015414713368018500970500498936910817336501949914675483148862843329341461828563728789</span></span><br><span class="line">f = -x^<span class="number">136</span> + x^<span class="number">135</span> - <span class="number">2</span>*x^<span class="number">134</span> - <span class="number">4</span>*x^<span class="number">132</span> + <span class="number">2</span>*x^<span class="number">130</span> - x^<span class="number">128</span> - <span class="number">3</span>*x^<span class="number">127</span> + <span class="number">4</span>*x^<span class="number">126</span> + <span class="number">3</span>*x^<span class="number">125</span> + <span class="number">3</span>*x^<span class="number">124</span> + x^<span class="number">123</span> + x^<span class="number">122</span> - <span class="number">5</span>*x^<span class="number">121</span> - <span class="number">3</span>*x^<span class="number">120</span> - x^<span class="number">119</span> - x^<span class="number">118</span> + x^<span class="number">117</span> + x^<span class="number">116</span> - <span class="number">4</span>*x^<span class="number">114</span> - <span class="number">2</span>*x^<span class="number">112</span> + <span class="number">2</span>*x^<span class="number">110</span> + x^<span class="number">109</span> + <span class="number">2</span>*x^<span class="number">108</span> - <span class="number">2</span>*x^<span class="number">107</span> + <span class="number">3</span>*x^<span class="number">106</span> - x^<span class="number">104</span> + <span class="number">2</span>*x^<span class="number">103</span> - x^<span class="number">102</span> + x^<span class="number">101</span> - <span class="number">2</span>*x^<span class="number">100</span> + <span class="number">3</span>*x^<span class="number">99</span> - <span class="number">2</span>*x^<span class="number">98</span> - x^<span class="number">97</span> - x^<span class="number">96</span> - <span class="number">3</span>*x^<span class="number">95</span> - x^<span class="number">94</span> - <span class="number">2</span>*x^<span class="number">93</span> - <span class="number">2</span>*x^<span class="number">91</span> + <span class="number">3</span>*x^<span class="number">90</span> - <span class="number">2</span>*x^<span class="number">89</span> - <span class="number">2</span>*x^<span class="number">88</span> + x^<span class="number">86</span> + x^<span class="number">85</span> - <span class="number">2</span>*x^<span class="number">84</span> - <span class="number">3</span>*x^<span class="number">83</span> + <span class="number">2</span>*x^<span class="number">82</span> + <span class="number">3</span>*x^<span class="number">79</span> - x^<span class="number">76</span> + <span class="number">2</span>*x^<span class="number">75</span> - x^<span class="number">74</span> + x^<span class="number">71</span> - <span class="number">5</span>*x^<span class="number">70</span> - x^<span class="number">67</span> + x^<span class="number">66</span> + x^<span class="number">65</span> + x^<span class="number">63</span> - x^<span class="number">61</span> + x^<span class="number">59</span> - <span class="number">2</span>*x^<span class="number">58</span> + <span class="number">6</span>*x^<span class="number">56</span> + x^<span class="number">55</span> + <span class="number">3</span>*x^<span class="number">54</span> - x^<span class="number">53</span> + <span class="number">2</span>*x^<span class="number">52</span> + <span class="number">3</span>*x^<span class="number">51</span> + x^<span class="number">50</span> + <span class="number">2</span>*x^<span class="number">49</span> + <span class="number">3</span>*x^<span class="number">47</span> + <span class="number">2</span>*x^<span class="number">46</span> - <span class="number">4</span>*x^<span class="number">45</span> + <span class="number">3</span>*x^<span class="number">44</span> + <span class="number">3</span>*x^<span class="number">43</span> - x^<span class="number">42</span> - <span class="number">2</span>*x^<span class="number">40</span> - <span class="number">5</span>*x^<span class="number">39</span> + x^<span class="number">38</span> + x^<span class="number">37</span> + <span class="number">2</span>*x^<span class="number">36</span> + <span class="number">2</span>*x^<span class="number">35</span> + x^<span class="number">34</span> - x^<span class="number">33</span> + x^<span class="number">32</span> - <span class="number">5</span>*x^<span class="number">31</span> + x^<span class="number">30</span> + x^<span class="number">29</span> + <span class="number">2</span>*x^<span class="number">28</span> - <span class="number">2</span>*x^<span class="number">27</span> + <span class="number">3</span>*x^<span class="number">26</span> - x^<span class="number">25</span> - x^<span class="number">23</span> - x^<span class="number">22</span> - <span class="number">3</span>*x^<span class="number">21</span> + <span class="number">2</span>*x^<span class="number">20</span> - x^<span class="number">19</span> - x^<span class="number">17</span> + <span class="number">2</span>*x^<span class="number">16</span> - <span class="number">2</span>*x^<span class="number">15</span> - <span class="number">2</span>*x^<span class="number">14</span> - <span class="number">2</span>*x^<span class="number">13</span> - <span class="number">2</span>*x^<span class="number">12</span> + <span class="number">2</span>*x^<span class="number">11</span> - <span class="number">2</span>*x^<span class="number">9</span> + <span class="number">3</span>*x^<span class="number">8</span> - <span class="number">4</span>*x^<span class="number">7</span> + <span class="number">2</span>*x^<span class="number">6</span> - <span class="number">2</span>*x^<span class="number">5</span> - <span class="number">5</span>*x^<span class="number">4</span> - <span class="number">3</span>*x^<span class="number">3</span> + <span class="number">5</span>*x^<span class="number">2</span> - <span class="number">2</span></span><br><span class="line">w = <span class="number">86258923706084556733053644452456806418792871483898871193707132372143291757396867798433017660985422614532352743658877188445517898648519256573663299464811234251773841741466280567326570167017786562044635756348763128567054349991798640926148221279889174229551074668002853442182664523748992260830782387602048836221</span></span><br></pre></td></tr></table></figure>
-
-<p>思路：<br>根据题目描述univariate polynomials（单变量多项式），题目中也是反复利用p，所以可以从p开始下手。  从    w &#x3D; pow(2,f(p),n)开始，这里也是我学习中感觉非常巧妙的地方，先了解前提知识费马小定理gcd(a,p)&#x3D;1,$a^{p-1}\equiv 1\pmod{p}$,于是接下来就要构造出p-1。对f(p)模(p-1),就有f(p) &#x3D; g(p)(p-1) + k。然后对w取p的模数。<br>$$<br>w &#x3D; 2^{f(p)} &#x3D; 2^{g(p)(p-1) + k} &#x3D; \left(2^{g(p)(p-1)}\right) \cdot \left(2^k\right)&#x3D;2^k \pmod{p}<br>$$<br>所以w除以p的模数就为2^k, 那么$w-2^{k}$​就为p的倍数，然后再与n取最大公约数就可以找出p从而解决RSA问题。即gcd(w-2^k,n).</p>
-<p>代码(<strong>错误的</strong>)</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">P.&lt;x&gt; = PolynomialRing(ZZ)</span><br><span class="line">x = P.gens()[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">n = <span class="number">151510886600487624888537926759375027338192556324330182365859112926770109752858284462159488504727238764120612593911292154858008775463001345641311051184326218974685701057787672193003745574697137968457609530135969033403360561333863943223407215732526198691453110628598401583407984162075630768455052482583101773637</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="number">74468088842131664480394073891613024559473817230309311952320910922177130990996003196602702376336093457990873018154873841543712071422931358036924937335888815556064840522100618318507080665149514719351519909821468981883880543654015414713368018500970500498936910817336501949914675483148862843329341461828563728789</span></span><br><span class="line">f = -x^<span class="number">136</span> + x^<span class="number">135</span> - <span class="number">2</span>*x^<span class="number">134</span> - <span class="number">4</span>*x^<span class="number">132</span> + <span class="number">2</span>*x^<span class="number">130</span> - x^<span class="number">128</span> - <span class="number">3</span>*x^<span class="number">127</span> + <span class="number">4</span>*x^<span class="number">126</span> + <span class="number">3</span>*x^<span class="number">125</span> + <span class="number">3</span>*x^<span class="number">124</span> + x^<span class="number">123</span> + x^<span class="number">122</span> - <span class="number">5</span>*x^<span class="number">121</span> - <span class="number">3</span>*x^<span class="number">120</span> - x^<span class="number">119</span> - x^<span class="number">118</span> + x^<span class="number">117</span> + x^<span class="number">116</span> - <span class="number">4</span>*x^<span class="number">114</span> - <span class="number">2</span>*x^<span class="number">112</span> + <span class="number">2</span>*x^<span class="number">110</span> + x^<span class="number">109</span> + <span class="number">2</span>*x^<span class="number">108</span> - <span class="number">2</span>*x^<span class="number">107</span> + <span class="number">3</span>*x^<span class="number">106</span> - x^<span class="number">104</span> + <span class="number">2</span>*x^<span class="number">103</span> - x^<span class="number">102</span> + x^<span class="number">101</span> - <span class="number">2</span>*x^<span class="number">100</span> + <span class="number">3</span>*x^<span class="number">99</span> - <span class="number">2</span>*x^<span class="number">98</span> - x^<span class="number">97</span> - x^<span class="number">96</span> - <span class="number">3</span>*x^<span class="number">95</span> - x^<span class="number">94</span> - <span class="number">2</span>*x^<span class="number">93</span> - <span class="number">2</span>*x^<span class="number">91</span> + <span class="number">3</span>*x^<span class="number">90</span> - <span class="number">2</span>*x^<span class="number">89</span> - <span class="number">2</span>*x^<span class="number">88</span> + x^<span class="number">86</span> + x^<span class="number">85</span> - <span class="number">2</span>*x^<span class="number">84</span> - <span class="number">3</span>*x^<span class="number">83</span> + <span class="number">2</span>*x^<span class="number">82</span> + <span class="number">3</span>*x^<span class="number">79</span> - x^<span class="number">76</span> + <span class="number">2</span>*x^<span class="number">75</span> - x^<span class="number">74</span> + x^<span class="number">71</span> - <span class="number">5</span>*x^<span class="number">70</span> - x^<span class="number">67</span> + x^<span class="number">66</span> + x^<span class="number">65</span> + x^<span class="number">63</span> - x^<span class="number">61</span> + x^<span class="number">59</span> - <span class="number">2</span>*x^<span class="number">58</span> + <span class="number">6</span>*x^<span class="number">56</span> + x^<span class="number">55</span> + <span class="number">3</span>*x^<span class="number">54</span> - x^<span class="number">53</span> + <span class="number">2</span>*x^<span class="number">52</span> + <span class="number">3</span>*x^<span class="number">51</span> + x^<span class="number">50</span> + <span class="number">2</span>*x^<span class="number">49</span> + <span class="number">3</span>*x^<span class="number">47</span> + <span class="number">2</span>*x^<span class="number">46</span> - <span class="number">4</span>*x^<span class="number">45</span> + <span class="number">3</span>*x^<span class="number">44</span> + <span class="number">3</span>*x^<span class="number">43</span> - x^<span class="number">42</span> - <span class="number">2</span>*x^<span class="number">40</span> - <span class="number">5</span>*x^<span class="number">39</span> + x^<span class="number">38</span> + x^<span class="number">37</span> + <span class="number">2</span>*x^<span class="number">36</span> + <span class="number">2</span>*x^<span class="number">35</span> + x^<span class="number">34</span> - x^<span class="number">33</span> + x^<span class="number">32</span> - <span class="number">5</span>*x^<span class="number">31</span> + x^<span class="number">30</span> + x^<span class="number">29</span> + <span class="number">2</span>*x^<span class="number">28</span> - <span class="number">2</span>*x^<span class="number">27</span> + <span class="number">3</span>*x^<span class="number">26</span> - x^<span class="number">25</span> - x^<span class="number">23</span> - x^<span class="number">22</span> - <span class="number">3</span>*x^<span class="number">21</span> + <span class="number">2</span>*x^<span class="number">20</span> - x^<span class="number">19</span> - x^<span class="number">17</span> + <span class="number">2</span>*x^<span class="number">16</span> - <span class="number">2</span>*x^<span class="number">15</span> - <span class="number">2</span>*x^<span class="number">14</span> - <span class="number">2</span>*x^<span class="number">13</span> - <span class="number">2</span>*x^<span class="number">12</span> + <span class="number">2</span>*x^<span class="number">11</span> - <span class="number">2</span>*x^<span class="number">9</span> + <span class="number">3</span>*x^<span class="number">8</span> - <span class="number">4</span>*x^<span class="number">7</span> + <span class="number">2</span>*x^<span class="number">6</span> - <span class="number">2</span>*x^<span class="number">5</span> - <span class="number">5</span>*x^<span class="number">4</span> - <span class="number">3</span>*x^<span class="number">3</span> + <span class="number">5</span>*x^<span class="number">2</span> - <span class="number">2</span></span><br><span class="line">w = <span class="number">86258923706084556733053644452456806418792871483898871193707132372143291757396867798433017660985422614532352743658877188445517898648519256573663299464811234251773841741466280567326570167017786562044635756348763128567054349991798640926148221279889174229551074668002853442182664523748992260830782387602048836221</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">k = f % (x-<span class="number">1</span>)</span><br><span class="line">k_int=ZZ(k)</span><br><span class="line">q = GCD(w -<span class="number">2</span>^k_int, n)</span><br><span class="line">p = n // q</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(long_to_bytes(<span class="built_in">int</span>(<span class="built_in">pow</span>(c, inverse(e, (p-<span class="number">1</span>)*(q-<span class="number">1</span>)), n))))</span><br></pre></td></tr></table></figure>
-
-<p>代码报错了，检查大概知道了原因在于k的值最后是负数，所以直接2^k不行。</p>
-<p>正确部分</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">k = f % (x-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">p = GCD(w * <span class="built_in">pow</span>(<span class="number">2</span>, -k, n) - <span class="number">1</span>, n)</span><br><span class="line">q = n // p</span><br><span class="line"><span class="comment">#b&#x27;ictf&#123;p-1_g0es_aB$olU7eLy_w1lD!!!&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>解释：当k是负数时， $2^{k}\pmod{n}$实际上是$2^{-\lvert k\rvert }\pmod{n}$的模逆元。这是因为指数运算是周期性的，且模逆元可以看作是将指数“翻转”到模数的范围内。pow(2, -k, n) 计算的是 $2^{k}\pmod{n}$ 的模逆元。如果 k是负数，这意味着我们正在寻找一个数 <em>y</em> 使得 $2^{k}*y\equiv 1\pmod{n}$，然后乘上w再减1就是与n有共同因子。勉强理解是这样，但我数学这方面并未深入研究，所以个人感觉纠错推导过程有点牵强，日后有新理解再做修改吧。</p>
 
       
     </div>
