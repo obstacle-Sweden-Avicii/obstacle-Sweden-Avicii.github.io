@@ -19,26 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":false,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="不要温和地走进那个良夜">
-<meta property="og:type" content="website">
-<meta property="og:title" content="obstacle的个人空间">
-<meta property="og:url" content="http://example.com/tags/crypto/index.html">
+    <meta name="description" content="vscode配置easyx前言：因为程序设计的作业要用到easyx图形库，又因为本人习惯用vscode,所以尝试在vscode中安装easyx但是路途确实有点艰辛，虽然最后回顾过程其实也很简单。 配置1.安装必要文件参考https:&#x2F;&#x2F;codebus.cn&#x2F;bestans&#x2F;easyx-for-mingw，下载网址中的压缩包然后按照网址所说将压缩包中include的头文件和lib64的库文件拷贝到m">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vscode安装easyx库">
+<meta property="og:url" content="http://example.com/2025/05/23/vscode%E9%85%8D%E7%BD%AEeasyx.html">
 <meta property="og:site_name" content="obstacle的个人空间">
-<meta property="og:description" content="不要温和地走进那个良夜">
+<meta property="og:description" content="vscode配置easyx前言：因为程序设计的作业要用到easyx图形库，又因为本人习惯用vscode,所以尝试在vscode中安装easyx但是路途确实有点艰辛，虽然最后回顾过程其实也很简单。 配置1.安装必要文件参考https:&#x2F;&#x2F;codebus.cn&#x2F;bestans&#x2F;easyx-for-mingw，下载网址中的压缩包然后按照网址所说将压缩包中include的头文件和lib64的库文件拷贝到m">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-05-23T13:30:21.000Z">
+<meta property="article:modified_time" content="2025-05-23T13:34:10.460Z">
 <meta property="article:author" content="瑞典厨师长">
-<meta property="article:tag" content="c语言,Linux,python,crypto密码学">
+<meta property="article:tag" content="vscode">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/tags/crypto/">
+<link rel="canonical" href="http://example.com/2025/05/23/vscode%E9%85%8D%E7%BD%AEeasyx.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/crypto/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/05/23/vscode%E9%85%8D%E7%BD%AEeasyx.html","path":"2025/05/23/vscode配置easyx.html","title":"vscode安装easyx库"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签: crypto | obstacle的个人空间</title>
+<title>vscode安装easyx库 | obstacle的个人空间</title>
   
 
 
@@ -125,7 +127,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -138,6 +140,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vscode%E9%85%8D%E7%BD%AEeasyx"><span class="nav-number">1.</span> <span class="nav-text">vscode配置easyx</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-number">1.1.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85%E5%BF%85%E8%A6%81%E6%96%87%E4%BB%B6"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.安装必要文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%A2%9E%E5%8A%A0%E7%BC%96%E8%AF%91%E6%97%B6%E7%9A%84%E9%93%BE%E6%8E%A5%E9%80%89%E9%A1%B9"><span class="nav-number">1.1.2.</span> <span class="nav-text">2.增加编译时的链接选项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-number">1.2.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -174,150 +177,127 @@
 
     </div>
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">crypto
-          <small>标签</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/05/23/vscode%E9%85%8D%E7%BD%AEeasyx.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/qq.jpg">
+      <meta itemprop="name" content="瑞典厨师长">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="obstacle的个人空间">
+      <meta itemprop="description" content="不要温和地走进那个良夜">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="vscode安装easyx库 | obstacle的个人空间">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          vscode安装easyx库
         </h1>
-      </div>
 
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2025</span>
+
+      <time title="创建时间：2025-05-23 21:30:21 / 修改时间：21:34:10" itemprop="dateCreated datePublished" datetime="2025-05-23T21:30:21+08:00">2025-05-23</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>636</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="vscode配置easyx"><a href="#vscode配置easyx" class="headerlink" title="vscode配置easyx"></a>vscode配置easyx</h1><p>前言：因为程序设计的作业要用到easyx图形库，又因为本人习惯用vscode,所以尝试在vscode中安装easyx但是路途确实有点艰辛，虽然最后回顾过程其实也很简单。</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="1-安装必要文件"><a href="#1-安装必要文件" class="headerlink" title="1.安装必要文件"></a>1.安装必要文件</h3><p>参考<a target="_blank" rel="noopener" href="https://codebus.cn/bestans/easyx-for-mingw%EF%BC%8C%E4%B8%8B%E8%BD%BD%E7%BD%91%E5%9D%80%E4%B8%AD%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%84%B6%E5%90%8E%E6%8C%89%E7%85%A7%E7%BD%91%E5%9D%80%E6%89%80%E8%AF%B4%E5%B0%86%E5%8E%8B%E7%BC%A9%E5%8C%85%E4%B8%ADinclude%E7%9A%84%E5%A4%B4%E6%96%87%E4%BB%B6%E5%92%8Clib64%E7%9A%84%E5%BA%93%E6%96%87%E4%BB%B6%E6%8B%B7%E8%B4%9D%E5%88%B0mingw%E7%9A%84%E5%A4%B4%E6%96%87%E4%BB%B6%E5%92%8C%E5%BA%93%E6%96%87%E4%BB%B6%E4%B8%AD%E3%80%82">https://codebus.cn/bestans/easyx-for-mingw，下载网址中的压缩包然后按照网址所说将压缩包中include的头文件和lib64的库文件拷贝到mingw的头文件和库文件中。</a></p>
+<h3 id="2-增加编译时的链接选项"><a href="#2-增加编译时的链接选项" class="headerlink" title="2.增加编译时的链接选项"></a>2.增加编译时的链接选项</h3><p>链接选项增加：-leasyx，这样可以在编译的时候链接 libeasyx.a 库文件。</p>
+<p>在tasks.json中添加即可</p>
+
+
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>这里以本人遇到一个问题为例子，本来按照教程将对应的文件复制到对应位置后就可以了但是却依然有问题如下图</p>
+
+
+<p>现在我们尝试测试一个代码结果发现找不到这个文件。但是上图中可以看到<strong>iostream</strong>是可以被找到的，那么我们只要找到这个文件存放的位置再把easyx.h这个文件也放到相同文件夹即可。按住ctrl然后鼠标点击<strong>iostream</strong>就可以找到具体位置</p>
+<p>如图所示我们找到该文件位置后再添加easyx.h就不报错了（话说这时候才发现自己的怎么是MSVC怪不得前面一开始不行😢，一直以为是mingw不过没什么关系。</p>
+
+
+<p>最后也是成功运行，接下来就可以进行后续的一些工作了。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一开始也是照着博客以及ai一顿捣鼓，最后终于完成还是很开心的，通过这次也对这些头文件貌似有了更深入的一些了解，也有了更多相关经验，以后也会继续探索学习。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-04-14T13:01:05+08:00"
-              content="2025-04-14">
-          04-14
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/04/14/TGCTF2025.html" itemprop="url">
-            <span itemprop="name">TGCTF2025</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/vscode/" rel="tag"># vscode</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/04/14/TGCTF2025.html" rel="prev" title="TGCTF2025">
+                  <i class="fa fa-angle-left"></i> TGCTF2025
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-04-02T17:01:05+08:00"
-              content="2025-04-02">
-          04-02
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/04/02/%E8%BF%91%E6%9C%9F%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0%E5%AD%A6%E4%B9%A0.html" itemprop="url">
-            <span itemprop="name">近期密码复现学习</span>
-          </a>
-      </div>
 
-      
-    </header>
-  </article>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-03-29T17:01:05+08:00"
-              content="2025-03-29">
-          03-29
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/03/29/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86.html" itemprop="url">
-            <span itemprop="name">中国剩余定理</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-02-27T13:01:05+08:00"
-              content="2025-02-27">
-          02-27
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/02/27/RSA%E4%B8%ADleak%E9%97%AE%E9%A2%98.html" itemprop="url">
-            <span itemprop="name">RSA中leak问题</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-02-18T23:41:42+08:00"
-              content="2025-02-18">
-          02-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/02/18/hgame2025week2%20crypto.html" itemprop="url">
-            <span itemprop="name">hgame 2025 week2 crypto</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-01-22T23:41:42+08:00"
-              content="2025-01-22">
-          01-22
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/01/22/%E6%A0%BC%E5%AF%86%E7%A0%81%E5%AD%A6%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0.html" itemprop="url">
-            <span itemprop="name">格密码学初步学习</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-    </div>
-  </div>
-  
-  
-  
 
 </div>
   </main>
