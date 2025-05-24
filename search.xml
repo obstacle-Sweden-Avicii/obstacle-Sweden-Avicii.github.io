@@ -300,7 +300,7 @@
   </entry>
   <entry>
     <title>vscode安装easyx库</title>
-    <url>/2025/05/23/vscode%E5%AE%89%E8%A3%85easyx%E5%BA%93.html</url>
+    <url>/2025/05/23/easyx%E5%BA%93/easyx%E5%BA%93.html</url>
     <content><![CDATA[<h1 id="vscode配置easyx"><a href="#vscode配置easyx" class="headerlink" title="vscode配置easyx"></a>vscode配置easyx</h1><p>前言：因为程序设计的作业要用到easyx图形库，又因为本人习惯用vscode,所以尝试在vscode中安装easyx但是路途确实有点艰辛，虽然最后回顾过程其实也很简单。</p>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="1-安装必要文件"><a href="#1-安装必要文件" class="headerlink" title="1.安装必要文件"></a>1.安装必要文件</h3><p>参考<a href="https://codebus.cn/bestans/easyx-for-mingw%E3%80%82">https://codebus.cn/bestans/easyx-for-mingw。</a></p>
 <p>下载网址中的压缩包然后按照网址所说将压缩包中include的头文件和lib64的库文件拷贝到mingw的头文件和库文件中。</p>
