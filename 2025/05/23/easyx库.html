@@ -27,11 +27,11 @@
 <meta property="og:description" content="vscode配置easyx前言：因为程序设计的作业要用到easyx图形库，又因为本人习惯用vscode,所以尝试在vscode中安装easyx但是路途确实有点艰辛，虽然最后回顾过程其实也很简单。 配置1.安装必要文件参考https:&#x2F;&#x2F;codebus.cn&#x2F;bestans&#x2F;easyx-for-mingw。 下载网址中的压缩包然后按照网址所说将压缩包中include的头文件和lib64的库文件拷贝到">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2025/05/23/easyx%E5%BA%93/easyx.png">
-<meta property="og:image" content="http://example.com/2025/05/23/easyx%E5%BA%93/2.png">
-<meta property="og:image" content="http://example.com/2025/05/23/easyx%E5%BA%93/3.png">
-<meta property="og:image" content="http://example.com/2025/05/23/easyx%E5%BA%93/4.png">
+<meta property="og:image" content="http://example.com/2025/05/23/easyx%E5%BA%93/werarfdasf.png">
+<meta property="og:image" content="http://example.com/2025/05/23/easyx%E5%BA%93/easyx3.png">
+<meta property="og:image" content="http://example.com/2025/05/23/easyx%E5%BA%93/easyx4.png">
 <meta property="article:published_time" content="2025-05-23T13:30:21.000Z">
-<meta property="article:modified_time" content="2025-05-24T16:47:20.057Z">
+<meta property="article:modified_time" content="2025-05-24T17:21:59.859Z">
 <meta property="article:author" content="瑞典厨师长">
 <meta property="article:tag" content="vscode">
 <meta name="twitter:card" content="summary">
@@ -229,7 +229,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-05-25 00:47:20" itemprop="dateModified" datetime="2025-05-25T00:47:20+08:00">2025-05-25</time>
+      <time title="修改时间：2025-05-25 01:21:59" itemprop="dateModified" datetime="2025-05-25T01:21:59+08:00">2025-05-25</time>
     </span>
 
   
@@ -271,15 +271,15 @@
 <img src="/2025/05/23/easyx%E5%BA%93/easyx.png" class="" title="easyx">
 
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>这里以本人遇到一个问题为例子，本来按照教程将对应的文件复制到对应位置后就可以了但是却依然有问题如下图</p>
-<img src="/2025/05/23/easyx%E5%BA%93/2.png" class="" width="2">
+<img src="/2025/05/23/easyx%E5%BA%93/werarfdasf.png" class="" title="werarfdasf">
 
 <p>现在我们尝试测试一个代码结果发现找不到这个文件。但是上图中可以看到<strong>iostream</strong>是可以被找到的，那么我们只要找到这个文件存放的位置再把easyx.h这个文件也放到相同文件夹即可。按住ctrl然后鼠标点击<strong>iostream</strong>就可以找到具体位置</p>
-<img src="/2025/05/23/easyx%E5%BA%93/3.png" class="" width="3">
+<img src="/2025/05/23/easyx%E5%BA%93/easyx3.png" class="" width="34524">
 
 
 
 <p>如图所示我们找到该文件位置后再添加easyx.h就不报错了（话说这时候才发现自己的怎么是MSVC怪不得前面一开始不行😢，一直以为是mingw不过没什么关系。</p>
-<img src="/2025/05/23/easyx%E5%BA%93/4.png" class="" width="4">
+<img src="/2025/05/23/easyx%E5%BA%93/easyx4.png" class="" width="324242342">
 
 <p>最后也是成功运行，接下来就可以进行后续的一些工作了。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一开始也是照着博客以及ai一顿捣鼓，最后终于完成还是很开心的，通过这次也对这些头文件貌似有了更深入的一些了解，也有了更多相关经验，以后也会继续探索学习。</p>
