@@ -300,20 +300,19 @@
   </entry>
   <entry>
     <title>vscode安装easyx库</title>
-    <url>/2025/05/23/vscode%E9%85%8D%E7%BD%AEeasyx.html</url>
+    <url>/2025/05/23/vscode%E5%AE%89%E8%A3%85easyx%E5%BA%93.html</url>
     <content><![CDATA[<h1 id="vscode配置easyx"><a href="#vscode配置easyx" class="headerlink" title="vscode配置easyx"></a>vscode配置easyx</h1><p>前言：因为程序设计的作业要用到easyx图形库，又因为本人习惯用vscode,所以尝试在vscode中安装easyx但是路途确实有点艰辛，虽然最后回顾过程其实也很简单。</p>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="1-安装必要文件"><a href="#1-安装必要文件" class="headerlink" title="1.安装必要文件"></a>1.安装必要文件</h3><p>参考<a href="https://codebus.cn/bestans/easyx-for-mingw%EF%BC%8C%E4%B8%8B%E8%BD%BD%E7%BD%91%E5%9D%80%E4%B8%AD%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%84%B6%E5%90%8E%E6%8C%89%E7%85%A7%E7%BD%91%E5%9D%80%E6%89%80%E8%AF%B4%E5%B0%86%E5%8E%8B%E7%BC%A9%E5%8C%85%E4%B8%ADinclude%E7%9A%84%E5%A4%B4%E6%96%87%E4%BB%B6%E5%92%8Clib64%E7%9A%84%E5%BA%93%E6%96%87%E4%BB%B6%E6%8B%B7%E8%B4%9D%E5%88%B0mingw%E7%9A%84%E5%A4%B4%E6%96%87%E4%BB%B6%E5%92%8C%E5%BA%93%E6%96%87%E4%BB%B6%E4%B8%AD%E3%80%82">https://codebus.cn/bestans/easyx-for-mingw，下载网址中的压缩包然后按照网址所说将压缩包中include的头文件和lib64的库文件拷贝到mingw的头文件和库文件中。</a></p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="1-安装必要文件"><a href="#1-安装必要文件" class="headerlink" title="1.安装必要文件"></a>1.安装必要文件</h3><p>参考<a href="https://codebus.cn/bestans/easyx-for-mingw%E3%80%82">https://codebus.cn/bestans/easyx-for-mingw。</a></p>
+<p>下载网址中的压缩包然后按照网址所说将压缩包中include的头文件和lib64的库文件拷贝到mingw的头文件和库文件中。</p>
 <h3 id="2-增加编译时的链接选项"><a href="#2-增加编译时的链接选项" class="headerlink" title="2.增加编译时的链接选项"></a>2.增加编译时的链接选项</h3><p>链接选项增加：-leasyx，这样可以在编译的时候链接 libeasyx.a 库文件。</p>
 <p>在tasks.json中添加即可</p>
-
-
+<p><img src="/vscode%E5%AE%89%E8%A3%85easyx%E5%BA%93/easyx.png" alt="easyx"></p>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>这里以本人遇到一个问题为例子，本来按照教程将对应的文件复制到对应位置后就可以了但是却依然有问题如下图</p>
-
-
+<p><img src="/vscode%E5%AE%89%E8%A3%85easyx%E5%BA%93/%E6%8A%A5%E9%94%99.png" alt="报错"></p>
 <p>现在我们尝试测试一个代码结果发现找不到这个文件。但是上图中可以看到<strong>iostream</strong>是可以被找到的，那么我们只要找到这个文件存放的位置再把easyx.h这个文件也放到相同文件夹即可。按住ctrl然后鼠标点击<strong>iostream</strong>就可以找到具体位置</p>
+<p><img src="/vscode%E5%AE%89%E8%A3%85easyx%E5%BA%93/%E4%BD%8D%E7%BD%AE.png" alt="位置"></p>
 <p>如图所示我们找到该文件位置后再添加easyx.h就不报错了（话说这时候才发现自己的怎么是MSVC怪不得前面一开始不行😢，一直以为是mingw不过没什么关系。</p>
-
-
+<p><img src="/vscode%E5%AE%89%E8%A3%85easyx%E5%BA%93/%E6%AD%A3%E5%B8%B8.png" alt="正常"></p>
 <p>最后也是成功运行，接下来就可以进行后续的一些工作了。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一开始也是照着博客以及ai一顿捣鼓，最后终于完成还是很开心的，通过这次也对这些头文件貌似有了更深入的一些了解，也有了更多相关经验，以后也会继续探索学习。</p>
 ]]></content>
