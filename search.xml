@@ -300,7 +300,7 @@
   </entry>
   <entry>
     <title>vscode安装easyx库</title>
-    <url>/2025/05/23/easyx%E5%BA%93/easyx%E5%BA%93.html</url>
+    <url>/2025/05/23/easyx%E5%BA%93.html</url>
     <content><![CDATA[<h1 id="vscode配置easyx"><a href="#vscode配置easyx" class="headerlink" title="vscode配置easyx"></a>vscode配置easyx</h1><p>前言：因为程序设计的作业要用到easyx图形库，又因为本人习惯用vscode,所以尝试在vscode中安装easyx但是路途确实有点艰辛，虽然最后回顾过程其实也很简单。</p>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="1-安装必要文件"><a href="#1-安装必要文件" class="headerlink" title="1.安装必要文件"></a>1.安装必要文件</h3><p>参考<a href="https://codebus.cn/bestans/easyx-for-mingw%E3%80%82">https://codebus.cn/bestans/easyx-for-mingw。</a></p>
 <p>下载网址中的压缩包然后按照网址所说将压缩包中include的头文件和lib64的库文件拷贝到mingw的头文件和库文件中。</p>
@@ -317,8 +317,7 @@
 
 
 <p>如图所示我们找到该文件位置后再添加easyx.h就不报错了（话说这时候才发现自己的怎么是MSVC怪不得前面一开始不行😢，一直以为是mingw不过没什么关系。</p>
-
-
+<p><img src="/easyx%E5%BA%93/4.png" alt="4"></p>
 <p>最后也是成功运行，接下来就可以进行后续的一些工作了。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一开始也是照着博客以及ai一顿捣鼓，最后终于完成还是很开心的，通过这次也对这些头文件貌似有了更深入的一些了解，也有了更多相关经验，以后也会继续探索学习。</p>
 ]]></content>
