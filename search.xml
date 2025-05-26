@@ -10,6 +10,7 @@
 <img src="/2024/11/30/1.%E5%9B%BE%E7%89%87/20240913_122405110_iOS.png" class="" title="20240913_122405110_iOS">
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>相信很多人尝试上面图片的插入方法会遇到在typora能正常显示图片，但在网页上图片却无法加载。这是因为上述地址如D:\blog\source\images\Elaina.jpg为本地地址，而hexo+github搭建的博客并不能访问本地地址所以自然无法成功。</p>
 <h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>最简单粗暴的方法就是直接将图片拖到typora中，typora会直接创建博客文章同名的文件夹存放图片。但是就是感觉文章写多了有点乱乱的。</p>
+<h2 id="特别注意"><a href="#特别注意" class="headerlink" title="特别注意"></a>特别注意</h2><p>说来也巧本以为早就解决了图片的问题结果又出现了，这次经过更长时间捣鼓得出结论上面例子里的【提示文字】不能为纯数字不然部署到GitHub上就被认定为width而不是title导致图片无法加载。 </p>
 ]]></content>
       <tags>
         <tag>测试</tag>
